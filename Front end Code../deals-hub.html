@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peersview</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="css/peersview.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".datepicker").datepicker();
+});	
+</script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="fixed-header">
+<!--header start-->
+<div class="header">
+  <nav class="navbar navbar-default nav-landing navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <span class="mobile-action">
+        <a href="notification.html" class="notification"><i></i></a>
+        <a href="messages.html" class="message"><i></i></a>
+        <span class="dropdown userli"><a href="javascript:void(0);" data-toggle="dropdown"><img class="profile-pic" src="images/profile.jpg" alt=""><span class="header-caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <span class="icon-arrow-up"></span>
+              <li><a href="my-profile.html">My Profile</a></li>
+              <li><a href="account-setting.html">Account Setting</a></li>
+              <li><a href="support.html">Peersview Support</a></li>
+              <li><a href="index.html">Log-Out</a></li>
+            </ul>
+          </span>
+        </span>
+        <a class="navbar-brand" href="home.html"><img src="images/logo.png" alt="peersview" /></a> </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="nav-home"><a href="home.html"><i></i>Home</a></li>
+          <li class="nav-forum"><a href="forum-home.html"><i></i>Forum</a></li>
+          <li class="nav-comm"><a href="community.html"><i></i>Campus</a></li>
+          <li class="active nav-events"><a href="events-landing.html"><i></i>Leisure</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="notification"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i></i></a>
+            <div class="inline-flyout dropdown-menu"> <span class="icon-arrow-up"></span>
+              <div>
+                <div class="flyout-title">Notifications</div>
+                <ul class="conversation-list">
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user1.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Angela Gill started following you</span> <span class="co-time">2 hours ago</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user2.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Faith Black commented on your post</span> <span class="co-time">3 hours ago</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user3.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Olivia Metcalfe like your post</span> <span class="co-time">4 hours ago</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user5.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Gordon Piper invite you to join the community</span> <span class="co-time">Today at 1:20pm</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user4.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Adekunle Amodu likes your post.</span> <span class="co-time">Yesterday at 5:35pm</span> </div>
+                    </a> </li>
+                </ul>
+                <div class="flyout-view"><a href="notification.html">View All</a></div>
+              </div>
+            </div>
+          </li>
+          <li class="message"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i></i></a>
+            <div class="inline-flyout dropdown-menu"> <span class="icon-arrow-up"></span>
+              <div>
+                <div class="flyout-title">Messages<a href="javascript:void(0);" data-toggle="modal" data-target="#message-modal" class="ext-action">New Message</a></div>
+                <ul class="conversation-list">
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user1.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Angela Gill</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user2.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Faith Black</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user3.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Olivia Metcalfe</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user4.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Adekunle Amodu</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user5.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Gordon Piper</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                </ul>
+                <div class="flyout-view"><a href="messages.html">View All</a></div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown search"> <a href="javascript:void(0);" data-toggle="dropdown"><i></i></a>
+            <div id="search-form" class="dropdown-menu"> <span class="icon-arrow-up"></span>
+              <div class="form-container">
+                <form action="">
+                  <input type="text" class="search-field" placeholder="Type search text here...">
+                  <div class="submit-container">
+                    <input type="submit" value="" class="submit">
+                  </div>
+                </form>
+                <div class="clear"></div>
+                <a href="advanced-search.html" class="advance-search-link">Advanced Search</a> </div>
+            </div>
+          </li>
+          <li class="dropdown userli"> <a href="javascript:void(0);" data-toggle="dropdown"><span class="welcome-user">Welcome John</span> <img class="profile-pic" src="images/profile.jpg" alt="" /><span class="header-caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <span class="icon-arrow-up"></span>
+              <li><a href="my-profile.html">My Profile</a></li>
+              <li><a href="account-setting.html">Account Setting</a></li>
+              <li><a href="support.html">Peersview Support</a></li>
+              <li><a href="index.html">Log-Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+</div>
+<!--header start-->
+<div class="container">
+  <div>
+    <!-- Nav pills -->
+    <ul class="nav nav-pills">
+      <li><a href="events-home.html">Home</a></li>
+      <li><a href="my-events.html">My Events</a></li>
+      <li class="active"><a href="deals-hub.html">Deals Hub</a></li>
+    </ul>
+    <!-- Tab pills -->
+    <div class="clear spacer20"></div>
+    <h4 class="deal-title">We're working to find you amazing deals. Listed below are all of the deals currently on offer for students.</h4>
+    <div>
+    	<!--tab-->
+      <div class="deal-block">
+          <div class="deal-heading">Retail</div>
+          <div class="top-offers"><span class="text-bold">Banana Republic:</span> <span class="discount">Save 15%</span> on full-priced, in-store purchases only.</div>
+          <div class="top-offers"><span class="text-bold">Bulk Barn:</span> Students receive <span class="discount">10% off</span> on Wednesdays with valid ID.</div>
+          <div class="top-offers"><span class="text-bold">Club Monaco:</span> Both full-priced and sale items are 20% off with your valid post-secondary ID. If you’re shopping online, <a href="http://www.clubmonaco.ca/category/index.jsp?categoryId=12724042&ab=footer_student">submit your email to receive a code</a></div>
+      		<div class="top-offers"><span class="text-bold">H&M:</span> Valid ID must be presented to receive <span class="discount">15% off</span> entire in-store purchases.</div>			
+          <div class="top-offers"><span class="text-bold">J.Crew:</span> The store <span class="discount">offers 15% off</span> when you’re shopping in-store and show a valid school ID at checkout. <a href="https://www.jcrew.com/help/teacher_student_discount.jsp">The offer</a> is only valid on purchases made in J.Crew, J.Crew Factory and J.Crew Mercantile stores.</div>
+          <div class="top-offers"><span class="text-bold">Kate Spade:</span> Show your student ID and receive <span class="discount">15% off</span> your purchase.</div>
+          <div class="top-offers"><span class="text-bold">Levi’s:</span> This store <span class="discount">offers 15% off</span> for students. <a href="http://www.levi.com/US/en_US/unidays">Register</a> to receive the same 15% off for online purchases.</div>
+          <div class="top-offers"><span class="text-bold">Roots:</span> Students <span class="discount">save 20%</span> with their student discount on regular-priced items. You can purchase anything on sale and you’ll still be able to receive 10% off.</div>
+          <div class="top-offers"><span class="text-bold">Sally Beauty Supply:</span> <span class="discount">Save</span> on products with your Beauty Student Card from Sally Beauty Supply. You’ll get monthly specials and special email offers to take advantage of.</div>
+          <div class="top-offers"><span class="text-bold">TOMS:</span> Students can get free shipping on all orders of TOMS Shoes; the company donates a pair of shoes to a child in need for every pair you buy.</div>
+          <div class="top-offers"><span class="text-bold">TopShop:</span> Students get 10% off. Visit <a href="http://www.topshop.com/en/tsuk/category/topshop-students-student-discount-2316596/home?TS=1392132268317&cat2=277560&intcmpid=W_FOOTER_MAIN_%20STUDENTS" target="_blank">their website</a> for more information.</div>
+          <div class="top-offers"><span class="text-bold">Urban Outfitters:</span> <span class="discount">Save 10% off</span> on specific days with your Student ID. Sign up for their <a href="https://urbanoutfitters.myunidays.com/" target="_blank">Student Program</a> to be told when to use your discount.</div> 
+        </div>
+      <!--tab-->
+      <!--tab-->
+      <div class="deal-block">
+          <div class="deal-heading">Restaurants and Bars</div>
+          <div class="top-offers"><span class="text-bold">Arby’s: </span>Students <span class="discount">save 10% off</span> their entire meal when they use their ID.</div>
+          <div class="top-offers"><span class="text-bold">Buffalo Wild Wings:</span> At many locations across Canada you can receive <span class="discount">10% off</span> your meal. Just ask your server to see if the deal is available at your location.</div>
+          <div class="top-offers"><span class="text-bold">Burger King:</span> Students can receive <span class="discount">10% off</span> their meal by showing their student card.</div>
+          <div class="top-offers"><span class="text-bold">Chipotle:</span> Students receive a <span class="discount">free</span> soft drink after the purchase of food, when they show their ID.</div>
+          <div class="top-offers"><span class="text-bold">Dairy Queen:</span> Students receive a <span class="discount">discount of 10%</span> off their purchase.</div>
+          <div class="top-offers"><span class="text-bold">Hard Rock Cafe:</span> Hard Rock Cafe locations worldwide <span class="discount">offer a 10% discount</span> for students with valid ISIC.</div>
+          <div class="top-offers"><span class="text-bold">Subway:</span> Students receive a <span class="discount">discount of 10%</span> with valid ID.</div>
+          <div class="top-offers"><span class="text-bold">St.Louis Bar & Grill:</span> Get <span class="discount">$5 off</span> any hot menu item or 20% off food.</div>
+      </div>
+      <!--tab-->
+      <!--tab-->
+      <div class="deal-block">
+          <div class="deal-heading">Technology</div>
+          <div class="top-offers"><span class="text-bold">Apple: </span> Get wireless Beats headphones when you buy an eligible computer, tablet or smartphone with a valid student ID. Apple also offers special education pricing on Apple computers, select software and third party products to post-secondary students, parents buying for a post-secondary student, or faculty and teachers. Pricing can be found <a href="http://www.apple.com/ca_edu_93120/shop/browse/home/findyourschool" target="_blank">here</a>.</div>
+          <div class="top-offers"><span class="text-bold">Adobe:</span> Full-time students can receive <a href="http://www.adobe.com/ca/creativecloud/buy/students.html?promoid=65FN7X8B&mv=other" target="_blank">discounts on software</a>, such as 60% on Creative Cloud.</div>
+          <div class="top-offers"><span class="text-bold">Best Buy:</span> Check out the <a href="http://www.bestbuy.ca/en-CA/category/bestbuy-student-pricing/store-page.aspx">Students Savings program</a> for exclusive deals on laptops, tablets, desktops and small appliances.</div>
+          <div class="top-offers"><span class="text-bold">Dell:</span> Dell offers discounts on laptops, desktops and more. You can check out these deals <a href="http://www.dell.com/learn/ca/en/cadhs1/campaigns/mpp-ca?&flushcache=true&cs=cappp1&ST=+dell%20+student%20+discount&dgc=ST&cid=3852&lid=5318919&acd=123088137920560&ven1=sEeD64Se3&ven2=b" target="_blank">online</a>.</div>
+          <div class="top-offers"><span class="text-bold">Microsoft:</span> Students can save up to $194 on a Surface Pro 3, or save 10% on accessories. They also get special pricing on software. Visit the Microsoft Store <a href="https://www.microsoftstore.com/store/msusa/en_US/edu?tduid=(7e15c328f2b69513a7264e39f6bc4140)(256380)(2459594)(b8XjFa1fmu4-Y09Pf9h_ooM80He68aYNEg)()" target="_blank">website</a> for more information.</div>
+          <div class="top-offers"><span class="text-bold">Shaw:</span> Keep your student budget balanced with <a href="http://www.shaw.ca/student/?semid=nb-student-goog-campaignid=284722333-adgroupid=27106288813-keyword=student%20deals-c-matchtype=b-devicemodel=-adposition=1t1-targetid=kwd-12698443-physcialloc=9000919-network=g-adposition=1t1" target="_blank">Shaw</a>. Students get internet for just $35 per month for eight months.</div>
+      </div>
+      <!--tab-->
+      <!--tab-->
+      <div class="deal-block">
+          <div class="deal-heading">Cellphone Companies</div>
+          <div class="top-offers"><span class="text-bold">Rogers: </span> This phone company has a student offer available called “split them into offers” which can vary. One offers a Samsung Galaxy S6 or Galaxy S7 for $0.05 on a two-year Premium + Tab Share Everything plan. Another takes $10 off a monthly bill for each new number added to a Share Everything plan. A data-focused offer adds 2GB for $5 on select Share Everything plans.</div>
+          <div class="top-offers"><span class="text-bold">Bell:</span> The company is offering students the same thing as Rogers, namely the 2GB extra on plans that start with 5GB. Until Sept. 30, there is also a 1GB bonus for tablets on a two-year Tablet Flex or Share plan.</div>
+          <div class="top-offers"><span class="text-bold">Telus:</span> This mobile provider is offering a <span class="discount">2GB monthly bonus for $5</span> for any student activating or upgrading a premium smartphone on a two-year Your Choice plan.</div>
+      </div>
+      <!--tab-->
+      <!--tab-->
+      <div class="deal-block">
+          <div class="deal-heading">Other</div>
+          <div class="top-offers"><span class="text-bold">Amazon Student: </span> Students receive <span class="discount">50% off</span> Amazon’s Prime service, which includes unlimited two-day shipping, after a six-month free trial. They also receive exclusive <a href="https://www.amazon.ca/gp/student/signup/info" target="_blank">offers and discounts</a> and eligibility for sweepstakes and contests.</div>
+          <div class="top-offers"><span class="text-bold">FedEx:</span> When you’re shipping a package, you can earn <span class="discount">20% to 30% off</span> by showing your student ID.</div>
+      </div>
+      <!--tab-->
+       <!--<div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="deal-widget"> <img src="images/deal-levis.jpg" alt="" class="img-responsive" />
+            <div class="deal-content">
+              <h5><a href="javacript:void(0);">ORANGE CROPPED BOOT CUT JEANS</a></h5>
+              <p class="deal-loc">Scarborough, Toronto</p>
+              <p class="deal-phone">416-392-5929</p>
+              <p class="deal-coupon">Coupon No. <span class="coupon-no">Az345kj</span></p>
+              <p class="deal-price"> <span class="price-off">23% OFF</span> <span class="price-val">From: $100</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="deal-widget"> <img src="images/deal-food.jpg" alt="" class="img-responsive" />
+            <div class="deal-content">
+              <h5><a href="javacript:void(0);">Tasty Local dish / Natives Restaurant</a></h5>
+              <p class="deal-loc">Scarborough, Toronto</p>
+              <p class="deal-phone">416-392-5929</p>
+              <p class="deal-coupon">Coupon No. <span class="coupon-no">Az345kj</span></p>
+              <p class="deal-price"> <span class="price-off">23% OFF</span> <span class="price-val">From: $100</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="deal-widget"> <img src="images/deal-food1.jpg" alt="" class="img-responsive" />
+            <div class="deal-content">
+              <h5><a href="javacript:void(0);">Tasty Local dish / Natives Restaurant</a></h5>
+              <p class="deal-loc">Scarborough, Toronto</p>
+              <p class="deal-phone">416-392-5929</p>
+              <p class="deal-coupon">Coupon No. <span class="coupon-no">Az345kj</span></p>
+              <p class="deal-price"> <span class="price-off">23% OFF</span> <span class="price-val">From: $100</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="deal-widget"> <img src="images/deal-food2.jpg" alt="" class="img-responsive" />
+            <div class="deal-content">
+              <h5><a href="javacript:void(0);">Tasty Local dish / Natives Restaurant</a></h5>
+              <p class="deal-loc">Scarborough, Toronto</p>
+              <p class="deal-phone">416-392-5929</p>
+              <p class="deal-coupon">Coupon No. <span class="coupon-no">Az345kj</span></p>
+              <p class="deal-price"> <span class="price-off">23% OFF</span> <span class="price-val">From: $100</span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center"><a href="javascript:void(0);" class="btn btn-blue">VIEW MORE DEALS</a></p>-->
+    </div>
+  </div>
+</div>
+<!-- New Message Modal -->
+<div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title">New Message</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>To</label>
+          <input type="text" class="form-control" placeholder="Name" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Write a message here..."  rows="3"class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Attach a File</label>
+          <input type="file" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-grey" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-blue">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- New Message Modal -->
+<div id="backToTop" title="Back to Top"></div>
+</body>
+</html>

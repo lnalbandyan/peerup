@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peersview</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/peersview.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/sticky.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="fixed-header">
+<!--header start-->
+<div class="header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <span class="mobile-action">
+        <a href="notification.html" class="notification"><i></i></a>
+        <a href="messages.html" class="message"><i></i></a>
+        <span class="dropdown userli"><a href="javascript:void(0);" data-toggle="dropdown"><img class="profile-pic" src="images/profile.jpg" alt=""><span class="header-caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <span class="icon-arrow-up"></span>
+              <li><a href="my-profile.html">My Profile</a></li>
+              <li><a href="account-setting.html">Account Setting</a></li>
+              <li><a href="support.html">Peersview Support</a></li>
+              <li><a href="index.html">Log-Out</a></li>
+            </ul>
+          </span>
+        </span>
+        <a class="navbar-brand" href="home.html"><img src="images/logo.png" alt="peersview" /></a> </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="nav-home"><a href="home.html"><i></i>Home</a></li>
+          <li class="nav-forum"><a href="forum-home.html"><i></i>Forum</a></li>
+          <li class="active nav-comm"><a href="community.html"><i></i>Campus</a></li>
+          <li class="nav-events"><a href="events-landing.html"><i></i>Leisure</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="notification"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i></i></a>
+            <div class="inline-flyout dropdown-menu"> <span class="icon-arrow-up"></span>
+              <div>
+                <div class="flyout-title">Notifications</div>
+                <ul class="conversation-list">
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user1.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Angela Gill started following you</span> <span class="co-time">2 hours ago</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user2.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Faith Black commented on your post</span> <span class="co-time">3 hours ago</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user3.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Olivia Metcalfe like your post</span> <span class="co-time">4 hours ago</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user5.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Gordon Piper invite you to join the community</span> <span class="co-time">Today at 1:20pm</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="javascript:void(0);">
+                    <div class="co-img"><img src="images/user4.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Adekunle Amodu likes your post.</span> <span class="co-time">Yesterday at 5:35pm</span> </div>
+                    </a> </li>
+                </ul>
+                <div class="flyout-view"><a href="notification.html">View All</a></div>
+              </div>
+            </div>
+          </li>
+          <li class="message"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i></i></a>
+            <div class="inline-flyout dropdown-menu"> <span class="icon-arrow-up"></span>
+              <div>
+                <div class="flyout-title">Messages<a href="javascript:void(0);" data-toggle="modal" data-target="#message-modal" class="ext-action">New Message</a></div>
+                <ul class="conversation-list">
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user1.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Angela Gill</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user2.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Faith Black</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user3.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Olivia Metcalfe</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user4.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Adekunle Amodu</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                  <li class="co-row"> <a href="messages.html">
+                    <div class="co-img"><img src="images/user5.jpg" alt=""></div>
+                    <div class="co-info"> <span class="co-name">Gordon Piper</span> <span class="co-day">Tue</span> </div>
+                    </a> </li>
+                </ul>
+                <div class="flyout-view"><a href="messages.html">View All</a></div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown search"> <a href="javascript:void(0);" data-toggle="dropdown"><i></i></a>
+            <div id="search-form" class="dropdown-menu"> <span class="icon-arrow-up"></span>
+              <div class="form-container">
+                <form action="">
+                  <input type="text" class="search-field" placeholder="Type search text here...">
+                  <div class="submit-container">
+                    <input type="submit" value="" class="submit">
+                  </div>
+                </form>
+                <div class="clear"></div>
+                <a href="advanced-search.html" class="advance-search-link">Advanced Search</a> </div>
+            </div>
+          </li>
+          <li class="dropdown userli"> <a href="javascript:void(0);" data-toggle="dropdown"><span class="welcome-user">Welcome John</span> <img class="profile-pic" src="images/profile.jpg" alt="" /><span class="header-caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <span class="icon-arrow-up"></span>
+              <li><a href="my-profile.html">My Profile</a></li>
+              <li><a href="account-setting.html">Account Setting</a></li>
+              <li><a href="support.html">Peersview Support</a></li>
+              <li><a href="index.html">Log-Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+</div>
+<!--header start-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="sticky-width sticky">
+        <!--left sidebar-->
+        <div class="sidebar-info"> <img src="images/univ-logo.jpg" alt="" />
+          <h4>University of Manchester</h4>
+        </div>
+        <div class="sidebar-links campus-menu">
+           <ul>
+            <li><a href="community-feed.html"><i class="icon-all-students"></i><span class="link-text">All Students</span></a></li>
+            <li><a href="community-year-enrollment.html"><i class="icon-feed"></i><span class="link-text">Freshers Feed</span></a></li>
+            <li><a href="community-course-list.html"><i class="icon-feed"></i><span class="link-text">Course feed</span></a></li>
+            <li><a href="community-classes-list.html"><i class="icon-classes"></i><span class="link-text">Classes</span></a></li>
+            <li><a href="student-home.html"><i class="icon-sgroup"></i><span class="link-text">Student group</span></a></li>
+            <li><a href="community-group.html"><i class="icon-clubs"></i><span class="link-text">Societies & Clubs</span></a></li>
+            <li class="active-link"><a href="market-place.html"><i class="icon-marketplace"></i><span class="link-text">Market Place</span></a></li>
+            <li><a href="community-job-center.html"><i class="icon-job"></i><span class="link-text">Job Center</span></a></li>
+          </ul>
+         </div>
+        <!--left sidebar-->
+      </div>
+    </div>
+    <div class="col-md-10">
+      <h1 class="page-title">Market Place <a href="market-place-sell.html" class="btn btn-blue pull-right">Sell your Item</a></h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box-list">
+            <div class="box-title"><a href="market-place-ads.html">Economics Text Book</a><span class="pull-right price">$100</span></div>
+            <img src="images/eco-textbook.jpg" class="img-responsive" alt="" /> </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-list">
+            <div class="box-title"><a href="market-place-ads.html">Economics Text Book</a><span class="pull-right price">$100</span></div>
+            <img src="images/eco-textbook.jpg" class="img-responsive" alt="" /> </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-list">
+            <div class="box-title"><a href="market-place-ads.html">Economics Text Book</a><span class="pull-right price">$100</span></div>
+            <img src="images/eco-textbook.jpg" class="img-responsive" alt="" /> </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-list">
+            <div class="box-title"><a href="market-place-ads.html">Economics Text Book</a><span class="pull-right price">$100</span></div>
+            <img src="images/eco-textbook.jpg" class="img-responsive" alt="" /> </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-list">
+            <div class="box-title"><a href="market-place-ads.html">Economics Text Book</a><span class="pull-right price">$100</span></div>
+            <img src="images/eco-textbook.jpg" class="img-responsive" alt="" /> </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box-list">
+            <div class="box-title"><a href="market-place-ads.html">Economics Text Book</a><span class="pull-right price">$100</span></div>
+            <img src="images/eco-textbook.jpg" class="img-responsive" alt="" /> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- New Message Modal -->
+<div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title">New Message</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>To</label>
+          <input type="text" class="form-control" placeholder="Name" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Write a message here..."  rows="3"class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Attach a File</label>
+          <input type="file" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-grey" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-blue">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- New Message Modal -->
+<div id="backToTop" title="Back to Top"></div>
+</body>
+</html>
