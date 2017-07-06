@@ -183,6 +183,10 @@ i.icon-success{background:url(../images/icon-sucess.png) no-repeat; width:14px; 
 .mobile-action .message, .mobile-action .notification{margin-top:0px !important; vertical-align:middle;}
 /*header css*/
 
+.fixed-header {
+	margin-top: 80px;
+}
+
 /*search css*/
 #search-form{width:340px;background:none;padding:1px 0 0; position:absolute; right:-18px; top:35px; z-index:9999; box-shadow:0 0 0 #fff; -webkit-box-shadow:0 0 0 #fff; border:0 none;}
 .icon-arrow-up{position:absolute; width:16px; height:14px; background:url(../images/arrow-top-icon.png) no-repeat; right:20px; top:-12px;}
@@ -570,7 +574,7 @@ margin-top:-5px;}
 
 /*community page css*/
 .jumbotron{background:none;}
-.community-page{ background:url(../images/community-banner.jpg) no-repeat; background-size:cover; text-align:center; padding:30px 0; min-height:568px; margin-top:-16px;}
+.community-page{ background:url(../images/community-banner.jpg) no-repeat; background-size:cover; text-align:center; padding:30px 0; min-height:568px; margin-top:64px;}
 .community-container{width:80%; margin:0 auto;}
 .community-container hgroup{color:#ffffff; margin-bottom:30px;}
 .community-container hgroup h1{margin:10px 0;}

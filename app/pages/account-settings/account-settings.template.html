@@ -1,0 +1,463 @@
+<app-navbar></app-navbar>
+
+<div class="container fixed-header">
+    <div class="page-name-title">Account Setting</div>
+    <div class="row">
+        <div class="col-md-3 col-sm-4 paddingR0">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-left">
+                <li class="active"><a href="accountSettings#general" data-toggle="tab">General</a></li>
+                <li><a href="accountSettings#password" data-toggle="tab">Password</a></li>
+                <li><a href="accountSettings#security" data-toggle="tab">Security and Privacy</a></li>
+                <li><a href="accountSettings#blocking" data-toggle="tab">Blocking</a></li>
+                <li><a href="accountSettings#notifications" data-toggle="tab">Notifications</a></li>
+                <li><a href="accountSettings#billing" data-toggle="tab">Billing</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9 col-sm-8 tab-content-right">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="general">
+                    <div class="tab-title">General</div>
+                    <ul class="account-list">
+                        <li>
+                            <label class="setting-lbl">Change Image:</label>
+                            <span class="setting-value"><input type="file"/></span>
+                        </li>
+                        <li>
+                            <label class="setting-lbl">Name:</label>
+                            <span class="setting-value">John Smith</span>
+                            <span class="edit-field" style="display:none;">
+                            <input type="text" value="John" class="input-setting"/>
+                            <input type="text" value="Smith" class="input-setting"/>
+                            </span> <a style="cursor: pointer;" ng-click="vm.openEdit($event)" class="setting-edit">Edit</a>
+                        </li>
+                        <li>
+                            <label class="setting-lbl">Primary Email:</label>
+                            <span class="setting-value">john@gmail.com</span>
+                            <span class="edit-field" style="display:none;">
+                            <input type="text" value="john@gmail.com" class="input-setting"/>
+                            </span> <a style="cursor: pointer;" ng-click="vm.openEdit($event)" class="setting-edit">Edit</a>
+                        </li>
+                        <li>
+                            <label class="setting-lbl">Language:</label>
+                            <span class="setting-value">English</span>
+                            <span class="edit-field" style="display:none;">
+                                <select class="input-setting">
+                <option value="so_SO">Af-Soomaali</option>
+                <option value="af_ZA">Afrikaans</option>
+                <option value="az_AZ">Azərbaycan dili</option>
+                <option value="id_ID">Bahasa Indonesia</option>
+                <option value="ms_MY">Bahasa Melayu</option>
+                <option value="jv_ID">Basa Jawa</option>
+                <option value="cx_PH">Bisaya</option>
+                <option value="bs_BA">Bosanski</option>
+                <option value="br_FR">Brezhoneg</option>
+                <option value="ca_ES">Català</option>
+                <option value="cs_CZ">Čeština</option>
+                <option value="co_FR">Corsu</option>
+                <option value="cy_GB">Cymraeg</option>
+                <option value="da_DK">Dansk</option>
+                <option value="de_DE">Deutsch</option>
+                <option value="et_EE">Eesti</option>
+                <option value="en_PI">English (Pirate)</option>
+                <option value="en_GB">English (UK)</option>
+                <option value="en_US">English (US)</option>
+                <option value="en_UD">English (uʍop əpısdՈ)</option>
+                <option value="es_LA">Español</option>
+                <option value="es_ES">Español (España)</option>
+                <option value="eo_EO">Esperanto</option>
+                <option value="eu_ES">Euskara</option>
+                <option value="tl_PH">Filipino</option>
+                <option value="fo_FO">Føroyskt</option>
+                <option value="fr_CA">Français (Canada)</option>
+                <option value="fr_FR">Français (France)</option>
+                <option value="fy_NL">Frysk</option>
+                <option value="ga_IE">Gaeilge</option>
+                <option value="gl_ES">Galego</option>
+                <option value="gn_PY">Guarani</option>
+                <option value="ha_NG">Hausa</option>
+                <option value="hr_HR">Hrvatski</option>
+                <option value="rw_RW">Ikinyarwanda</option>
+                <option value="is_IS">Íslenska</option>
+                <option value="it_IT">Italiano</option>
+                <option value="sw_KE">Kiswahili</option>
+                <option value="ku_TR">Kurdî (Kurmancî)</option>
+                <option value="lv_LV">Latviešu</option>
+                <option value="fb_LT">Leet Speak</option>
+                <option value="lt_LT">Lietuvių</option>
+                <option value="la_VA">lingua latina</option>
+                <option value="hu_HU">Magyar</option>
+                <option value="mg_MG">Malagasy</option>
+                <option value="mt_MT">Malti</option>
+                <option value="nl_NL">Nederlands</option>
+                <option value="nl_BE">Nederlands (België)</option>
+                <option value="nb_NO">Norsk (bokmål)</option>
+                <option value="nn_NO">Norsk (nynorsk)</option>
+                <option value="uz_UZ">O'zbek</option>
+                <option value="pl_PL">Polski</option>
+                <option value="pt_BR">Português (Brasil)</option>
+                <option value="pt_PT">Português (Portugal)</option>
+                <option value="ff_NG">Pulaar</option>
+                <option value="ro_RO">Română</option>
+                <option value="sc_IT">Sardu</option>
+                <option value="sq_AL">Shqip</option>
+                <option value="sz_PL">ślōnskŏ gŏdka</option>
+                <option value="sk_SK">Slovenčina</option>
+                <option value="sl_SI">Slovenščina</option>
+                <option value="fi_FI">Suomi</option>
+                <option value="sv_SE">Svenska</option>
+                <option value="vi_VN">Tiếng Việt</option>
+                <option value="tr_TR">Türkçe</option>
+              </select>
+                            </span>
+                            <a style="cursor: pointer;" ng-click="vm.openEdit($event)" class="setting-edit">Edit</a></li>
+                        <li>
+                            <label class="setting-lbl">Institution/Current Place of Employment</label>
+                            <span class="setting-value">St. Marry's</span>
+                            <span class="edit-field" style="display:none;">
+                                <input type="text" value="St. Marry's" class="input-setting"/>
+                            </span>
+                            <a style="cursor: pointer;" ng-click="vm.openEdit($event)" class="setting-edit">Edit</a>
+                        </li>
+                        <li>
+                            <label class="setting-lbl">Course/Current Employment</label>
+                            <span class="setting-value">Accounting and Finance</span>
+                            <span class="edit-field" style="display:none;">
+                                <select class="input-setting">
+                <option>Select Course</option>
+                <option>Accounting and Finance</option>
+                <option>Agriculture &amp; Forestry</option>
+                <option>Anatomy &amp; Physiology</option>
+                <option>Anthropology</option>
+                <option>Architecture &amp; The built environment</option>
+                <option>Astronomy</option>
+                <option>Biological science</option>
+                <option>Business &amp; Management</option>
+                <option>Chemistry</option>
+                <option>Classics &amp; Ancient History</option>
+                <option>Communication and Media studies</option>
+                <option>Computer Science and Information Systems</option>
+                <option>Creative Arts</option>
+                <option>Dentistry</option>
+                <option>Development Studies</option>
+                <option>Earth &amp; Marine Science</option>
+                <option>Economics</option>
+                <option>Education &amp; Training</option>
+                <option>Engineering-  Aeronautical</option>
+                <option>Engineering- Civil &amp; Structural</option>
+                <option>Engineering- Computer&amp; Network</option>
+                <option>Engineering- Electrical</option>
+                <option>Engineering- Mineral &amp; Mining</option>
+                <option>Engineering-Chemical</option>
+                <option>Engineering-Mechanical</option>
+                <option>English Language &amp; Literature</option>
+                <option>Ethnicity, Gender &amp; Diversity</option>
+                <option>Finance </option>
+                <option>Geography</option>
+                <option>Hospitality &amp; Leisure Management </option>
+                <option>Human Resource Management</option>
+                <option>International Relations</option>
+                <option>Journalism</option>
+                <option>Law and Legal Studies</option>
+                <option>Library &amp; Information Management</option>
+                <option>Life Sciences</option>
+                <option>Linguistics</option>
+                <option>Logistics &amp; Supply Chain Management</option>
+                <option>Marketing</option>
+                <option>Material Science</option>
+                <option>Mathematics</option>
+                <option>Medicine</option>
+                <option>Modern Language</option>
+                <option>Nursing</option>
+                <option>Optometry</option>
+                <option>Others</option>
+                <option>Performing Arts</option>
+                <option>Pharmacology</option>
+                <option>Pharmacy</option>
+                <option>Philosophy</option>
+                <option>Product Design</option>
+                <option>Psychology</option>
+                <option>Public Policy</option>
+                <option>Social &amp; Political science</option>
+                <option>Social Work</option>
+                <option>Sociology</option>
+                <option>Sports</option>
+                <option>Sports Science</option>
+                <option>Statistics and Operations</option>
+                <option>Theology, Divinity and Religious Studies</option>
+                <option>Urban Planning</option>
+                <option>Veterinary Science</option>
+                <option>Zoology</option>
+              </select>
+                            </span>
+                            <a style="cursor: pointer;" ng-click="vm.openEdit($event)" class="setting-edit">Edit</a>
+                        </li>
+                        <li>
+                            <label class="setting-lbl">Date of Birth</label>
+                            <span class="setting-value">02/07/1985</span>
+                            <span class="edit-field" style="display:none;">
+                                <input type="text" value="02/07/1985" class="input-setting datepicker"/>
+                            </span>
+                            <a style="cursor: pointer;" ng-click="vm.openEdit($event)" class="setting-edit">Edit</a>
+                        </li>
+                        <li>
+                            <label class="setting-lbl">City</label>
+                            <span class="setting-value">Toronto</span>
+                            <span class="edit-field" style="display:none;">
+                                <input type="text" value="Toronto" class="input-setting"/>
+                            </span>
+                            <a style="cursor: pointer;" ng-click="vm.openEdit($event)" class="setting-edit">Edit</a>
+                        </li>
+                        <li>
+                            <label class="setting-lbl">Website</label>
+                            <span class="setting-value">peersview.com</span>
+                            <span class="edit-field" style="display:none;">
+                                <input type="text" value="peersview.com" class="input-setting"/>
+                            </span>
+                            <a style="cursor: pointer;" ng-click="vm.openEdit($event)" class="setting-edit">Edit</a>
+                        </li>
+                        <li class="setting-action" id="general-action" style="display:none;">
+                            <label class="setting-lbl">&nbsp;</label>
+                            <span class="setting-value">
+                                <input type="button" ng-click="vm.cancelEdit()" value="Save Changes" class="btn btn-blue btn-sm gn-save"/>
+                                &nbsp;&nbsp;
+                                <input type="button" ng-click="vm.cancelEdit()" value="Cancel" class="btn btn-white btn-sm gn-cancel"/>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="password">
+                    <div class="tab-title">Password</div>
+                    <ul class="account-list">
+                        <li>
+                            <label class="setting-lbl">Current Password:</label>
+                            <span class="setting-value">
+              <input type="text"/>
+              </span></li>
+                        <li>
+                            <label class="setting-lbl">New Password:</label>
+                            <span class="setting-value">
+              <input type="text"/>
+              </span></li>
+                        <li class="setting-action">
+                            <label class="setting-lbl">&nbsp;</label>
+                            <span class="setting-value">
+              <input type="button" value="Save Changes" class="btn btn-blue btn-sm"/>
+              </span></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="security">
+                    <div class="tab-title">Security and Privacy</div>
+                    <ul class="account-list">
+                        <li>
+                            <label class="setting-lbl">Protect my posts:</label>
+                            <span class="setting-value">
+              <input type="checkbox" checked="checked"/>
+              </span></li>
+                        <li>
+                            <label class="setting-lbl">Direct Messages:</label>
+                            <span class="setting-value">
+              	<div class="checkbox margin0"><label><input
+                        type="checkbox"/> Receive Direct Messages from anyone</label></div>
+                <div class="note-text">If selected, you will be able to receive messages from any Peersview user even if you do not follow them.</div>
+              </span></li>
+                        <li>
+                            <label class="setting-lbl">Who can View my Profile:</label>
+                            <span class="setting-value">
+              <select>
+                <option>Everyone</option>
+                <option>People I Follow</option>
+                <option>My Followers</option>
+              </select>
+              </span></li>
+                        <li class="setting-action">
+                            <label class="setting-lbl">&nbsp;</label>
+                            <span class="setting-value">
+              <input type="button" value="Save Changes" class="btn btn-blue btn-sm">
+              </span></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="blocking">
+                    <div class="tab-title">Blocking</div>
+                    <ul class="account-list">
+                        <li>
+                            <label class="setting-lbl">Block Users:</label>
+                            <span class="setting-value">Tom Shank&nbsp;&nbsp;
+              <input type="button" value="Unblock" class="btn btn-blue btn-xs"/>
+              </span></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="notifications">
+                    <div class="tab-title">Notifications</div>
+                    <ul class="account-list">
+                        <li>
+                            <label class="setting-lbl">Email me When:</label>
+                            <span class="setting-value">
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" name="email-me"/>
+                I have a new follower</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" name="email-me"/>
+                I have a Page view</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" name="email-me"/>
+                Someone Likes my Post or Media</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" name="email-me"/>
+                Someone tags me in a Post or Media</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" name="email-me"/>
+                There is an event I could be interested</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" name="email-me"/>
+                Suggestions for recommended accounts</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" name="email-me"/>
+                Suggestions based on my recent follows</label>
+              </div>
+              </span></li>
+                        <li>
+                            <label class="setting-lbl">Activity relating to my Account:</label>
+                            <span class="setting-value">
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" name="activity"/>
+                Notifications from The Community</label>
+              </div>
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" name="activity"/>
+                Top posts relating to my interest</label>
+              </div>
+              </span></li>
+                        <li class="setting-action">
+                            <label class="setting-lbl">&nbsp;</label>
+                            <span class="setting-value">
+              <input type="button" value="Save Changes" class="btn btn-blue btn-sm">
+              </span></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="billing">
+                    <div class="tab-title">Billing</div>
+                    <div class="billing">
+                        <ul class="account-list">
+                            <li>
+                                <label class="setting-lbl">Billing Methods:</label>
+                                <span class="setting-value">
+                <select>
+                  <option>Paypal</option>
+                  <option>Visa</option>
+                  <option>Mastercard</option>
+                </select>
+                &nbsp;&nbsp;<a style="cursor: pointer;" ng-click="vm.isNewCardOpen = true" class="add-card-link">Add Billing Method</a>
+                <div class="add-new-card" ng-if="vm.isNewCardOpen">
+                  <div class="add-card-widget">
+                    <div class="add-card-title">Add New Card</div>
+                    <div class="add-card-fields">
+                      <form>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Name on Card</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                              <label>Card Number</label>
+                              <div class="input-group">
+                                <input type="text" class="form-control">
+                                <div class="input-group-addon"><i class="icon-lock"></i></div>
+                              </div>
+                            </div>
+                            <div class="form-group"> <span class="date-fields">
+                              <label>Expiry Date</label>
+                              <input type="text" class="form-control" placeholder="MM">
+                              <input type="text" class="form-control" placeholder="YY">
+                              </span> <span class="cvv-fields">
+                              <label>Security Code</label>
+                              <input type="text" class="form-control">
+                              </span> </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Country</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                              <label>Address</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                              <label>City</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                              <label>Post Code (Optional)</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-button">
+                          <input type="button" ng-click="vm.isNewCardOpen = false"
+                                 class="btn btn-white btn-sm cancel-card" value="Cancel"/>
+                          <input type="button" class="btn btn-blue btn-sm" value="Add Card"/>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                </span></li>
+                            <li>
+                                <label class="setting-lbl">Card Ending 0345</label>
+                                <a style="cursor: pointer;" ng-click="vm.openEdit($event)" class="setting-edit">Edit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- New Message Modal -->
+<div class="modal fade" id="message-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <h4 class="modal-title">New Message</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>To</label>
+                    <input type="text" class="form-control" placeholder="Name"/>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Write a message here..." rows="3" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Attach a File</label>
+                    <input type="file"/>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-grey" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-blue">Send</button>
+            </div>
+        </div>
+    </div>
+</div>

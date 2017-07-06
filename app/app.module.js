@@ -1,10 +1,9 @@
 'use strict';
 
 // Define the `phonecatApp` module
-angular.module('phonecatApp', [
+angular.module('peerUp', [
   'ngAnimate',
   'ngRoute',
   'core',
-  'phoneDetail',
-  'phoneList'
+  'ui.bootstrap'
 ]);
