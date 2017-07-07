@@ -176,7 +176,7 @@ $(document).ready(function() {
               <div class="col-md-6 form-group split-fields">
                 <label>Event starts</label>
                 <br />
-                <input type="text" class="form-control field-calender datepicker" placeholder="DD/MM/YYYY" />
+                <input type="text" class="form-control field-calender datepicker" ng-focus="vm.dateOpen1 = !vm.dateOpen1" is-open="vm.dateOpen1" uib-datepicker-popup="'DD/MM/YYYY" placeholder="" />
                 <input type="text" class="form-control field-time" placeholder="00:00 HRS" />
               </div>
               <div class="col-md-6 form-group split-fields">

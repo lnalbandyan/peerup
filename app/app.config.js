@@ -37,6 +37,60 @@ angular.
       when('/communityClass', {
           template: '<community-class></community-class>'
       }).
+      when('/communityClassesDetail', {
+          template: '<community-classes-details></community-classes-details>'
+      }).
+      when('/communityClassesList', {
+          template: '<community-classes-list></community-classes-list>'
+      }).
+      when('/communityCourseList', {
+          template: '<community-course-list></community-course-list>'
+      }).
+      when('/communityFeed', {
+          template: '<community-feed></community-feed>'
+      }).
+      when('/communityGroup', {
+          template: '<community-group></community-group>'
+      }).
+      when('/communityJobCenter', {
+          template: '<community-job-center></community-job-center>'
+      }).
+      when('/communitySocities', {
+          template: '<community-socities></community-socities>'
+      }).
+      when('/communityYearEnrollment', {
+          template: '<community-year-enrollment></community-year-enrollment>'
+      }).
+      when('/contact', {
+          template: '<contact></contact>'
+      }).
+      when('/coursesFeed', {
+          template: '<courses-feed></courses-feed>'
+      }).
+      when('/createEvent', {
+          template: '<create-event></create-event>'
+      }).
+      when('/createGroup', {
+          template: '<create-group></create-group>'
+      }).
+      when('/dealsHub', {
+          template: '<deals-hub></deals-hub>'
+      }).
+      when('/eventsDetail', {
+          template: '<events-detail></events-detail>'
+      }).
+      when('/eventsHome', {
+          template: '<events-home></events-home>'
+      }).
+      when('/eventsLanding', {
+          template: '<events-landing></events-landing>'
+      }).
+      when('/followersFollowing', {
+          template: '<followers-following></followers-following>'
+      }).
+      when('/forumCareers', {
+          template: '<forum-careers></forum-careers>'
+      }).
       otherwise('/');
     }
   ]);

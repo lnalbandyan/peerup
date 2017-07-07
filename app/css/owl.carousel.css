@@ -36,3 +36,9 @@
 #forum-slider .owl-prev, #forum-slider .owl-next{position:absolute; width:16px; height:24px; display:inline-block; background:url(../images/slider-arrow-lg.png) no-repeat; text-indent:-99999em; top:45%;}
 #forum-slider .owl-prev{left:20px; background-position:left 0;}
 #forum-slider .owl-next{right:20px; background-position:right 0;}
+.owl-theme .owl-nav {
+    margin-top: 0 !important;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+    margin: 0;
+}

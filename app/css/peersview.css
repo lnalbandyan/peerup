@@ -187,6 +187,42 @@ i.icon-success{background:url(../images/icon-sucess.png) no-repeat; width:14px; 
 	margin-top: 80px;
 }
 
+.uib-button-bar {
+	display: none;
+}
+
+.uib-daypicker tr th .btn {
+	background-color: #631a90 !important;
+	border-radius: 0 !important;
+	border: 0!important;
+	color: #ffffff !important;
+}
+
+.uib-datepicker-popup.dropdown-menu {
+	padding: 0;
+	border-bottom: 0;
+	border-radius: 0;
+}
+.uib-datepicker-popup .uib-day .btn {
+	border-radius: 0 !important;
+}
+
+.split-fields >div {
+	display: inline-block;
+}
+
+.uib-datepicker-popup .uib-day .btn:hover .text-info {
+	color: #fff;
+}
+
+
+.uib-datepicker-popup .uib-day .btn:hover {
+	background-color: #631a90 !important;
+	border-radius: 0 !important;
+	border: 0!important;
+	color: #ffffff !important;
+}
+
 /*search css*/
 #search-form{width:340px;background:none;padding:1px 0 0; position:absolute; right:-18px; top:35px; z-index:9999; box-shadow:0 0 0 #fff; -webkit-box-shadow:0 0 0 #fff; border:0 none;}
 .icon-arrow-up{position:absolute; width:16px; height:14px; background:url(../images/arrow-top-icon.png) no-repeat; right:20px; top:-12px;}
@@ -631,7 +667,7 @@ margin-top:-5px;}
 /*club page css*/
 
 /*forum page css*/
-.forum-header{background:#efe8f4 url(../images/brand-bg.png) no-repeat center top; padding:40px; margin:-17px 0 0;}
+.forum-header{background:#efe8f4 url(../images/brand-bg.png) no-repeat center top; padding:40px; margin:63px 0 0;}
 .forum-header .top-links li{display:inline-block;}
 .forum-header .top-links li a{color:#000000; font-size:16px; padding:6px 22px; border-radius:20px; -webkit-border-radius:20px; -moz-border-radius:20px;}
 .forum-header .top-links li a:hover{color:#631990;}
