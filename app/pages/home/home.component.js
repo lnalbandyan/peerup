@@ -2,39 +2,18 @@
 
 angular.
 module('peerUp').
-component('communityAcs', {
-    templateUrl: 'pages/community-acs/community-acs.html',
+component('home', {
+    templateUrl: 'pages/home/home.html',
     controllerAs: 'vm',
-    controller: function communityAcsComponenet($uibModal) {
+    controller: function homeComponenet($uibModal) {
         var vm = this;
 
-        if ($(window).width() < 1025) {
-
-        } else {
-            var $sticky = $('.sticky');
-            var $stickyrStopper = $('.sticky-stopper');
-            if (!!$sticky.offset()) { // make sure ".sticky" element exists
-
-                var generalSidebarHeight = $sticky.innerHeight();
-                var stickyTop = $sticky.offset().top;
-                var stickOffset = 0;
-                var stickyStopperPosition = $stickyrStopper.offset();
-                var stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
-                var diff = stopPoint + stickOffset;
-
-                $(window).scroll(function () { // scroll event
-                    var windowTop = $(window).scrollTop(); // returns number
-
-                    if (stopPoint < windowTop) {
-                        $sticky.css({position: 'absolute', top: diff});
-                    } else if (stickyTop < windowTop + stickOffset) {
-                        $sticky.css({position: 'fixed', top: '77px'});
-                    } else {
-                        $sticky.css({position: 'absolute', top: '0px'});
-                    }
-                });
-            }
-        }
+        vm.moreNews = function(e){
+            var txt = $(".hidden-news").is(':visible') ? 'View More News' : 'Hide News';
+            $(".view-more-news a span").text(txt);
+            $(e.target).toggleClass("active");
+            $(".hidden-news").slideToggle();
+        };
 
         vm.postLink = function (e) {
             $(".create-poll, .brain-map, .ask-question, .share-story, .guest-list").hide();
@@ -50,22 +29,53 @@ component('communityAcs', {
             $(e.target).closest("li").addClass("active");
         };
 
+        vm.shareStoryLink = function (e) {
+            $(".create-post, .brain-map, .ask-question, .create-poll").hide();
+            $(".share-story").fadeIn();
+            $(".post-action li").removeClass("active");
+            $(this).closest("li").addClass("active");
+        };
+
         vm.openPostDetail = function (size) {
             var parentElem = angular.element('body');
             var modalInstance = $uibModal.open({
                 animation: true,
-                templateUrl: 'pages/business-profile/post-detail-modal/post-detail-modal.html',
+                templateUrl: 'pages/home/post-detail-modal/post-detail-modal.html',
                 size: size,
                 appendTo: parentElem
             });
         };
-        vm.openUsersProfile = function (size) {
+        vm.openShare = function (size) {
             var parentElem = angular.element('body');
             var modalInstance = $uibModal.open({
                 animation: true,
-                templateUrl: 'pages/business-profile/users-profile-modal/users-profile-modal.html',
+                templateUrl: 'pages/home/share-modal/share-modal.html',
                 size: size,
-                appendTo: parentElem
+                appendTo: parentElem,
+                controllerAs: 'vm',
+                controller: function ($uibModalInstance) {
+                    var vm = this;
+                    vm.cancel = function () {
+                        $uibModalInstance.dismiss('cancel');
+                    };
+                }
+            });
+        };
+
+        vm.openInvite = function (size) {
+            var parentElem = angular.element('body');
+            var modalInstance = $uibModal.open({
+                animation: true,
+                templateUrl: 'pages/home/invite-modal/invite-modal.html',
+                size: size,
+                appendTo: parentElem,
+                controllerAs: 'vm',
+                controller: function ($uibModalInstance) {
+                    var vm = this;
+                    vm.cancel = function () {
+                        $uibModalInstance.dismiss('cancel');
+                    };
+                }
             });
         };
 

@@ -91,6 +91,34 @@ angular.
       when('/forumCareers', {
           template: '<forum-careers></forum-careers>'
       }).
+      when('/forumHome', {
+          template: '<forum-home></forum-home>'
+      }).
+      when('/forumPostSecondary', {
+          template: '<forum-post-secondary></forum-post-secondary>'
+      }).
+      when('/forumPostgraduate', {
+          template: '<forum-postgraduate></forum-postgraduate>'
+      }).
+      when('/groupFeed', {
+          template: '<group-feed></group-feed>'
+      }).
+      when('/home', {
+          template: '<home></home>'
+      }).
+      when('/index', {
+          template: '<homepage></homepage>'
+      }).
+      when('/marketPlace', {
+          template: '<market-place></market-place>'
+      }).
+      when('/marketPlaceAds', {
+          template: '<market-place-ads></market-place-ads>'
+      }).
+      when('/marketPlaceSell', {
+          template: '<market-place-sell></market-place-sell>'
+      }).
+
       otherwise('/');
     }
   ]);

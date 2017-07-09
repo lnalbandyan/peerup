@@ -1,8 +1,7 @@
 $( document ).ready(function() {
- if($(window).width() < 1025)
-	{
+ if($(window).width() < 1025) {
 
-  } else {
+	} else {
 		var $sticky = $('.sticky');
 		var $stickyrStopper = $('.sticky-stopper');
 		if (!!$sticky.offset()) { // make sure ".sticky" element exists

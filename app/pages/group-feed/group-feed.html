@@ -1,0 +1,199 @@
+<app-navbar active="'campus'"></app-navbar>
+
+<div class="container fixed-header">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sticky-width sticky">
+                <!--left sidebar-->
+                <div class="sidebar-info"> <img src="images/univ-logo.jpg" alt="" />
+                    <h4>University of Manchester</h4>
+                </div>
+                <div class="sidebar-links campus-menu">
+                    <ul>
+                        <li><a href="community-feed.html"><i class="icon-all-students"></i><span class="link-text">All Students</span></a></li>
+                        <li><a href="community-year-enrollment.html"><i class="icon-feed"></i><span class="link-text">Freshers Feed</span></a></li>
+                        <li><a href="community-course-list.html"><i class="icon-feed"></i><span class="link-text">Course feed</span></a></li>
+                        <li class="active-link"><a href="community-classes-list.html"><i class="icon-classes"></i><span class="link-text">Classes</span></a></li>
+                        <li><a href="student-home.html"><i class="icon-sgroup"></i><span class="link-text">Student group</span></a></li>
+                        <li><a href="community-group.html"><i class="icon-clubs"></i><span class="link-text">Societies & Clubs</span></a></li>
+                        <li><a href="market-place.html"><i class="icon-marketplace"></i><span class="link-text">Market Place</span></a></li>
+                        <li><a href="community-job-center.html"><i class="icon-job"></i><span class="link-text">Job Center</span></a></li>
+                    </ul>
+                </div>
+                <!--left sidebar-->
+            </div>
+        </div>
+        <div class="col-md-10">
+            <!--content area-->
+            <div class="col-xs-12 col-sm-8 col-md-8">
+                <!--create post-->
+                <h3 class="tab-heading">Accounting and Finance</h3>
+                <!--create post-->
+                <ul class="post-action">
+                    <li class="active"><a href="javascript:void(0);" class="create-post-link" ng-click="vm.postLink($event)">Write a Post</a></li>
+                    <li><a href="javascript:void(0);" ng-click="vm.pollLink($event)" class="create-poll-link">Create Poll</a></li>
+                    <li><a href="javascript:void(0);" class="question-link" ng-click="vm.questionLink($event)">Ask a Question</a></li>
+                    <li><a href="javascript:void(0);" class="brain-link" ng-click="vm.brainLink($event)">Brainstorming Map</a></li>
+                </ul>
+                <div class="create-post"> <a href="javascript:void(0);" class="img-upload"></a>
+                    <input class="upload-file" type="file" style="display:none;" />
+                    <textarea class="form-control" placeholder="Whats happening?"></textarea>
+                </div>
+                <div class="create-poll" style="display:none;">
+                    <textarea class="form-control" placeholder="Ask something..."></textarea>
+                    <ul class="poll-option">
+                        <li>
+                            <input type="text" placeholder="Add an option" />
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Add an option" />
+                        </li>
+                    </ul>
+                    <div><a href="javascript:void(0);" class="btn-add-new" id="add-poll-opt">Add New</a></div>
+                    <div class="bottom-block">
+                        <input type="button" class="btn btn-blue btn-sm" value="Post" />
+                    </div>
+                </div>
+                <div class="ask-question" style="display:none;">
+                    <textarea class="form-control" placeholder="Ask something..."></textarea>
+                    <div class="bottom-block">
+                        <input type="button" class="btn btn-blue btn-sm" value="Post" />
+                    </div>
+                </div>
+                <div class="brain-map" style="display:none;"> <img src="images/brain-map-chart.png" alt="" /> </div>
+                <!--create post-->
+                <div>
+                    <div>
+                        <div class="tab-pill"><span>TIMELINE</span></div>
+                        <!--post-->
+                        <div class="single-post">
+                            <div class="post-head">
+                                <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
+                                <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
+                                    <ul class="post-share user-star">
+                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
+                                    </ul>
+                                    <span class="post-time"> •  10 h</span>
+                                    <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</a></h1>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-img"><span class="new">New Post</span><img src="images/post-img1.jpg" alt="" /></div>
+                                <div class="post-share">
+                                    <ul>
+                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
+                                        <li class="reply">106 Replies</li>
+                                        <li class="view">670 Views</li>
+                                        <li class="share">100 Shares</li>
+                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
+                        </div>
+                        <!--post-->
+                        <!--post-->
+                        <div class="single-post">
+                            <div class="post-shared">Coopeers post shared</div>
+                            <div class="post-head">
+                                <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
+                                <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
+                                    <ul class="post-share user-star">
+                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
+                                    </ul>
+                                    <span class="post-time"> •  10 h</span>
+                                    <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Who understands financial modeling?</a></h1>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-img"><img src="images/post-img2.jpg" alt="" /></div>
+                                <div class="post-share">
+                                    <ul>
+                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp;Like • &nbsp;205 Likes</li>
+                                        <li class="reply">106 Replies</li>
+                                        <li class="view">670 Views</li>
+                                        <li class="share">100 Shares</li>
+                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
+                        </div>
+                        <!--post-->
+                        <!--post-->
+                        <div class="single-post">
+                            <div class="post-head">
+                                <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
+                                <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
+                                    <ul class="post-share user-star">
+                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
+                                    </ul>
+                                    <span class="post-time"> •  10 h</span>
+                                    <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Looks like team "Giggle Waters" had the last giggle after all! Congratulations to the <span class="hash-tag">#MahindraWarRoom 2016</span> Champion...</a></h1>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-img"><span class="new">New Post</span><img src="images/post-img3.jpg" alt="" /></div>
+                                <div class="post-share">
+                                    <ul>
+                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
+                                        <li class="reply">106 Replies</li>
+                                        <li class="view">670 Views</li>
+                                        <li class="share">100 Shares</li>
+                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
+                        </div>
+                        <!--post-->
+                        <div class="load-more"><a href="javascript:void(0);">load more...</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--content area-->
+            <!--right sidebar-->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="widget"> <a href="javascript:void(0);" class="btn btn-primary btn-block">Leave Group</a> </div>
+                <div class="widget">
+                    <h5 class="widget-title">Peers (<strong>24 Online</strong>)</h5>
+                    <ul class="users-list">
+                        <li data-toggle="tooltip" title="Angela Gill"><img src="images/user1.jpg" alt="" ng-click="vm.openUsersProfile('sm')" /></li>
+                        <li data-toggle="tooltip" title="Faith Black"><i class="online-indicator"></i><img src="images/user2.jpg" alt="" ng-click="vm.openUsersProfile('sm')" /></li>
+                        <li data-toggle="tooltip" title="Olivia	Metcalfe"><img src="images/user3.jpg" alt="" ng-click="vm.openUsersProfile('sm')" /></li>
+                        <li data-toggle="tooltip" title="Adekunle Amodu"><i class="online-indicator"></i><img src="images/user4.jpg" alt="" ng-click="vm.openUsersProfile('sm')" /></li>
+                        <li data-toggle="tooltip" title="Gordon Piper"><img src="images/user5.jpg" alt="" ng-click="vm.openUsersProfile('sm')" /></li>
+                        <li data-toggle="tooltip" title="David Ball"><i class="online-indicator"></i><img src="images/user6.jpg" alt="" ng-click="vm.openUsersProfile('sm')" /></li>
+                        <li data-toggle="tooltip" title="Megan Vaughan"><img src="images/user7.jpg" alt="" ng-click="vm.openUsersProfile('sm')" /></li>
+                        <li data-toggle="tooltip" title="Gavin Newman"><i class="online-indicator"></i><img src="images/user8.jpg" alt="" ng-click="vm.openUsersProfile('sm')" /></li>
+                    </ul>
+                    <a class="link-und" href="followers-following.html">View All</a> </div>
+                <div class="widget">
+                    <h5 class="widget-title">Invite Members</h5>
+                    <div class="invite-form">
+                        <div class="form-group">
+                            <label>Enter Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <input type="button" value="Send Invite" class="btn btn-white btn-sm">
+                    </div>
+                </div>
+                <div class="sidebar-footer">
+                    <p>Copyright 2017 All rights reserved.</p>
+                    <ul>
+                        <li><a href="javascript:void(0);">About Us</a></li>
+                        <li><a href="javascript:void(0);">Our Team</a></li>
+                        <li><a href="javascript:void(0);">Careers</a></li>
+                        <li><a href="javascript:void(0);">Support</a></li>
+                        <li><a href="javascript:void(0);">Events</a></li>
+                        <li><a href="javascript:void(0);">Campus</a></li>
+                        <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+                        <li><a href="javascript:void(0);">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--right sidebar-->
+        </div>
+    </div>
+</div>

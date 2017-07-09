@@ -2,10 +2,10 @@
 
 angular.
 module('peerUp').
-component('communityAcs', {
-    templateUrl: 'pages/community-acs/community-acs.html',
+component('groupFeed', {
+    templateUrl: 'pages/group-feed/group-feed.html',
     controllerAs: 'vm',
-    controller: function communityAcsComponenet($uibModal) {
+    controller: function groupFeedComponenet($uibModal) {
         var vm = this;
 
         if ($(window).width() < 1025) {
@@ -46,6 +46,20 @@ component('communityAcs', {
         vm.pollLink = function (e) {
             $(".create-post, .brain-map, .ask-question, .share-story, .guest-list").hide();
             $(".create-poll, .timeline-block").fadeIn();
+            $(".post-action li").removeClass("active");
+            $(e.target).closest("li").addClass("active");
+        };
+
+        vm.questionLink = function (e) {
+            $(".create-post, .brain-map, .create-poll, .timeline-block").hide();
+            $(".ask-question, .timeline-block").fadeIn();
+            $(".post-action li").removeClass("active");
+            $(e.target).closest("li").addClass("active");
+        };
+
+        vm.brainLink = function (e) {
+            $(".create-post, .create-poll, .timeline-block, .ask-question").hide();
+            $(".brain-map").fadeIn();
             $(".post-action li").removeClass("active");
             $(e.target).closest("li").addClass("active");
         };

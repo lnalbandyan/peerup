@@ -1,0 +1,304 @@
+<app-navbar active="'home'"></app-navbar>
+
+<div class="container fixed-header">
+    <div class="row">
+        <!--left sidebar-->
+        <div class="col-md-3 page-left-col">
+            <div class="sticky" style="width:220px;">
+                <div class="widget profile-widget">
+                    <div class="top-info"> <a href="my-profile.html" class="user-img"><img src="images/profile-pic-lg.jpg" alt="Peersview" /></a>
+                        <h3 class="user-name"><a href="my-profile.html">John Smith</a></h3>
+                    </div>
+                    <div class="bottom-info">
+                        <span><a href="followers-following.html">Following <br /><big>250</big></a></span>
+                        <span><a href="followers-following.html">Followers <br /><big>250</big></a></span>
+                    </div>
+                </div>
+                <div class="widget rating">
+                    <h5 class="widget-title">Rating</h5>
+                    <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i>
+                </div>
+                <div class="spacer20"></div>
+                <div class="widget quick-feed">
+                    <h3><span>5 things</span> to do in <span>15 minutes</span></h3>
+                    <ul class="list">
+                        <li>Invite your friends</li>
+                        <li>Complete "About Me" section</li>
+                        <li>Follow a few Peers</li>
+                        <li>Checkout the Forum</li>
+                        <li>Join your school's Campus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--left sidebar-->
+        <!--content area-->
+        <div class="col-md-6 page-center-col">
+            <!--create post-->
+            <ul class="post-action">
+                <li class="active"><a href="javascript:void(0);" class="create-post-link" ng-click="vm.postLink($event)">Write a Post</a></li>
+                <li><a href="javascript:void(0);" class="create-poll-link" ng-click="vm.pollLink($event)">Create Poll</a></li>
+                <li><a href="javascript:void(0);" class="share-story-link" ng-click="vm.shareStoryLink($event)">Share a Story</a></li>
+            </ul>
+            <div class="create-post"> <a href="javascript:void(0);" class="img-upload"></a>
+                <input class="upload-file" type="file" style="display:none;" />
+                <textarea class="form-control" placeholder="Whats happening?"></textarea>
+            </div>
+            <div class="create-poll" style="display:none;">
+                <textarea class="form-control" placeholder="Ask something..."></textarea>
+                <ul class="poll-option">
+                    <li>
+                        <input type="text" placeholder="Add an option" />
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Add an option" />
+                    </li>
+                </ul>
+                <div><a href="javascript:void(0);" class="btn-add-new" id="add-poll-opt">Add New</a></div>
+                <div class="bottom-block">
+                    <input type="button" class="btn btn-blue btn-sm" value="Post" />
+                </div>
+            </div>
+            <div class="share-story" style="display:none;">
+                <input type="text" class="form-control" placeholder="Title" />
+                <textarea class="form-control" placeholder="Tell your story..."></textarea>
+                <div class="bottom-block">
+                    <input type="button" class="btn btn-blue btn-sm" value="Share">
+                </div>
+            </div>
+            <!--create post-->
+            <div class="clear spacer10"></div>
+            <div class="page-tab" id="post-tab">
+                <ul>
+                    <li class="active"><a href="home#timeline" data-toggle="tab">Latest</a></li>
+                    <li><a href="home#popular" data-toggle="tab">Trending</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="timeline">
+                    <!--post-->
+                    <div class="news-post">
+                        <div class="news-title">Top Stories</div>
+                        <ul>
+                            <li><a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" target="_blank">Breakthrough computer program detects cancer before symptoms arise<span class="news-ref">(IBTimes) 18:41</span></a></li>
+                            <li><a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" target="_blank">Breakthrough computer program detects cancer before symptoms arise<span class="news-ref">(IBTimes) 18:41</span></a></li>
+                            <li><a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" target="_blank">Breakthrough computer program detects cancer before symptoms arise<span class="news-ref">(IBTimes) 18:41</span></a></li>
+                            <li><a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" target="_blank">Breakthrough computer program detects cancer before symptoms arise<span class="news-ref">(IBTimes) 18:41</span></a></li>
+                            <li class="hidden-news" style="display:none;"><a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" target="_blank">Breakthrough computer program detects cancer before symptoms arise<span class="news-ref">(IBTimes) 18:41</span></a></li>
+                            <li class="hidden-news" style="display:none;"><a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" target="_blank">Breakthrough computer program detects cancer before symptoms arise<span class="news-ref">(IBTimes) 18:41</span></a></li>
+                            <li class="hidden-news" style="display:none;"><a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" target="_blank">Breakthrough computer program detects cancer before symptoms arise<span class="news-ref">(IBTimes) 18:41</span></a></li>
+                        </ul>
+                        <div class="view-more-news"><a href="javascript:void(0);" ng-click="vm.moreNews($event)"><span>View More News</span> <i></i></a></div>
+                    </div>
+                    <!--post-->
+                    <div class="clear spacer20"></div>
+                    <!--post-->
+                    <div class="single-post">
+                        <div class="post-shared">Coopeers post shared</div>
+                        <div class="post-head">
+                            <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
+                            <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
+                                <ul class="post-share user-star">
+                                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i>
+                                </ul>
+                                <span class="post-time"> •  10 h</span>
+                                <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Who understands financial modeling?</a></h1>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-img"><img src="images/post-img2.jpg" alt="" /></div>
+                            <div class="post-share">
+                                <ul>
+                                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp;Like • &nbsp;205 Likes</li>
+                                    <li class="reply" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);" >106 Replies</a></li>
+                                    <li class="view">670 Views</li>
+                                    <li class="share"><a href="javascript:void(0);" ng-click="vm.openShare('md')">100 Shares</a></li>
+                                    <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('md')">Report</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--post-->
+                    <!--post-->
+                    <div class="single-post">
+                        <div class="post-head">
+                            <div class="post-user"><img src="images/toranto-uni.png" alt=""></div>
+                            <div class="post-info"> <a class="post-by" href="business-profile.html">University of Toronto</a>
+                                <span class="post-time"> •  10 h</span>
+                                <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Looks like team "Giggle Waters" had the last giggle after all! Congratulations to the <span class="hash-tag">#MahindraWarRoom 2016</span> Champion...</a></h1>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-img"><span class="new">New Post</span><img src="images/post-img3.jpg" alt="" /></div>
+                            <div class="post-share">
+                                <ul>
+                                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
+                                    <li class="reply" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);" >106 Replies</a></li>
+                                    <li class="view">670 Views</li>
+                                    <li class="share"><a href="javascript:void(0);" ng-click="vm.openShare('md')">100 Shares</a></li>
+                                    <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('md')">Report</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--post-->
+                    <!--post-->
+                    <div class="single-post">
+                        <div class="post-head">
+                            <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
+                            <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
+                                <ul class="post-share user-star">
+                                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i>
+                                </ul>
+                                <span class="post-time"> •  10 h</span>
+                                <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</a></h1>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-img"><span class="new">New Post</span><img src="images/post-img4.jpg" alt="" /></div>
+                            <div class="post-share">
+                                <ul>
+                                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
+                                    <li class="reply" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);" >106 Replies</a></li>
+                                    <li class="view">670 Views</li>
+                                    <li class="share"><a href="javascript:void(0);" ng-click="vm.openShare('md')">100 Shares</a></li>
+                                    <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('md')">Report</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--post-->
+                    <div class="load-more"><a href="javascript:void(0);">load more...</a></div>
+                </div>
+                <div class="tab-pane fade" id="popular">
+                    <!--post-->
+                    <div class="single-post">
+                        <div class="post-head">
+                            <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
+                            <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
+                                <ul class="post-share user-star">
+                                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i>
+                                </ul>
+                                <span class="post-time"> •  10 h</span>
+                                <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Looks like team "Giggle Waters" had the last giggle after all! Congratulations to the <span class="hash-tag">#MahindraWarRoom 2016</span> Champion...</a></h1>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-img"><span class="new">New Post</span><img src="images/post-img3.jpg" alt="" /></div>
+                            <div class="post-share">
+                                <ul>
+                                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
+                                    <li class="reply" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);" >106 Replies</a></li>
+                                    <li class="view">670 Views</li>
+                                    <li class="share"><a href="javascript:void(0);" ng-click="vm.openShare('md')">100 Shares</a></li>
+                                    <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('md')">Report</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--post-->
+                    <!--post-->
+                    <div class="single-post">
+                        <div class="post-head">
+                            <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
+                            <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
+                                <ul class="post-share user-star">
+                                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i>
+                                </ul>
+                                <span class="post-time"> •  10 h</span>
+                                <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</a></h1>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-img"><span class="new">New Post</span><img src="images/post-img4.jpg" alt="" /></div>
+                            <div class="post-share">
+                                <ul>
+                                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
+                                    <li class="reply" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);" >106 Replies</a></li>
+                                    <li class="view">670 Views</li>
+                                    <li class="share"><a href="javascript:void(0);" ng-click="vm.openShare('md')">100 Shares</a></li>
+                                    <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('md')">Report</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--post-->
+                    <div class="load-more"><a href="javascript:void(0);">load more...</a></div>
+                </div>
+            </div>
+        </div>
+        <!--content area-->
+        <!--right sidebar-->
+        <div class="col-md-3">
+            <div class="widget events">
+                <h5 class="widget-title">Invite Your Friends</h5>
+                <div class="invite-form">
+                    <div class="form-group">
+                        <label>Invite via Email</label>
+                        <input type="text" class="form-control" placeholder="Email" />
+                    </div>
+                    <input type="button" value="Continue" class="btn btn-white btn-sm" ng-click="vm.openInvite('md')" />
+                    <div class="or-text"><span>OR</span></div>
+                    <div class="email-site"> <a class="email-gmail" href="http://gmail.com/" target="_blank">Gmail</a><a class="email-yahoo" href="https://login.yahoo.com/" target="_blank">Yahoo</a><a class="email-fb" href="https://www.facebook.com" target="_blank">Facebook</a> </div>
+                </div>
+            </div>
+            <div class="widget">
+                <h5 class="widget-title">Peers You May Know <a href="peers-list.html" class="link-view">View All</a></h5>
+                <div class="profile-widget profile-sm">
+                    <div class="top-info"> <a href="user-profile.html" class="user-img"><img src="images/john.jpg" alt="Peersview"></a>
+                        <span class="user-profile-info">
+            <h2><a href="user-profile.html">Adekunle Amodu</a></h2><a class="icon-follow" href="javascript:void(0);" data-toggle="tooltip" title="Follow"></a>
+            <ul class="peers-info">
+              <li><i class="icon-institute" data-toggle="tooltip" title="" data-original-title="Institution"></i>&nbsp;St. Marry's Univercity</li>
+              <li><i class="icon-course" data-toggle="tooltip" title="" data-original-title="Course"></i>&nbsp;Accounting</li>
+            </ul>
+            </span>
+                    </div>
+                </div>
+                <div class="profile-widget profile-sm">
+                    <div class="top-info"> <a href="user-profile.html" class="user-img"><img src="images/user1.jpg" alt="Peersview"></a> <span class="user-profile-info">
+            <h2><a href="user-profile.html">Adekunle Amodu</a></h2><a class="icon-follow" href="javascript:void(0);" data-toggle="tooltip" title="Follow"></a>
+            <ul class="peers-info">
+              <li><i class="icon-institute" data-toggle="tooltip" title="" data-original-title="Institution"></i>&nbsp;St. Marry's Univercity</li>
+              <li><i class="icon-course" data-toggle="tooltip" title="" data-original-title="Course"></i>&nbsp;Accounting</li>
+            </ul>
+            </span>
+                    </div>
+                </div>
+                <div class="profile-widget profile-sm">
+                    <div class="top-info"> <a href="user-profile.html" class="user-img"><img src="images/user2.jpg" alt="Peersview"></a> <span class="user-profile-info">
+            <h2><a href="user-profile.html">Adekunle Amodu</a></h2><a class="icon-follow" href="javascript:void(0);" data-toggle="tooltip" title="Follow"></a>
+            <ul class="peers-info">
+              <li><i class="icon-institute" data-toggle="tooltip" title="" data-original-title="Institution"></i>&nbsp;St. Marry's Univercity</li>
+              <li><i class="icon-course" data-toggle="tooltip" title="" data-original-title="Course"></i>&nbsp;Accounting</li>
+            </ul>
+            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="widget events">
+                <h5 class="widget-title">Popular Events</h5>
+                <ul>
+                    <li> <img src="images/event1.jpg" alt="" /> <a class="event-name" href="javascript:void(0);">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-loc">123 Main Street, NY</span> <span class="event-time">28th Oct  •  5PM</span> </li>
+                    <li> <img src="images/event2.jpg" alt="" /> <a class="event-name" href="javascript:void(0);">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-loc">123 Main Street, NY</span> <span class="event-time">28th Oct  •  5PM</span> </li>
+                </ul>
+            </div>
+            <div class="widget ad"> AD </div>
+            <div class="sidebar-footer">
+                <p>Copyright 2017 All rights reserved.</p>
+                <ul>
+                    <li><a href="javascript:void(0);">About Us</a></li>
+                    <li><a href="javascript:void(0);">Our Team</a></li>
+                    <li><a href="javascript:void(0);">Careers</a></li>
+                    <li><a href="javascript:void(0);">Support</a></li>
+                    <li><a href="javascript:void(0);">Events</a></li>
+                    <li><a href="javascript:void(0);">Campus</a></li>
+                    <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+                    <li><a href="javascript:void(0);">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--right sidebar-->
+    </div>
+</div>
