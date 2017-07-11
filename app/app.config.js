@@ -163,6 +163,33 @@ angular.
       when('/signUp', {
           template: '<sign-up></sign-up>'
       }).
+      when('/student-home', {
+          template: '<student-home></student-home>'
+      }).
+      when('/support', {
+          template: '<support></support>'
+      }).
+      when('/supportBusyOrg', {
+          template: '<support-busy-org></support-busy-org>'
+      }).
+      when('/supportFixProblem', {
+          template: '<support-fix-problem></support-fix-problem>'
+      }).
+      when('/supportNetworkAdmin', {
+          template: '<support-network-admin></support-network-admin>'
+      }).
+      when('/supportPolicies', {
+          template: '<support-policies></support-policies>'
+      }).
+      when('/supportUsingCommunity', {
+          template: '<support-using-community></support-using-community>'
+      }).
+      when('/supportUsingPeersview', {
+          template: '<support-using-peersview></support-using-peersview>'
+      }).
+      when('/termsOfUse', {
+          template: '<terms-of-use></terms-of-use>'
+      }).
 
       otherwise('/');
     }
