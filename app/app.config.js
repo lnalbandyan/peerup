@@ -118,6 +118,51 @@ angular.
       when('/marketPlaceSell', {
           template: '<market-place-sell></market-place-sell>'
       }).
+      when('/messages', {
+          template: '<messages></messages>'
+      }).
+      when('/myClubList', {
+          template: '<my-club-list></my-club-list>'
+      }).
+      when('/myEvents', {
+          template: '<my-events></my-events>'
+      }).
+      when('/myProfile', {
+          template: '<my-profile></my-profile>'
+      }).
+      when('/notification', {
+          template: '<notification></notification>'
+      }).
+      when('/onloard1', {
+          template: '<onloard1></onloard1>'
+      }).
+      when('/onloard2', {
+          template: '<onloard2></onloard2>'
+      }).
+      when('/onloard2ex', {
+          template: '<onloard2ex></onloard2ex>'
+      }).
+      when('/onloard2opt', {
+          template: '<onloard2opt></onloard2opt>'
+      }).
+      when('/onloard2org', {
+          template: '<onloard2org></onloard2org>'
+      }).
+      when('/onloard3', {
+          template: '<onloard3></onloard3>'
+      }).
+      when('/peersList', {
+          template: '<peers-list></peers-list>'
+      }).
+      when('/registerCommunity', {
+          template: '<register-community></register-community>'
+      }).
+      when('/signIn', {
+          template: '<sign-in></sign-in>'
+      }).
+      when('/signUp', {
+          template: '<sign-up></sign-up>'
+      }).
 
       otherwise('/');
     }

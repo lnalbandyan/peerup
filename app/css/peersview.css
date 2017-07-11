@@ -495,6 +495,7 @@ margin-top:-5px;}
 /*content css*/
 
 /*post css*/
+.form-control:focus{outline: none; box-shadow: none;}
 .post-action li{display:inline-block;}
 .post-action li a{padding:5px 15px 2px; display:inline-block; border-radius:5px 5px 0 0; -webkit-border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; color:#999999; font-weight:bold;}
 .post-action li a:hover{color:#333;}

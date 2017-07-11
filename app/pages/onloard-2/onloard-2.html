@@ -1,0 +1,141 @@
+<div class="detail-page container">
+    <div class="header">
+        <nav class="navbar navbar-default">
+            <div class="">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo-blue.png" alt="peersview"/></a>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div>
+    <div class="">
+        <hgroup class="process-header">
+            <h1>Just a few more details</h1>
+        </hgroup>
+        <div class="borad-outer">
+            <div class="progress-ind">
+                <ul>
+                    <li class="complete"><span class="bubble"><i></i></span><label>Step 1</label></li>
+                    <li class="active"><span class="bubble"><i></i></span><label>Step 2</label></li>
+                    <li><span class="bubble"><i></i></span><label>Step 3</label></li>
+                </ul>
+            </div>
+            <div class="status-selection">
+                <label>Status:</label>
+                <span class="select-options">
+            	<a>Student</a>
+             </span>
+            </div>
+            <div class="board-block">
+                <div class="board-bar count5">
+            	<span class="filter-field">
+                	<input type="text" class="form-control institue" placeholder="Name of your School"/>
+                </span>
+                    <span class="filter-field arrow-icon">
+                	 <select class="form-control designation">
+                       <option>Select Level of Study</option>
+                       <option style="color:#631a90">Post-secondary Level</option>
+                       <option style="color:#ed5d28">Undergraduate Level</option>
+                       <option style="color:#000">Postgraduate Level</option>
+                   </select>
+                 </span>
+                    <span class="filter-field arrow-icon">
+                	 <select class="form-control designation">
+                          <option>Select Course</option>
+                          <option>Accounting and Finance</option>
+                          <option>Agriculture &amp; Forestry</option>
+                          <option>Anatomy &amp; Physiology</option>
+                          <option>Anthropology</option>
+                          <option>Architecture &amp; The built environment</option>
+                          <option>Astronomy</option>
+                          <option>Biological science</option>
+                          <option>Business &amp; Management</option>
+                          <option>Chemistry</option>
+                          <option>Classics &amp; Ancient History</option>
+                          <option>Communication and Media studies</option>
+                          <option>Computer Science and Information Systems</option>
+                          <option>Creative Arts</option>
+                          <option>Dentistry</option>
+                          <option>Development Studies</option>
+                          <option>Earth &amp; Marine Science</option>
+                          <option>Economics</option>
+                          <option>Education &amp; Training</option>
+                          <option>Engineering-  Aeronautical</option>
+                          <option>Engineering- Civil &amp; Structural</option>
+                          <option>Engineering- Computer&amp; Network</option>
+                          <option>Engineering- Electrical</option>
+                          <option>Engineering- Mineral &amp; Mining</option>
+                          <option>Engineering-Chemical</option>
+                          <option>Engineering-Mechanical</option>
+                          <option>English Language &amp; Literature</option>
+                          <option>Ethnicity, Gender &amp; Diversity</option>
+                          <option>Finance </option>
+                          <option>Geography</option>
+                          <option>Hospitality &amp; Leisure Management </option>
+                          <option>Human Resource Management</option>
+                          <option>International Relations</option>
+                          <option>Journalism</option>
+                          <option>Law and Legal Studies</option>
+                          <option>Library &amp; Information Management</option>
+                          <option>Life Sciences</option>
+                          <option>Linguistics</option>
+                          <option>Logistics &amp; Supply Chain Management</option>
+                          <option>Marketing</option>
+                          <option>Material Science</option>
+                          <option>Mathematics</option>
+                          <option>Medicine</option>
+                          <option>Modern Language</option>
+                          <option>Nursing</option>
+                          <option>Optometry</option>
+                          <option>Others</option>
+                          <option>Performing Arts</option>
+                          <option>Pharmacology</option>
+                          <option>Pharmacy</option>
+                          <option>Philosophy</option>
+                          <option>Product Design</option>
+                          <option>Psychology</option>
+                          <option>Public Policy</option>
+                          <option>Social &amp; Political science</option>
+                          <option>Social Work</option>
+                          <option>Sociology</option>
+                          <option>Sports</option>
+                          <option>Sports Science</option>
+                          <option>Statistics and Operations</option>
+                          <option>Theology, Divinity and Religious Studies</option>
+                          <option>Urban Planning</option>
+                          <option>Veterinary Science</option>
+                          <option>Zoology</option>
+                        </select>
+                 </span>
+                    <span class="filter-field">
+                     <input type="text" class="form-control field-calender datepicker designation"
+                            ng-focus="vm.dateOpen2 = !vm.dateOpen2"
+                            is-open="vm.dateOpen2"
+                            ng-model="vm.dt"
+                            uib-datepicker-popup="{{vm.format}}"
+                            datepicker-options="vm.dateOptions"/>
+                 </span>
+                    <span class="filter-field last-border">
+                     <input type="text" class="form-control designation" placeholder="Current City"/>
+                 </span>
+                    <div class="clear"></div>
+                </div>
+                <div class="board-content">
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-button no-sep">
+            <input class="btn btn-md btn-blue" value="Continue" type="button"
+                   onClick="parent.location='onloard-3.html'">
+        </div>
+    </div>
+</div>
