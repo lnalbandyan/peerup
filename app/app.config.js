@@ -163,7 +163,7 @@ angular.
       when('/signUp', {
           template: '<sign-up></sign-up>'
       }).
-      when('/student-home', {
+      when('/studentHome', {
           template: '<student-home></student-home>'
       }).
       when('/support', {

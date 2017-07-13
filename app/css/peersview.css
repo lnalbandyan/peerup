@@ -143,14 +143,23 @@ i.icon-success{background:url(../images/icon-sucess.png) no-repeat; width:14px; 
 /*btn css*/
 
 /*header css*/
-.header .navbar-default{background-color:#631a90; border:0 none; border-bottom:solid 3px #fff; border-radius:0px; -webkit-border-radius:0px; padding:15px 0 0 0;}
+.welcome-user {vertical-align: sub;}
+.header .navbar-default{background-color:#631a90; border:0 none; border-radius:0px; -webkit-border-radius:0px; padding:15px 0 0 0;}
 .header .navbar{margin-bottom:25px; font-family: 'Conv_MavenPro-Bold'; font-size:12px;}
 .header .navbar.nav-landing{margin-bottom:0px;}
 .navbar-brand{padding:0px 10px; margin:0 10px 0 0; height:auto;}
 .navbar-default .navbar-nav > li{margin:0 4px;}
-.navbar-default .navbar-nav > li > a{color:#ffffff; text-transform:uppercase; padding:13px 30px; border-radius:3px 3px 0 0; -webkit-border-radius:3px 3px 0 0; -moz-border-radius:3px 3px 0 0; background-color:#73309a;}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color:#fff; background-color:#6c2d91;}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background-color:#ffffff; color:#631a90;}
+.navbar-default .navbar-nav > li > a{color:#ffffff; text-transform:uppercase; padding:13px 20px; border-radius:3px 3px 0 0; -webkit-border-radius:3px 3px 0 0; -moz-border-radius:3px 3px 0 0; background-color:transparent;}
+.navbar-default .navbar-nav > li > a img {width: 22px;}
+.navbar-default .navbar-nav.navbar-left > li > a img {opacity: .5}
+.navbar-default .navbar-nav > li > a img.profile-pic {width: 42px;}
+.navbar-default .navbar-nav.navbar-left > li > a {  border-bottom: 3px solid transparent;}
+.navbar-default .navbar-nav.navbar-left > li.active > a {  border-bottom: 3px solid #fff;}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {background-color: transparent;}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color:#fff; background-color:transparent;}
+.navbar-default .navbar-nav.navbar-left > li > a:hover img, .navbar-default .navbar-nav.navbar-left > li > a:focus img {  opacity:1;  }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background-color:transparent; color:#ffffff;}
+.navbar-default .navbar-nav.navbar-left > .active > a img, .navbar-default .navbar-nav.navbar-left > .active > a:hover img, .navbar-default .navbar-nav.navbar-left > .active > a:focus img {opacity:1;}
 .nav li a > i{display:inline-block; margin:0 5px 0 0; vertical-align:middle;}
 .nav-home i{width:14px; height:13px; background:url(../images/nav-icons.png) no-repeat 0 -5px;}
 .nav-home.active i{background-position:0 -144px;}
