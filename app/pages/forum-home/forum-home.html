@@ -1,194 +1,330 @@
 <app-navbar active="'forum'"></app-navbar>
 <div class="forum-page-bg">
-    <div class="upcoming-event fixed-header">
-        <div class="container"> <span class="event-title-tag">events</span> <strong class="event-category">politics</strong><span class="events-description"><strong>make it happens.</strong> Tustin, California. January 24/25</span> <span class="pull-right"><a href="javascript:void(0);" class="event-more-info"><u>More Info</u></a></span> </div>
-    </div>
-    <div class="container forum">
+    <div class="container forum fixed-header">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 forum-leftmenu">
                 <div class="sticky-width sticky">
                     <div class="forum-sidebar text-lower">
                         <ul>
-                            <li class="active-link forum-home"><a href="#forumHome"><i></i><span class="link-text">Home</span></a></li>
-                            <li class="forum-course"><a href="#forumPostgraduate"><i></i><span class="link-text">Postgraduate Students Forum</span></a></li>
-                            <li class="forum-course"><a href="#forumPostgraduate"><i></i><span class="link-text">Undergraduate Students Forum</span></a></li>
-                            <li class="forum-course"><a href="#forumPostSecondary"><i></i><span class="link-text">Post-secondary Students Forum</span></a></li>
-                            <li class="forum-career"><a href="#forumCareers"><i></i><span class="link-text">Careers Forum</span></a></li>
+                            <li class="active-link forum-home"><a href="#forumHome"><img class="icon"
+                                                                                         src="images/forum_icon_grey.png"/>
+                                <span class="link-text">Forum</span></a></li>
+                            <li class="forum-career"><a href="#forumCareers"><img class="icon"
+                                                                                  src="images/case_icon_grey.png"/><span
+                                    class="link-text">Careers</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="sec-heading">Top Stories For You</div>
-                <div class="latest-post post-sep">
-                    <div class="top-post">
-                        <div class="row">
-                            <div class="col-md-5"><img src="images/stories-bg.jpg" class="img-responsive" alt="" /></div>
-                            <div class="col-md-7 top-user-left">
-                                <div class="story-category">Politics</div>
-                                <h2>Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h2>
-                                <div class="post-share">
-                                    <ul>
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                        <li class="reply">106 Replies</li>
-                                        <li class="view">670 Views</li>
-                                        <li class="share">100 Shares</li>
-                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('md')">Report</a></li>
-                                        <li class="follow"><a class="follow-link" href="javascript:void(0);">Follow</a></li>
-                                    </ul>
-                                </div>
-                                <p class="marginT20">24 Answers&nbsp;&nbsp;•&nbsp;&nbsp;<a href="javascript:void(0);"><u>View All</u></a></p>
-                            </div>
-                        </div>
-                        <div class="spacer10"></div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="top-user-detail"> <img src="images/user4.jpg" alt="" /> <span class="user-info-left"> <span class="comment-by-user">David Heinemeier</span><br />
-                    <span class="comment-user-profile">Data journalist at The Economist</span> <small class="comment-time">Answering Thu at 10:30 PM</small> </span> </div>
-                                <p class="comment-info">I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge others thinking. I am going... <a href="javascript:void(0);">VIEW MORE</a></p>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="top-user-detail"> <img src="images/user4.jpg" alt="" /> <span class="user-info-left"> <span class="comment-by-user">Brendamarmon77</span><br />
-                    <span class="comment-user-profile">Data journalist at The Economist</span> <small class="comment-time">Answering Thu at 10:30 PM</small> </span> </div>
-                                <p class="comment-info">I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge others thinking. I am going... <a href="javascript:void(0);">VIEW MORE</a></p>
-                            </div>
-                            <div class="col-md-4"> <a href="javascript:void(0);" class="btn-lg-answer"><i></i><br />
-                                Write Answer</a> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row other-posts">
-                    <div class="col-md-6">
-                        <div class="story-category">Courses</div>
-                        <h2>Who understands financial modeling?</h2>
-                        <img src="images/courses-post.jpg" alt="" class="img-responsive" />
-                        <div class="post-share marginT20">
-                            <ul>
-                                <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                <li class="reply">106 Replies</li>
-                                <li class="view">670 Views</li>
-                                <li class="share">100 Shares</li>
-                                <li class="report"><a href="javascript:void(0);" data-toggle="modal" data-target="#report-modal">Report</a></li>
-                                <li class="follow"><a class="follow-link" href="javascript:void(0);">Follow</a></li>
-                            </ul>
-                        </div>
-                        <p class="marginT20">24 Answers&nbsp;&nbsp;•&nbsp;&nbsp;<a href="javascript:void(0);"><u>View All</u></a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="story-category">Others</div>
-                        <h2>Who understands financial modeling?</h2>
-                        <img src="images/courses-post.jpg" alt="" class="img-responsive" />
-                        <div class="post-share marginT20">
-                            <ul>
-                                <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                <li class="reply">106 Replies</li>
-                                <li class="view">670 Views</li>
-                                <li class="share">100 Shares</li>
-                                <li class="report"><a href="javascript:void(0);" data-toggle="modal" data-target="#report-modal">Report</a></li>
-                                <li class="follow"><a class="follow-link" href="javascript:void(0);">Follow</a></li>
-                            </ul>
-                        </div>
-                        <p class="marginT20">24 Answers&nbsp;&nbsp;•&nbsp;&nbsp;<a href="javascript:void(0);"><u>View All</u></a></p>
-                    </div>
-                </div>
-                <div class="forum-banner"> <a href="javascript:void(0);"><img src="images/forum-banner.jpg" alt="" class="img-responsive" /></a> </div>
-                <div class="latest-post">
-                    <div class="top-post">
-                        <div class="row">
-                            <div class="col-md-5"><img src="images/stories-bg.jpg" class="img-responsive" alt="" /></div>
-                            <div class="col-md-7 top-user-left">
-                                <div class="story-category">Politics</div>
-                                <h2>Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h2>
-                                <div class="post-share">
-                                    <ul>
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                        <li class="reply">106 Replies</li>
-                                        <li class="view">670 Views</li>
-                                        <li class="share">100 Shares</li>
-                                        <li class="report"><a href="javascript:void(0);" data-toggle="modal" data-target="#report-modal">Report</a></li>
-                                        <li class="follow"><a class="follow-link" href="javascript:void(0);">Follow</a></li>
-                                    </ul>
-                                </div>
-                                <p class="marginT20">24 Answers&nbsp;&nbsp;•&nbsp;&nbsp;<a href="javascript:void(0);"><u>View All</u></a></p>
-                            </div>
-                        </div>
-                        <div class="spacer10"></div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="top-user-detail"> <img src="images/user4.jpg" alt="" /> <span class="user-info-left"> <span class="comment-by-user">David Heinemeier</span><br />
-                    <span class="comment-user-profile">Data journalist at The Economist</span> <small class="comment-time">Answering Thu at 10:30 PM</small> </span> </div>
-                                <p class="comment-info">I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge others thinking. I am going... <a href="javascript:void(0);">VIEW MORE</a></p>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="top-user-detail"> <img src="images/user4.jpg" alt="" /> <span class="user-info-left"> <span class="comment-by-user">Brendamarmon77</span><br />
-                    <span class="comment-user-profile">Data journalist at The Economist</span> <small class="comment-time">Answering Thu at 10:30 PM</small> </span> </div>
-                                <p class="comment-info">I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge others thinking. I am going... <a href="javascript:void(0);">VIEW MORE</a></p>
-                            </div>
-                            <div class="col-md-4"> <a href="javascript:void(0);" class="btn-lg-answer"><i></i><br />
-                                Write Answer</a> </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="btn btn-blue btn-block" href="javascript:void(0);">Load More...</a>
-                <div class="spacer20"></div>
-            </div>
-            <div class="col-md-3">
-                <div class="widget">
-                    <div class="widget-title">Top Question for you</div>
-                    <ul class="question-list">
-                        <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
-                            <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
-                            <div class="post-share">
-                                <ul>
-                                    <li class="view">670 Views</li>
-                                    <li class="share">100 Shares</li>
-                                </ul>
-                            </div>
-                            <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
-                        <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
-                            <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
-                            <div class="post-share">
-                                <ul>
-                                    <li class="view">670 Views</li>
-                                    <li class="share">100 Shares</li>
-                                </ul>
-                            </div>
-                            <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
-                        <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
-                            <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
-                            <div class="post-share">
-                                <ul>
-                                    <li class="view">670 Views</li>
-                                    <li class="share">100 Shares</li>
-                                </ul>
-                            </div>
-                            <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
-                        <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
-                            <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
-                            <div class="post-share">
-                                <ul>
-                                    <li class="view">670 Views</li>
-                                    <li class="share">100 Shares</li>
-                                </ul>
-                            </div>
-                            <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
-                    </ul>
-                </div>
-                <div class="widget"> <img src="images/wobi.png" alt="" class="img-responsive" /> </div>
-                <div class="sidebar-footer">
-                    <p>Copyright 2017 All rights reserved.</p>
+            <div class="col-md-9 forum-tab">
+                <div class="page-tab" id="post-tab">
                     <ul>
-                        <li><a href="javascript:void(0);">About Us</a></li>
-                        <li><a href="javascript:void(0);">Our Team</a></li>
-                        <li><a href="javascript:void(0);">Careers</a></li>
-                        <li><a href="javascript:void(0);">Support</a></li>
-                        <li><a href="javascript:void(0);">Events</a></li>
-                        <li><a href="javascript:void(0);">Campus</a></li>
-                        <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                        <li><a href="javascript:void(0);">Terms & Conditions</a></li>
-                        <li><a href="javascript:void(0);">Contact Us</a></li>
+                        <li class="active"><a href="forumCareers#general" data-toggle="tab">General Forum</a></li>
+                        <li>
+                            <a href="forumCareers#course" data-toggle="tab">
+                                <span>Select Course</span>
+                                <img class="passive" src="images/univercity_white.png"/>
+                                <img class="active" src="images/univercity_grey.png"/>
+                                <select class="form-control designation">
+                                    <option>Select Course</option>
+                                    <option>Accounting and Finance</option>
+                                    <option>Agriculture &amp; Forestry</option>
+                                    <option>Anatomy &amp; Physiology</option>
+                                    <option>Anthropology</option>
+                                    <option>Architecture &amp; The built environment</option>
+                                    <option>Astronomy</option>
+                                    <option>Biological science</option>
+                                    <option>Business &amp; Management</option>
+                                    <option>Chemistry</option>
+                                    <option>Classics &amp; Ancient History</option>
+                                    <option>Communication and Media studies</option>
+                                    <option>Computer Science and Information Systems</option>
+                                    <option>Creative Arts</option>
+                                    <option>Dentistry</option>
+                                    <option>Development Studies</option>
+                                    <option>Earth &amp; Marine Science</option>
+                                    <option>Economics</option>
+                                    <option>Education &amp; Training</option>
+                                    <option>Engineering- Aeronautical</option>
+                                    <option>Engineering- Civil &amp; Structural</option>
+                                    <option>Engineering- Computer&amp; Network</option>
+                                    <option>Engineering- Electrical</option>
+                                    <option>Engineering- Mineral &amp; Mining</option>
+                                    <option>Engineering-Chemical</option>
+                                    <option>Engineering-Mechanical</option>
+                                    <option>English Language &amp; Literature</option>
+                                    <option>Ethnicity, Gender &amp; Diversity</option>
+                                    <option>Finance</option>
+                                    <option>Geography</option>
+                                    <option>Hospitality &amp; Leisure Management</option>
+                                    <option>Human Resource Management</option>
+                                    <option>International Relations</option>
+                                    <option>Journalism</option>
+                                    <option>Law and Legal Studies</option>
+                                    <option>Library &amp; Information Management</option>
+                                    <option>Life Sciences</option>
+                                    <option>Linguistics</option>
+                                    <option>Logistics &amp; Supply Chain Management</option>
+                                    <option>Marketing</option>
+                                    <option>Material Science</option>
+                                    <option>Mathematics</option>
+                                    <option>Medicine</option>
+                                    <option>Modern Language</option>
+                                    <option>Nursing</option>
+                                    <option>Optometry</option>
+                                    <option>Others</option>
+                                    <option>Performing Arts</option>
+                                    <option>Pharmacology</option>
+                                    <option>Pharmacy</option>
+                                    <option>Philosophy</option>
+                                    <option>Product Design</option>
+                                    <option>Psychology</option>
+                                    <option>Public Policy</option>
+                                    <option>Social &amp; Political science</option>
+                                    <option>Social Work</option>
+                                    <option>Sociology</option>
+                                    <option>Sports</option>
+                                    <option>Sports Science</option>
+                                    <option>Statistics and Operations</option>
+                                    <option>Theology, Divinity and Religious Studies</option>
+                                    <option>Urban Planning</option>
+                                    <option>Veterinary Science</option>
+                                    <option>Zoology</option>
+                                </select>
+                            </a>
+                        </li>
                     </ul>
                 </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="general">
+                        <div class="forum-header">
+                            <div class="question-widget">
+                                <h4 class="question-title">Ask a question?</h4>
+                                <div class="question-input">
+                                    <span class="by-user-img">
+                                        <img src="images/profile.jpg" alt="" />
+                                        <p>Mark Grey</p>
+                                    </span>
+                                    <span class="by-user-text">
+                                        <i class="input-caret grey-caret"></i>
+                                        <input type="text" class="form-control" placeholder="What’s your question?" />
+                                        <a href="javascript:void(0);" class=" btn btn-blue">Post a question</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!--top post-->
+                                    <div class="top-post">
+                                        <div class="row">
+                                            <div class="col-md-3 forum-user-details text-right">
+                                                <img src="images/user4.jpg" alt="">
+                                                <p>Mark Grey</p>
+                                                <span>University of Toronto</span>
+                                                <div class="post-share "><i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                            </div>
+                                            <div class="col-md-9 top-user-left">
+                                                <div class="top-user">
+                                                    <div class="forum-post">
+                                                        <i class="input-caret grey-caret"></i>
+                                                        <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                                    </div>
+                                                    <div class="post-share">
+                                                        <ul>
+                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                            <li class="view pull-right">670 Views</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--top post-->
+                                    <!--top post-->
+                                    <div class="top-post">
+                                        <div class="row">
+                                            <div class="col-md-3 forum-user-details text-right">
+                                                <img src="images/user4.jpg" alt="">
+                                                <p>Mark Grey</p>
+                                                <span>University of Toronto</span>
+                                                <div class="post-share "><i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                            </div>
+                                            <div class="col-md-9 top-user-left">
+                                                <div class="top-user">
+                                                    <div class="forum-post">
+                                                        <i class="input-caret grey-caret"></i>
+                                                        <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                                    </div>
+                                                    <div class="post-share">
+                                                        <ul>
+                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                            <li class="view pull-right">670 Views</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--top post-->
+                                    <!--top post-->
+                                    <div class="top-post">
+                                        <div class="row">
+                                            <div class="col-md-3 forum-user-details text-right">
+                                                <img src="images/user4.jpg" alt="">
+                                                <p>Mark Grey</p>
+                                                <span>University of Toronto</span>
+                                                <div class="post-share "><i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                            </div>
+                                            <div class="col-md-9 top-user-left">
+                                                <div class="top-user">
+                                                    <div class="forum-post">
+                                                        <i class="input-caret grey-caret"></i>
+                                                        <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                                    </div>
+                                                    <div class="post-share">
+                                                        <ul>
+                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                            <li class="view pull-right">670 Views</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--top post-->
+                                    <!--top post-->
+                                    <div class="top-post">
+                                        <div class="row">
+                                            <div class="col-md-3 forum-user-details text-right">
+                                                <img src="images/user4.jpg" alt="">
+                                                <p>Mark Grey</p>
+                                                <span>University of Toronto</span>
+                                                <div class="post-share "><i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                            </div>
+                                            <div class="col-md-9 top-user-left">
+                                                <div class="top-user">
+                                                    <div class="forum-post">
+                                                        <i class="input-caret grey-caret"></i>
+                                                        <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                                    </div>
+                                                    <div class="post-share">
+                                                        <ul>
+                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                            <li class="view pull-right">670 Views</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--top post-->
+                                    <!--top post-->
+                                    <div class="top-post">
+                                        <div class="row">
+                                            <div class="col-md-3 forum-user-details text-right">
+                                                <img src="images/user4.jpg" alt="">
+                                                <p>Mark Grey</p>
+                                                <span>University of Toronto</span>
+                                                <div class="post-share "><i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star fill"></i>
+                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                            </div>
+                                            <div class="col-md-9 top-user-left">
+                                                <div class="top-user">
+                                                    <div class="forum-post">
+                                                        <i class="input-caret grey-caret"></i>
+                                                        <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                                    </div>
+                                                    <div class="post-share">
+                                                        <ul>
+                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                            <li class="view pull-right">670 Views</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--top post-->
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="widget">
+                                        <div class="widget-title">Top Question for you</div>
+                                        <ul class="question-list">
+                                            <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
+                                                <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
+                                                <div class="post-share">
+                                                    <ul>
+                                                        <li class="view">670 Views</li>
+                                                        <li class="share">100 Shares</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
+                                            <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
+                                                <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
+                                                <div class="post-share">
+                                                    <ul>
+                                                        <li class="view">670 Views</li>
+                                                        <li class="share">100 Shares</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
+                                            <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
+                                                <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
+                                                <div class="post-share">
+                                                    <ul>
+                                                        <li class="view">670 Views</li>
+                                                        <li class="share">100 Shares</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
+                                            <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
+                                                <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
+                                                <div class="post-share">
+                                                    <ul>
+                                                        <li class="view">670 Views</li>
+                                                        <li class="share">100 Shares</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget"> <img src="images/wobi.png" alt="" class="img-responsive" /> </div>
+                                    <div class="sidebar-footer">
+                                        <p>Copyright 2017 All rights reserved.</p>
+                                        <ul>
+                                            <li><a href="javascript:void(0);">About Us</a></li>
+                                            <li><a href="javascript:void(0);">Our Team</a></li>
+                                            <li><a href="javascript:void(0);">Careers</a></li>
+                                            <li><a href="javascript:void(0);">Support</a></li>
+                                            <li><a href="javascript:void(0);">Events</a></li>
+                                            <li><a href="javascript:void(0);">Campus</a></li>
+                                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                                            <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+                                            <li><a href="javascript:void(0);">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
