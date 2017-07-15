@@ -93,6 +93,14 @@
                                 </select>
                             </a>
                         </li>
+                        <li class="pull-right select-degree">
+                            <i class="material-icons">settings</i>
+                            <select class="form-control designation">
+                                <option>Postgraduate</option>
+                                <option>Undergraduate </option>
+                                <option>Undergraduate </option>
+                            </select>
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-content">
@@ -113,7 +121,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 forum-feed">
                             <div class="row">
                                 <div class="col-md-8">
                                     <!--top post-->
@@ -123,9 +131,12 @@
                                                 <img src="images/user4.jpg" alt="">
                                                 <p>Mark Grey</p>
                                                 <span>University of Toronto</span>
-                                                <div class="post-share "><i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                                <div class="post-share ">
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i></div>
                                             </div>
                                             <div class="col-md-9 top-user-left">
                                                 <div class="top-user">
@@ -135,16 +146,27 @@
                                                     </div>
                                                     <div class="post-share">
                                                         <ul>
-                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li>
+                                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star"></i>
+                                                                &nbsp; Likes (135)
+                                                            </li>
                                                             <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
                                                             <li class="view pull-right">670 Views</li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--top post-->
                                     <!--top post-->
                                     <div class="top-post">
                                         <div class="row">
@@ -152,9 +174,12 @@
                                                 <img src="images/user4.jpg" alt="">
                                                 <p>Mark Grey</p>
                                                 <span>University of Toronto</span>
-                                                <div class="post-share "><i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                                <div class="post-share ">
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i></div>
                                             </div>
                                             <div class="col-md-9 top-user-left">
                                                 <div class="top-user">
@@ -164,16 +189,140 @@
                                                     </div>
                                                     <div class="post-share">
                                                         <ul>
-                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li>
+                                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star"></i>
+                                                                &nbsp; Likes (135)
+                                                            </li>
                                                             <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
                                                             <li class="view pull-right">670 Views</li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--top post-->
+                                    <div class="top-post">
+                                        <div class="row">
+                                            <div class="col-md-3 forum-user-details text-right">
+                                                <img src="images/user4.jpg" alt="">
+                                                <p>Mark Grey</p>
+                                                <span>University of Toronto</span>
+                                                <div class="post-share ">
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i></div>
+                                            </div>
+                                            <div class="col-md-9 top-user-left">
+                                                <div class="top-user">
+                                                    <div class="forum-post">
+                                                        <i class="input-caret grey-caret"></i>
+                                                        <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                                    </div>
+                                                    <div class="post-share">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star"></i>
+                                                                &nbsp; Likes (135)
+                                                            </li>
+                                                            <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                            <li class="view pull-right">670 Views</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="top-post">
+                                        <div class="row">
+                                            <div class="col-md-3 forum-user-details text-right">
+                                                <img src="images/user4.jpg" alt="">
+                                                <p>Mark Grey</p>
+                                                <span>University of Toronto</span>
+                                                <div class="post-share ">
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i></div>
+                                            </div>
+                                            <div class="col-md-9 top-user-left">
+                                                <div class="top-user">
+                                                    <div class="forum-post">
+                                                        <i class="input-caret grey-caret"></i>
+                                                        <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                                    </div>
+                                                    <div class="post-share">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star"></i>
+                                                                &nbsp; Likes (135)
+                                                            </li>
+                                                            <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                            <li class="view pull-right">670 Views</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <top-questions></top-questions>
+                                    <sidebar-image></sidebar-image>
+                                    <sidebar-footer></sidebar-footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="course">
+                        <div class="forum-header">
+                            <div class="question-widget">
+                                <h4 class="question-title">Ask a question?</h4>
+                                <div class="question-input">
+                                    <span class="by-user-img">
+                                        <img src="images/profile.jpg" alt="" />
+                                        <p>Mark Grey</p>
+                                    </span>
+                                    <span class="by-user-text">
+                                        <i class="input-caret grey-caret"></i>
+                                        <input type="text" class="form-control" placeholder="What’s your question?" />
+                                        <a href="javascript:void(0);" class=" btn btn-blue">Post a question</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 forum-feed">
+                            <div class="row">
+                                <div class="col-md-8">
                                     <!--top post-->
                                     <div class="top-post">
                                         <div class="row">
@@ -181,9 +330,12 @@
                                                 <img src="images/user4.jpg" alt="">
                                                 <p>Mark Grey</p>
                                                 <span>University of Toronto</span>
-                                                <div class="post-share "><i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                                <div class="post-share ">
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i></div>
                                             </div>
                                             <div class="col-md-9 top-user-left">
                                                 <div class="top-user">
@@ -193,26 +345,39 @@
                                                     </div>
                                                     <div class="post-share">
                                                         <ul>
-                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li>
+                                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star"></i>
+                                                                &nbsp; Likes (135)
+                                                            </li>
                                                             <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
                                                             <li class="view pull-right">670 Views</li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--top post-->
-                                    <!--top post-->
                                     <div class="top-post">
                                         <div class="row">
                                             <div class="col-md-3 forum-user-details text-right">
                                                 <img src="images/user4.jpg" alt="">
                                                 <p>Mark Grey</p>
                                                 <span>University of Toronto</span>
-                                                <div class="post-share "><i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                                <div class="post-share ">
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i></div>
                                             </div>
                                             <div class="col-md-9 top-user-left">
                                                 <div class="top-user">
@@ -222,26 +387,39 @@
                                                     </div>
                                                     <div class="post-share">
                                                         <ul>
-                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li>
+                                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star"></i>
+                                                                &nbsp; Likes (135)
+                                                            </li>
                                                             <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
                                                             <li class="view pull-right">670 Views</li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--top post-->
-                                    <!--top post-->
                                     <div class="top-post">
                                         <div class="row">
                                             <div class="col-md-3 forum-user-details text-right">
                                                 <img src="images/user4.jpg" alt="">
                                                 <p>Mark Grey</p>
                                                 <span>University of Toronto</span>
-                                                <div class="post-share "><i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star fill"></i>
-                                                    <i class="star fill"></i> <i class="star"></i></div>
+                                                <div class="post-share ">
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i></div>
                                             </div>
                                             <div class="col-md-9 top-user-left">
                                                 <div class="top-user">
@@ -251,10 +429,64 @@
                                                     </div>
                                                     <div class="post-share">
                                                         <ul>
-                                                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp; Likes (135)</li>
+                                                            <li>
+                                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star"></i>
+                                                                &nbsp; Likes (135)
+                                                            </li>
                                                             <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
                                                             <li class="view pull-right">670 Views</li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="top-post">
+                                        <div class="row">
+                                            <div class="col-md-3 forum-user-details text-right">
+                                                <img src="images/user4.jpg" alt="">
+                                                <p>Mark Grey</p>
+                                                <span>University of Toronto</span>
+                                                <div class="post-share ">
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i></div>
+                                            </div>
+                                            <div class="col-md-9 top-user-left">
+                                                <div class="top-user">
+                                                    <div class="forum-post">
+                                                        <i class="input-caret grey-caret"></i>
+                                                        <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                                    </div>
+                                                    <div class="post-share">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star fill"></i>
+                                                                <i class="star"></i>
+                                                                &nbsp; Likes (135)
+                                                            </li>
+                                                            <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                            <li class="view pull-right">670 Views</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -263,62 +495,9 @@
                                     <!--top post-->
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="widget">
-                                        <div class="widget-title">Top Question for you</div>
-                                        <ul class="question-list">
-                                            <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
-                                                <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
-                                                <div class="post-share">
-                                                    <ul>
-                                                        <li class="view">670 Views</li>
-                                                        <li class="share">100 Shares</li>
-                                                    </ul>
-                                                </div>
-                                                <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
-                                            <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
-                                                <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
-                                                <div class="post-share">
-                                                    <ul>
-                                                        <li class="view">670 Views</li>
-                                                        <li class="share">100 Shares</li>
-                                                    </ul>
-                                                </div>
-                                                <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
-                                            <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
-                                                <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
-                                                <div class="post-share">
-                                                    <ul>
-                                                        <li class="view">670 Views</li>
-                                                        <li class="share">100 Shares</li>
-                                                    </ul>
-                                                </div>
-                                                <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
-                                            <li> <span class="lbl-question">Question asked</span> <span class="lbl-by-user">John Smith (politics) <small>• 57m</small></span>
-                                                <h5 class="question-asked">What if Kejriwal kills Modi?</h5>
-                                                <div class="post-share">
-                                                    <ul>
-                                                        <li class="view">670 Views</li>
-                                                        <li class="share">100 Shares</li>
-                                                    </ul>
-                                                </div>
-                                                <a href="javascript:void(0);" class="btn btn-sm btn-white">Write Answer</a> </li>
-                                        </ul>
-                                    </div>
-                                    <div class="widget"> <img src="images/wobi.png" alt="" class="img-responsive" /> </div>
-                                    <div class="sidebar-footer">
-                                        <p>Copyright 2017 All rights reserved.</p>
-                                        <ul>
-                                            <li><a href="javascript:void(0);">About Us</a></li>
-                                            <li><a href="javascript:void(0);">Our Team</a></li>
-                                            <li><a href="javascript:void(0);">Careers</a></li>
-                                            <li><a href="javascript:void(0);">Support</a></li>
-                                            <li><a href="javascript:void(0);">Events</a></li>
-                                            <li><a href="javascript:void(0);">Campus</a></li>
-                                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                                            <li><a href="javascript:void(0);">Terms & Conditions</a></li>
-                                            <li><a href="javascript:void(0);">Contact Us</a></li>
-                                        </ul>
-                                    </div>
+                                    <top-questions></top-questions>
+                                    <sidebar-image></sidebar-image>
+                                    <sidebar-footer></sidebar-footer>
                                 </div>
                             </div>
                         </div>
