@@ -7,8 +7,11 @@ component('forumHome', {
     controllerAs: 'vm',
     controller: function forumHomeComponenet($uibModal ) {
         var vm = this;
-        var $sticky = $('.sticky');
-        $sticky.css({position: 'fixed', top: '66px'});
+        if ($(window).width() > 1025) {
+
+            var $sticky = $('.sticky');
+            $sticky.css({position: 'fixed', top: '86px'});
+        }
 
         vm.openReport = function (size) {
             var parentElem = angular.element('body');

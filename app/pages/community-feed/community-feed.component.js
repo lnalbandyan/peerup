@@ -7,6 +7,11 @@ component('communityFeed', {
     controllerAs: 'vm',
     controller: function communityFeedComponenet($uibModal) {
         var vm = this;
+        if ($(window).width() > 1025) {
+
+            var $sticky = $('.sticky');
+            $sticky.css({position: 'fixed', top: '86px'});
+        }
 
         vm.postLink = function (e) {
             $(".create-poll, .brain-map, .ask-question, .share-story, .guest-list").hide();

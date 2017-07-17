@@ -7,7 +7,11 @@ component('forumCareers', {
     controllerAs: 'vm',
     controller: function forumCareersComponenet($uibModal ) {
         var vm = this;
-        var $sticky = $('.sticky');
-        $sticky.css({position: 'fixed', top: '66px'});
+        if ($(window).width() > 1025) {
+
+            var $sticky = $('.sticky');
+            $sticky.css({position: 'fixed', top: '86px'});
+        }
+
     }
 });

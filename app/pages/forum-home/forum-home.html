@@ -2,21 +2,23 @@
 <div class="forum-page-bg">
     <div class="container forum fixed-header">
         <div class="row">
-            <div class="col-md-3 forum-leftmenu">
+            <div class="col-md-3 forum-leftmenu fixed-sidebar-wrapper">
                 <div class="sticky-width sticky">
-                    <div class="forum-sidebar text-lower">
+                    <div class="fixed-sidebar text-lower">
                         <ul>
-                            <li class="active-link forum-home"><a href="#forumHome"><img class="icon"
-                                                                                         src="images/forum_icon_grey.png"/>
-                                <span class="link-text">Forum</span></a></li>
-                            <li class="forum-career"><a href="#forumCareers"><img class="icon"
-                                                                                  src="images/case_icon_grey.png"/><span
-                                    class="link-text">Careers</span></a></li>
+                            <li class="active-link forum-home"><a href="#forumHome">
+                                <i class="material-icons">forum</i>
+                                <span class="link-text">Forum</span></a>
+                            </li>
+                            <li class="forum-career"><a href="#forumCareers">
+                                <i class="material-icons">work</i>
+                                <span class="link-text">Careers</span></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-9 forum-tab">
+            <div class="col-md-9 forum-tab fixed-sidebar-content">
                 <div class="page-tab" id="post-tab">
                     <ul>
                         <li class="active"><a href="forumCareers#general" data-toggle="tab">General Forum</a></li>
@@ -125,6 +127,7 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     <!--top post-->
+                                    <span class="header-tab">Latest Discussions</span>
                                     <div class="top-post">
                                         <div class="row">
                                             <div class="col-md-3 forum-user-details text-right">

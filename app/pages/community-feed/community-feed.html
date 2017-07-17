@@ -1,29 +1,69 @@
 <app-navbar active="'campus'"></app-navbar>
 
-<div class="container fixed-header">
+<div class="container fixed-header grey">
     <div class="row">
-        <div class="col-md-2">
-            <div class="sticky-width sticky">
+        <div class="col-md-2 fixed-sidebar-wrapper">
+            <div class="sticky-width sticky wide">
                 <!--left sidebar-->
-                <div class="sidebar-info"> <img src="images/univ-logo.jpg" alt="" />
-                    <h4>University of Manchester</h4>
-                </div>
-                <div class="sidebar-links campus-menu">
-                    <ul>
-                        <li class="active-link"><a href="#communityFeed"><i class="icon-all-students"></i><span class="link-text">All Students</span></a></li>
-                        <li><a href="#communityYearEnrollment"><i class="icon-feed"></i><span class="link-text">Freshers Feed</span></a></li>
-                        <li><a href="#coursesFeed"><i class="icon-feed"></i><span class="link-text">Course feed</span></a></li>
-                        <li><a href="#communityClassesList"><i class="icon-classes"></i><span class="link-text">Classes</span></a></li>
-                        <li><a href="#studentHome"><i class="icon-sgroup"></i><span class="link-text">Student group</span></a></li>
-                        <li><a href="#communityGroup"><i class="icon-clubs"></i><span class="link-text">Societies & Clubs</span></a></li>
-                        <li><a href="#marketPlace"><i class="icon-marketplace"></i><span class="link-text">Market Place</span></a></li>
-                        <li><a href="#communityJobCenter"><i class="icon-job"></i><span class="link-text">Job Center</span></a></li>
-                    </ul>
-                </div>
+               <div class="fixed-sidebar">
+                   <div class="sidebar-info"> <img src="images/univ-logo.jpg" alt="" />
+                       <h4>University of Manchester</h4>
+                   </div>
+                   <ul>
+                       <li class="active-link">
+                           <a href="#communityFeed">
+                               <i class="material-icons">person_pin</i>
+                               <span class="link-text">All Students</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#communityYearEnrollment">
+                               <i class="material-icons">school</i>
+                               <span class="link-text">Freshers Feed</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#coursesFeed">
+                               <i class="material-icons">account_balance</i>
+                               <span class="link-text">Course feed</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#communityClassesList">
+                               <i class="material-icons">book</i>
+                               <span class="link-text">Classes</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#studentHome">
+                               <i class="material-icons">people</i>
+                               <span class="link-text">Student group</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#communityGroup">
+                               <i class="material-icons">group_work</i>
+                               <span class="link-text">Societies & Clubs</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#marketPlace">
+                               <i class="material-icons">add_shopping_cart</i>
+                               <span class="link-text">Market Place</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#communityJobCenter">
+                               <i class="material-icons">work</i>
+                               <span class="link-text">Job Center</span>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
                 <!--left sidebar-->
             </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 fixed-sidebar-content">
             <!--content area-->
             <div class="col-xs-12 col-sm-8 col-md-8">
                 <!--create post-->
@@ -54,86 +94,116 @@
                 <div>
                     <div>
                         <div class="tab-pill"><span>TIMELINE</span></div>
-                        <!--post-->
-                        <div class="single-post">
-                            <div class="post-head">
-                                <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-                                <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                                    <ul class="post-share user-star">
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                                    </ul>
-                                    <span class="post-time"> •  10 h</span>
-                                    <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</a></h1>
+                        <div class="top-post">
+                            <div class="row">
+                                <div class="col-md-3 forum-user-details text-right">
+                                    <img src="images/user4.jpg" alt="">
+                                    <p>Mark Grey</p>
+                                    <div class="post-share ">
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star"></i></div>
+                                </div>
+                                <div class="col-md-9 top-user-left">
+                                    <p class="post-time">10 h ago</p>
+                                    <h3 class="post-title grey">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                                </div>
+                                <div class="col-xs-12 post-text">
+                                    <img class="img-responsive" src="images/post-img1.jpg" alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    <div class="post-share">
+                                        <ul>
+                                            <li>
+                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star"></i>
+                                                <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                            </li>
+                                            <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                            <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="post-content">
-                                <div class="post-img"><span class="new">New Post</span><img src="images/post-img1.jpg" alt="" /></div>
-                                <div class="post-share">
-                                    <ul>
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                        <li class="reply">106 Replies</li>
-                                        <li class="view">670 Views</li>
-                                        <li class="share">100 Shares</li>
-                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
                         </div>
-                        <!--post-->
-                        <!--post-->
-                        <div class="single-post">
-                            <div class="post-shared">Coopeers post shared</div>
-                            <div class="post-head">
-                                <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-                                <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                                    <ul class="post-share user-star">
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                                    </ul>
-                                    <span class="post-time"> •  10 h</span>
-                                    <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Who understands financial modeling?</a></h1>
+                        <div class="top-post">
+                            <div class="row">
+                                <div class="col-md-3 forum-user-details text-right">
+                                    <img src="images/user4.jpg" alt="">
+                                    <p>Mark Grey</p>
+                                    <div class="post-share ">
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star"></i></div>
+                                </div>
+                                <div class="col-md-9 top-user-left">
+                                    <p class="post-time">10 h ago</p>
+                                    <h3 class="post-title grey">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                                </div>
+                                <div class="col-xs-12 post-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    <div class="post-share">
+                                        <ul>
+                                            <li>
+                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star"></i>
+                                                <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                            </li>
+                                            <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                            <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="post-content">
-                                <div class="post-img"><img src="images/post-img2.jpg" alt="" /></div>
-                                <div class="post-share">
-                                    <ul>
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                        <li class="reply">106 Replies</li>
-                                        <li class="view">670 Views</li>
-                                        <li class="share">100 Shares</li>
-                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
                         </div>
-                        <!--post-->
-                        <!--post-->
-                        <div class="single-post">
-                            <div class="post-head">
-                                <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-                                <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                                    <ul class="post-share user-star">
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                                    </ul>
-                                    <span class="post-time"> •  10 h</span>
-                                    <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Looks like team "Giggle Waters" had the last giggle after all! Congratulations to the <span class="hash-tag">#MahindraWarRoom 2016</span> Champion...</a></h1>
+                        <div class="top-post">
+                            <div class="row">
+                                <div class="col-md-3 forum-user-details text-right">
+                                    <img src="images/user4.jpg" alt="">
+                                    <p>Mark Grey</p>
+                                    <div class="post-share ">
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star"></i></div>
+                                </div>
+                                <div class="col-md-9 top-user-left">
+                                    <p class="post-time">10 h ago</p>
+                                    <h3 class="post-title grey">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                                </div>
+                                <div class="col-xs-12 post-text">
+                                    <div class="post-share">
+                                        <ul>
+                                            <li>
+                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star"></i>
+                                                <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                            </li>
+                                            <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                            <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="post-content">
-                                <div class="post-img"><span class="new">New Post</span><img src="images/post-img3.jpg" alt="" /></div>
-                                <div class="post-share">
-                                    <ul>
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                        <li class="reply">106 Replies</li>
-                                        <li class="view">670 Views</li>
-                                        <li class="share">100 Shares</li>
-                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
                         </div>
                         <!--post-->
                         <div class="load-more"><a href="javascript:void(0);">load more...</a></div>
