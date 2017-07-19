@@ -10,7 +10,7 @@ component('eventsHome', {
         if ($(window).width() > 1025) {
 
             var $sticky = $('.sticky');
-            $sticky.css({position: 'fixed', top: '86px'});
+            $sticky.css({position: 'fixed', top: '66px'});
         }
         vm.format = 'dd/MMMM/yyyy';
         vm.dt = new Date();

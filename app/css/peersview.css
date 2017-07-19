@@ -1202,6 +1202,79 @@ margin-top:-5px;}
 	background-color: #4e4e4e !important;
 }
 
+.deals-wrapper {
+	width: calc(100% + 30px);
+	margin-left: -30px;
+	padding-left: 25px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f4f4f4;
+}
+
+.deals-wrapper .deals-item {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	margin: 1%;
+	background-color: #fff;
+	padding: 35px;
+	border-radius: 3px;
+
+}
+
+.deals-wrapper .deals-item h4 {
+	font-size: 18px;
+	color: #585e66;
+	font-family: 'Conv_MavenPro-Bold';
+	margin-top: 0;
+}
+.deals-wrapper .deals-item p {
+	color: #989898;
+	font-size: 16px;
+	max-height: 45px;
+	overflow: hidden;
+}
+
+.deals-wrapper .deals-item .badge {
+	border-radius: 3px;
+	position: absolute;
+	font-size: 10px;
+	top:10px;
+	right:10px;
+	padding: 3px 15px;
+}
+
+.deals-wrapper .load_more {
+	font-size: 14px;
+	font-family: 'Conv_MavenPro-Bold';
+	color: #631a90;
+	border: 1px solid #d5d6d8;
+	padding: 10px 50px;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.deals-wrapper .deals-item .badge.orange {
+	background-color: #ff6d4a;
+	color: #fff;
+}
+.deals-wrapper .deals-item .badge.yellow {
+	background-color: #ffae00;
+	color: #fff;
+}
+.deals-wrapper .deals-item .badge.red {
+	background-color: #ff5b79;
+	color: #fff;
+}
+.deals-wrapper .deals-item .badge.blue {
+	background-color: #4da1ff;
+	color: #fff;
+}
+.deals-wrapper .deals-item .badge.green {
+	background-color: #a6e50f;
+	color: #fff;
+}
+
 .fixed-sidebar-wrapper {
 	width:270px;
 	padding:0;
@@ -1416,7 +1489,7 @@ font-size:16px; margin:5px 0 0 0; text-transform:uppercase;}
 .deal-price{border-top:solid 1px #e1e1e1; padding-top:10px; overflow:hidden; margin-bottom:0px;}
 .price-off{background:#fff; border:solid 1px #d5d5d5; display:inline-block; color:#ff0000; text-align:center; padding:5px 15px; float:left;}
 .price-val{background:#70ad47; display:inline-block; color:#fff; text-align:center; padding:5px 15px; font-size:14px; float:right; font-family: 'Conv_MavenPro-Bold';}
-.deal-title{text-align:center; max-width:830px; text-align:center; margin:25px auto; font-size:24px;}
+.deal-title{text-align:center; max-width:830px; text-align:center; margin:40px auto; font-size:24px; color: #e33656}
 
 .city-block{ padding:15px; margin:0 0 30px 0;}
 .city-block li > div{border: 1px solid #631990; padding:25px 20px; border-radius:5px; -webkit-border-radius:5px; margin-bottom:5px; background:#fff; font-size:18px; font-family: 'Conv_MavenPro-Bold';}

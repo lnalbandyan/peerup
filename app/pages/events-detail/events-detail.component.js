@@ -7,6 +7,11 @@ component('eventsDetail', {
     controllerAs: 'vm',
     controller: function eventsDetailComponenet($uibModal ) {
         var vm = this;
+        if ($(window).width() > 1025) {
+
+            var $sticky = $('.sticky');
+            $sticky.css({position: 'fixed', top: '66px'});
+        }
         vm.items = [1, 2, 3, 4, 5, 6, 7, 8];
         vm.properties = {
             items: 1,
