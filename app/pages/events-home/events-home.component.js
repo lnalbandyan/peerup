@@ -7,6 +7,11 @@ component('eventsHome', {
     controllerAs: 'vm',
     controller: function eventsHomeComponenet($uibModal ) {
         var vm = this;
+        if ($(window).width() > 1025) {
+
+            var $sticky = $('.sticky');
+            $sticky.css({position: 'fixed', top: '86px'});
+        }
         vm.format = 'dd/MMMM/yyyy';
         vm.dt = new Date();
         vm.dateOptions = {

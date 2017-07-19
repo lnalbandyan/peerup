@@ -63,18 +63,23 @@
                 <!--left sidebar-->
             </div>
         </div>
-        <div class="col-md-10 fixed-sidebar-content">
-            <div class="col-xs-12">
+        <div class="col-md-10 fixed-sidebar-content ">
+            <div class="col-xs-12 post-actions">
                 <div class="page-title">
-                    <p>Careers</p>
+                    <p>All Students</p>
                 </div>
                 <ul class="post-action">
                     <li class="active"><a href="javascript:void(0);" class="create-post-link" ng-click="vm.postLink($event)">Write a Post</a></li>
                     <li><a href="javascript:void(0);" ng-click="vm.pollLink($event)" class="create-poll-link">Create Poll</a></li>
                 </ul>
-                <div class="create-post"> <a href="javascript:void(0);" class="img-upload"></a>
-                    <input class="upload-file" type="file" style="display:none;" />
-                    <textarea class="form-control" placeholder="Whats happening?"></textarea>
+                <div class="create-post">
+                    <div class="post-input">
+                        <i class="input-caret grey-caret"></i>
+                        <input class="upload-file" id="uploadImage" type="file" style="display:none;" />
+                        <label for="uploadImage" class="img-upload flat-btn"><i class="material-icons">photo_camera</i></label>
+                        <textarea class="form-control" placeholder="Whats happening?"></textarea>
+                    </div>
+                    <a href="javascript:void(0);" class=" btn btn-blue">ADD POST</a>
                 </div>
                 <div class="create-poll" style="display:none;">
                     <textarea class="form-control" placeholder="Ask something..."></textarea>
@@ -88,7 +93,7 @@
                     </ul>
                     <div><a href="javascript:void(0);" class="btn-add-new" id="add-poll-opt">Add New</a></div>
                     <div class="bottom-block">
-                        <input type="button" class="btn btn-blue btn-sm" value="Post" />
+                        <a href="javascript:void(0);" class=" btn btn-blue">ADD POST</a>
                     </div>
                 </div>
                 <!--create post-->
@@ -218,23 +223,28 @@
             <!--content area-->
             <!--right sidebar-->
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="widget">
-                    <div class="widget-title">To Get Started Complete the Following Steps</div>
-                </div>
-                <div class="sidebar-footer">
-                    <p>Copyright 2017 All rights reserved.</p>
+                <div class="widget steps-widget">
+                    <div class="widget-title">
+                        <p>To Get Started Complete the Following Steps</p>
+                    </div>
                     <ul>
-                        <li><a href="javascript:void(0);">About Us</a></li>
-                        <li><a href="javascript:void(0);">Our Team</a></li>
-                        <li><a href="javascript:void(0);">Careers</a></li>
-                        <li><a href="javascript:void(0);">Support</a></li>
-                        <li><a href="javascript:void(0);">Events</a></li>
-                        <li><a href="javascript:void(0);">Campus</a></li>
-                        <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                        <li><a href="javascript:void(0);">Terms & Conditions</a></li>
-                        <li><a href="javascript:void(0);">Contact Us</a></li>
+                        <li>
+                            <a href="#"><i class="material-icons orange">rss_feed</i>Join your course feed</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons yellow">people</i>Join the groups for classes you are taking
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons red">rotate_right</i>Join the fresher’s feed</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="material-icons blue">local_bar</i>Join clubs and societies</a>
+                        </li>
                     </ul>
                 </div>
+
+                <sidebar-footer></sidebar-footer>
             </div>
             <!--right sidebar-->
         </div>

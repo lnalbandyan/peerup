@@ -20,6 +20,13 @@ component('communityClass', {
             $(e.target).closest("li").addClass("active");
         };
 
+        vm.brainLink = function (e) {
+            $(".create-post, .create-poll, .timeline-block, .ask-question").hide();
+            $(".brain-map").fadeIn();
+            $(".post-action li").removeClass("active");
+            $(e.target).closest("li").addClass("active");
+        };
+
         vm.pollLink = function (e) {
             $(".create-post, .brain-map, .ask-question, .share-story, .guest-list").hide();
             $(".create-poll, .timeline-block").fadeIn();
@@ -32,15 +39,6 @@ component('communityClass', {
             var modalInstance = $uibModal.open({
                 animation: true,
                 templateUrl: 'pages/business-profile/post-detail-modal/post-detail-modal.html',
-                size: size,
-                appendTo: parentElem
-            });
-        };
-        vm.openUsersProfile = function (size) {
-            var parentElem = angular.element('body');
-            var modalInstance = $uibModal.open({
-                animation: true,
-                templateUrl: 'pages/business-profile/users-profile-modal/users-profile-modal.html',
                 size: size,
                 appendTo: parentElem
             });

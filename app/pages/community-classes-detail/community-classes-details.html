@@ -28,11 +28,16 @@
                                 <span class="link-text">Course feed</span>
                             </a>
                         </li>
-                        <li class="active-link">
-                            <a href="#communityClassesList">
-                                <i class="material-icons">book</i>
-                                <span class="link-text">Classes</span>
+                        <li id="classes-menu" class="active-link dropdown-list">
+                            <a href="javascript:void(0);" ng-click="vm.dropdownOpen = !vm.dropdownOpen">
+                                <i class="material-icons">book</i><span class="link-text">Classes <i class="material-icons pull-right">keyboard_arrow_down</i></span>
                             </a>
+                            <div class="dropdown-list-item" ng-if="vm.dropdownOpen">
+                                <a href="#communityClassesList">All Classes</a>
+                                <a href="#communityClass">Auditing</a>
+                                <a href="#communityClass">Business Accounting</a>
+                                <a href="#communityClass">Forensic Accounting</a>
+                            </div>
                         </li>
                         <li>
                             <a href="#studentHome">

@@ -1,144 +1,162 @@
 <app-navbar active="'leisure'"></app-navbar>
 <div class="container fixed-header">
-    <div>
-        <!-- Nav pills -->
-        <ul class="nav nav-pills">
-            <li class="active"><a href="#eventsHome">Home</a></li>
-            <li><a href="#myEvents">My Events</a></li>
-            <li><a href="#dealsHub">Deals Hub</a></li>
+
+    <div class="row">
+        <div class="col-md-3 forum-leftmenu fixed-sidebar-wrapper">
+            <div class="sticky-width wide sticky">
+                <div class="fixed-sidebar text-lower">
+                    <ul>
+                        <li class="active-link forum-home"><a href="#eventsHome">
+                            <i class="material-icons">date_range</i>
+                            <span class="link-text">Home</span></a>
+                        </li>
+                        <li class="forum-career"><a href="#myEvents">
+                            <i class="material-icons">perm_contact_calendar</i>
+                            <span class="link-text">My Events</span></a>
+                        </li>
+                        <li class="forum-career"><a href="#dealsHub">
+                            <i class="material-icons">work</i>
+                            <span class="link-text">Deals Hub</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 forum-tab fixed-sidebar-content">
+
+            <!-- Tab pills -->
             <a href="#createEvent" class="create-btn">Create an Event</a>
-        </ul>
-        <!-- Tab pills -->
-        <div class="clear spacer20"></div>
-        <div class="view-by">
-            <label>Change City</label>
-            <select class="form-control">
-                <option>Select</option>
-                <option>TORONTO</option>
-                <option>GUELPH</option>
-                <option>VANCOUVER</option>
-                <option>MONTREAL</option>
-                <option>OTTAWA</option>
-                <option>LONDON</option>
-                <option>HALIFAX</option>
-                <option>VICTORIA</option>
-                <option>WATERLOO</option>
-                <option>KINGSTON</option>
-                <option>WINDSOR</option>
-                <option>QUEBEC CITY</option>
-                <option>KELOWNA</option>
-                <option>WINNIPEG</option>
-                <option>MONCTON</option>
-                <option>ABBOTSFORD</option>
-                <option>CALGARY</option>
-                <option>FREDERICTON</option>
-                <option>BURNABY</option>
-                <option>HAMILTON</option>
-                <option>SASKATOON</option>
-                <option>ST. CATHERINES</option>
-                <option>REGINA</option>
-                <option>EDMONTON</option>
-                <option>MISSISSAUGA</option>
-                <option>SHERBROOKE</option>
-                <option>THUNDERBAY</option>
-            </select>
-        </div>
-        <div class="clear"></div>
-        <div class="event-banner" id="events-slider">
-            <ng-owl-carousel class="owl-theme" owl-items="vm.items" owl-properties="vm.properties">
-                <div class="item" style="background:url(images/event-banner.jpg) no-repeat; height:355px;">
-                    <div class="event-header-info"> <span class="opp-news">Scholarship opportunity for SLC card +2 appeared students</span>
-                        <h1 class="event-tagline">Education Expo <span>2016</span></h1>
-                        <span class="event-detail-loc">(Bay Area, Sans Francisco, 6-7th October)</span> </div>
-                </div>
-                <div class="item" style="background:url(images/event-banner.jpg) no-repeat; height:355px;">
-                    <div class="event-header-info"> <span class="opp-news">Scholarship opportunity for SLC card +2 appeared students</span>
-                        <h1 class="event-tagline">Education Expo <span>2016</span></h1>
-                        <span class="event-detail-loc">(Bay Area, Sans Francisco, 6-7th October)</span> </div>
-                </div>
-            </ng-owl-carousel>
-        </div>
-        <div>
-            <div class="highlight-box">
-                <div class="top-bar">
-                    <span class="event-search">
-                        <input type="text" class="form-control" placeholder="Search"/>
-                    </span>
-                </div>
-                <div class="clear"></div>
-                <div class="mid-bar">
-                    <span class="select-event-date">
-                        <input type="text" class="form-control field-calender datepicker well-sm"
-                               ng-focus="vm.dateOpen2 = !vm.dateOpen2"
-                               is-open="vm.dateOpen2"
-                               ng-model="vm.dt"
-                               uib-datepicker-popup="{{vm.format}}"
-                               datepicker-options="vm.dateOptions"/>
-                    </span>
-                    <span class="event-date-list">
-                        <a href="javascript:void(0);" class="all">All <br />Events</a>
-                        <ul class="scrolling-list" id="date-slider">
-                            <ng-owl-carousel class="owl-theme" owl-items="vm.items" owl-properties="vm.dateProperties">
-                                <li class="item"><a href="javascript:void(0);">1st<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">2nd<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">3rd<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">4th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">5th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">6th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">7th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">8th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">9th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">10th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">11th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">12th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">13th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">14th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">15th<br />Sept</a></li>
-                                <li class="item"><a href="javascript:void(0);">16th<br />Sept</a></li>
-                            </ng-owl-carousel>
-                        </ul>
-                    </span>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="events-list">
-                            <div class="event-img"></div>
-                            <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+            <div class="clear spacer20"></div>
+            <div class="view-by">
+                <label>Change City</label>
+                <select class="form-control">
+                    <option>Select</option>
+                    <option>TORONTO</option>
+                    <option>GUELPH</option>
+                    <option>VANCOUVER</option>
+                    <option>MONTREAL</option>
+                    <option>OTTAWA</option>
+                    <option>LONDON</option>
+                    <option>HALIFAX</option>
+                    <option>VICTORIA</option>
+                    <option>WATERLOO</option>
+                    <option>KINGSTON</option>
+                    <option>WINDSOR</option>
+                    <option>QUEBEC CITY</option>
+                    <option>KELOWNA</option>
+                    <option>WINNIPEG</option>
+                    <option>MONCTON</option>
+                    <option>ABBOTSFORD</option>
+                    <option>CALGARY</option>
+                    <option>FREDERICTON</option>
+                    <option>BURNABY</option>
+                    <option>HAMILTON</option>
+                    <option>SASKATOON</option>
+                    <option>ST. CATHERINES</option>
+                    <option>REGINA</option>
+                    <option>EDMONTON</option>
+                    <option>MISSISSAUGA</option>
+                    <option>SHERBROOKE</option>
+                    <option>THUNDERBAY</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+            <div class="event-banner" id="events-slider">
+                <ng-owl-carousel class="owl-theme" owl-items="vm.items" owl-properties="vm.properties">
+                    <div class="item" style="background:url(images/event-banner.jpg) no-repeat; height:355px;">
+                        <div class="event-header-info"> <span class="opp-news">Scholarship opportunity for SLC card +2 appeared students</span>
+                            <h1 class="event-tagline">Education Expo <span>2016</span></h1>
+                            <span class="event-detail-loc">(Bay Area, Sans Francisco, 6-7th October)</span> </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="events-list">
-                            <div class="event-img"></div>
-                            <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                    <div class="item" style="background:url(images/event-banner.jpg) no-repeat; height:355px;">
+                        <div class="event-header-info"> <span class="opp-news">Scholarship opportunity for SLC card +2 appeared students</span>
+                            <h1 class="event-tagline">Education Expo <span>2016</span></h1>
+                            <span class="event-detail-loc">(Bay Area, Sans Francisco, 6-7th October)</span> </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="events-list">
-                            <div class="event-img"></div>
-                            <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                </ng-owl-carousel>
+            </div>
+            <div>
+                <div class="highlight-box">
+                    <div class="top-bar">
+                        <span class="event-search">
+                            <input type="text" class="form-control" placeholder="Search"/>
+                        </span>
                     </div>
-                    <div class="col-md-3">
-                        <div class="events-list">
-                            <div class="event-img"></div>
-                            <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                    <div class="clear"></div>
+                    <div class="mid-bar">
+                        <span class="select-event-date">
+                            <input type="text" class="form-control field-calender datepicker well-sm"
+                                   ng-focus="vm.dateOpen2 = !vm.dateOpen2"
+                                   is-open="vm.dateOpen2"
+                                   ng-model="vm.dt"
+                                   uib-datepicker-popup="{{vm.format}}"
+                                   datepicker-options="vm.dateOptions"/>
+                        </span>
+                        <span class="event-date-list">
+                            <a href="javascript:void(0);" class="all">All <br />Events</a>
+                            <ul class="scrolling-list" id="date-slider">
+                                <ng-owl-carousel class="owl-theme" owl-items="vm.items" owl-properties="vm.dateProperties">
+                                    <li class="item"><a href="javascript:void(0);">1st<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">2nd<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">3rd<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">4th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">5th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">6th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">7th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">8th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">9th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">10th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">11th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">12th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">13th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">14th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">15th<br />Sept</a></li>
+                                    <li class="item"><a href="javascript:void(0);">16th<br />Sept</a></li>
+                                </ng-owl-carousel>
+                            </ul>
+                        </span>
                     </div>
-                    <div class="col-md-3">
-                        <div class="events-list">
-                            <div class="event-img"></div>
-                            <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="events-list">
-                            <div class="event-img"></div>
-                            <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="events-list">
-                            <div class="event-img"></div>
-                            <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="events-list">
-                            <div class="event-img"></div>
-                            <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="events-list">
+                                <div class="event-img"></div>
+                                <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="events-list">
+                                <div class="event-img"></div>
+                                <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="events-list">
+                                <div class="event-img"></div>
+                                <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="events-list">
+                                <div class="event-img"></div>
+                                <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="events-list">
+                                <div class="event-img"></div>
+                                <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="events-list">
+                                <div class="event-img"></div>
+                                <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="events-list">
+                                <div class="event-img"></div>
+                                <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="events-list">
+                                <div class="event-img"></div>
+                                <a class="event-name" href="#eventsDetail">Cras et augue vestibulum nisl luctus consectetur.</a> <span class="event-time">28th Oct  •  5PM</span> <span class="event-loc">123 Main Street, NY</span> <a href="#eventsDetail" class="btn btn-white">Buy Ticket</a> </div>
+                        </div>
                     </div>
                 </div>
             </div>
