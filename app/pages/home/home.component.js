@@ -7,7 +7,11 @@ component('home', {
     controllerAs: 'vm',
     controller: function homeComponenet($uibModal) {
         var vm = this;
+        if ($(window).width() > 1025) {
 
+            var $sticky = $('.sticky');
+            $sticky.css({position: 'fixed', top: '68px'});
+        }
         vm.moreNews = function(e){
             var txt = $(".hidden-news").is(':visible') ? 'View More News' : 'Hide News';
             $(".view-more-news a span").text(txt);

@@ -28,7 +28,7 @@
                                 <img class="passive" src="images/univercity_white.png"/>
                                 <img class="active" src="images/univercity_grey.png"/>
                                 <select class="form-control designation">
-                                    <option>Select Course</option>
+                                    <option>Course</option>
                                     <option>Accounting and Finance</option>
                                     <option>Agriculture &amp; Forestry</option>
                                     <option>Anatomy &amp; Physiology</option>
@@ -117,7 +117,11 @@
                                     </span>
                                     <span class="by-user-text">
                                         <i class="input-caret grey-caret"></i>
-                                        <input type="text" class="form-control" placeholder="What’s your question?" />
+                                        <div>
+                                            <input class="upload-file" id="uploadImage" type="file" style="display:none;" />
+                                            <label for="uploadImage" class="img-upload flat-btn"><i class="material-icons">photo_camera</i></label>
+                                            <input type="text" class="form-control" placeholder="What’s your question?" />
+                                        </div>
                                         <a href="javascript:void(0);" class=" btn btn-blue">Post a question</a>
                                     </span>
                                 </div>
@@ -125,7 +129,7 @@
                         </div>
                         <div class="col-xs-12 forum-feed">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-9">
                                     <!--top post-->
                                     <span class="header-tab">Latest Discussions</span>
                                     <div class="top-post">
@@ -298,7 +302,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <top-questions></top-questions>
                                     <sidebar-image></sidebar-image>
                                     <sidebar-footer></sidebar-footer>

@@ -1,5 +1,5 @@
 <app-navbar active="'campus'"></app-navbar>
-<div class="container fixed-header">
+<div class="container fixed-header grey">
     <div class="row">
         <div class="col-md-2 fixed-sidebar-wrapper">
             <div class="sticky-width sticky wide">
@@ -63,34 +63,97 @@
             </div>
         </div>
         <div class="col-md-10 fixed-sidebar-content">
-            <h1 class="page-title">Student Group <a href="#createGroup" class="btn btn-blue pull-right">Create A Group</a></h1>
+            <div class="page-title">
+                <p>Student Groups<a href="#createGroup" class="btn btn-blue pull-right">Create A Group</a></p>
+            </div>
             <div class="row">
-                <div class="col-md-8">
-                    <div class="sec-heading">My Groups</div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="box-list">
-                                <div class="box-title"><a href="#groupFeed">Accounting and Finance</a><span class="active-user">252</span></div>
-                                <img src="images/course-accounting.jpg" class="img-responsive" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate iaculis dolor, sit amet pulvinar purus gravida in.</p>
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs deals-tabs">
+                        <li class="active"><a href="studentHome#public" data-toggle="tab">Public Groups</a></li>
+                        <li><a href="studentHome#myGroups" data-toggle="tab">My Groups</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="public">
+                            <div class="deals-wrapper">
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <sidebar-footer></sidebar-footer>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="box-list">
-                                <div class="box-title"><a href="#groupFeed">Finance and Investment</a><span class="active-user">252</span></div>
-                                <img src="images/course-finance.jpg" class="img-responsive" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate iaculis dolor, sit amet pulvinar purus gravida in.</p>
+                        <div class="tab-pane fade in" id="myGroups">
+                            <div class="deals-wrapper">
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <div class="deals-item">
+                                    <span class="active-user">252</span>
+                                    <h4>Next Step</h4>
+                                    <p>Sublattice of electrons that point in one direction, than from the sublattice that points</p>
+                                    <a href="#">Read more</a>
+                                </div>
+                                <sidebar-footer></sidebar-footer>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 pull-right">
-                    <div class="widget">
-                        <div class="widget-title">Public Groups</div>
-                        <div>
-                            <ul>
-                                <li><a href="javascript:void(0);">Financial Accounting</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
