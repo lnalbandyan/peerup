@@ -1,157 +1,289 @@
 <app-navbar active="'leisure'"></app-navbar>
-<div class="container fixed-header">
-    <div>
-        <!-- Nav pills -->
-        <ul class="nav nav-pills">
-            <li><a href="#eventsHome">Home</a></li>
-            <li><a href="#myEvents">My Events</a></li>
-            <li><a href="#dealsHub">Deals Hub</a></li>
-            <a href="#createEvent" class="create-btn">Create an Event</a>
-        </ul>
-        <!-- Tab pills -->
-        <div class="clear"></div>
-        <!-- Tab pills -->
-        <div class="row">
-            <div class="col-md-9 paddingR0">
-                <div class="event-banner slider-split" id="events-slider">
-                    <ng-owl-carousel class="owl-theme" owl-items="vm.items" owl-properties="vm.properties">
-                        <div class="item" style="background:url(images/event-banner.jpg) no-repeat; height:355px;">
-                            <div class="event-header-info"> <span class="opp-news">Scholarship opportunity for SLC card +2 appeared students</span>
-                                <h1 class="event-tagline">Education Expo <span>2016</span></h1>
-                                <span class="event-detail-loc">(Bay Area, Sans Francisco, 6-7th October)</span> </div>
-                        </div>
-                        <div class="item" style="background:url(images/event-banner.jpg) no-repeat; height:355px;">
-                            <div class="event-header-info"> <span class="opp-news">Scholarship opportunity for SLC card +2 appeared students</span>
-                                <h1 class="event-tagline">Education Expo <span>2016</span></h1>
-                                <span class="event-detail-loc">(Bay Area, Sans Francisco, 6-7th October)</span> </div>
-                        </div>
-                    </ng-owl-carousel>
-                </div>
-            </div>
-            <div class="col-md-3 paddingL0">
-                <div class="slider-right-info">
-                    <ul class="event-info-list">
-                        <li>
-                            <label>Ticket Type:</label>
-                            <span class="value">Paid Entry</span></li>
-                        <li>
-                            <label>End:</label>
-                            <span class="value">4th October</span></li>
+<div class="container fixed-header event-detail ">
+    <div class="row">
+        <div class="col-md-3 forum-leftmenu fixed-sidebar-wrapper">
+            <div class="sticky-width wide sticky">
+                <div class="fixed-sidebar text-lower">
+                    <ul>
+                        <li class="forum-home"><a href="#eventsHome">
+                            <i class="material-icons">date_range</i>
+                            <span class="link-text">Home</span></a>
+                        </li>
+                        <li class="forum-career"><a href="#myEvents">
+                            <i class="material-icons">perm_contact_calendar</i>
+                            <span class="link-text">My Events</span></a>
+                        </li>
+                        <li class="active-link forum-career"><a href="#dealsHub">
+                            <i class="material-icons">work</i>
+                            <span class="link-text">Deals Hub</span></a>
+                        </li>
                     </ul>
-                    <div class="pricing-block">
-                        <div class="event-user-price">$25</div>
-                        <div class="event-user-qty"> <span class="qty-input">
-              <label>Qty.</label>
-              <input type="text" class="form-control" value="1" readonly="readonly" name='quantity' />
-              </span> <span class="qty-action"> <a href="javascript:void(0)" class="qty-up qtyplus" field='quantity'><i></i></a> <a href="javascript:void(0)" class="qty-down qtyminus" field='quantity'><i></i></a> </span> </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="clear"></div>
-                    <p><a href="javascript:void(0);" class="btn btn-primary btn-block">Buy Ticket</a></p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 events-timeline">
-                <!--create post-->
-                <ul class="post-action">
-                    <li class="active"><a href="javascript:void(0);" class="create-post-link" ng-click="vm.postLink($event)">Write a Post</a></li>
-                    <li><a href="javascript:void(0);" ng-click="vm.pollLink($event)" class="create-poll-link">Create Poll</a></li>
-                    <li><a href="javascript:void(0);" class="guest-link" ng-click="vm.guestLink($event)">Event Guest List</a></li>
-                </ul>
-                <div class="create-post"> <a href="javascript:void(0);" class="img-upload"></a>
-                    <input class="upload-file" type="file" style="display:none;" />
-                    <textarea class="form-control" placeholder="Whats happening?"></textarea>
+        <div class="col-md-9 fixed-sidebar-content">
+            <div class="row">
+                <div class="col-md-9 paddingR0">
+                    <div class="event-banner slider-split" id="events-slider">
+                        <ng-owl-carousel class="owl-theme" owl-items="vm.items" owl-properties="vm.properties">
+                            <div class="item" style="background:url(images/event-banner.jpg) no-repeat; height:355px;">
+                                <div class="event-header-info"> <span class="opp-news">Scholarship opportunity for SLC card +2 appeared students</span>
+                                    <h1 class="event-tagline">Education Expo <span>2016</span></h1>
+                                    <span class="event-detail-loc">(Bay Area, Sans Francisco, 6-7th October)</span> </div>
+                            </div>
+                            <div class="item" style="background:url(images/event-banner.jpg) no-repeat; height:355px;">
+                                <div class="event-header-info"> <span class="opp-news">Scholarship opportunity for SLC card +2 appeared students</span>
+                                    <h1 class="event-tagline">Education Expo <span>2016</span></h1>
+                                    <span class="event-detail-loc">(Bay Area, Sans Francisco, 6-7th October)</span> </div>
+                            </div>
+                        </ng-owl-carousel>
+                    </div>
                 </div>
-                <div class="create-poll" style="display:none;">
-                    <textarea class="form-control" placeholder="Ask something..."></textarea>
-                    <ul class="poll-option">
-                        <li>
-                            <input type="text" placeholder="Add an option" />
-                        </li>
-                        <li>
-                            <input type="text" placeholder="Add an option" />
-                        </li>
+                <div class="col-md-3 paddingL0">
+                    <div class="slider-right-info">
+                        <ul class="event-info-list">
+                            <li>
+                                <label>Ticket Type:</label>
+                                <span class="value">Paid Entry</span></li>
+                            <li>
+                                <label>End:</label>
+                                <span class="value">4th October</span></li>
+                        </ul>
+                        <div class="pricing-block">
+                            <div class="event-user-price">$25</div>
+                            <div class="event-user-qty"> <span class="qty-input">
+              <label>Qty.</label>
+              <input type="text" class="form-control" value="1" readonly="readonly" name='quantity' />
+              </span> <span class="qty-action"> <a href="javascript:void(0)" class="qty-up qtyplus" field='quantity'><i></i></a> <a href="javascript:void(0)" class="qty-down qtyminus" field='quantity'><i></i></a> </span> </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <p><a href="javascript:void(0);" class="btn btn-primary btn-block">Buy Ticket</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 events-timeline">
+                    <!--create post-->
+                    <ul class="post-action">
+                        <li class="active"><a href="javascript:void(0);" class="create-post-link" ng-click="vm.postLink($event)">Write a Post</a></li>
+                        <li><a href="javascript:void(0);" ng-click="vm.pollLink($event)" class="create-poll-link">Create Poll</a></li>
+                        <li><a href="javascript:void(0);" class="guest-link" ng-click="vm.guestLink($event)">Event Guest List</a></li>
                     </ul>
-                    <div><a href="javascript:void(0);" class="btn-add-new" id="add-poll-opt">Add New</a></div>
-                    <div class="bottom-block">
-                        <input type="button" class="btn btn-blue btn-sm" value="Post" />
+                    <div class="create-post">
+                        <div class="post-input">
+                            <i class="input-caret grey-caret"></i>
+                            <input class="upload-file" id="uploadImage" type="file" style="display:none;" />
+                            <label for="uploadImage" class="img-upload flat-btn"><i class="material-icons">photo_camera</i></label>
+                            <textarea class="form-control" placeholder="Whats happening?"></textarea>
+                        </div>
+                        <a href="javascript:void(0);" class=" btn btn-blue">ADD POST</a>
                     </div>
-                </div>
-                <div class="guest-list" style="display:none;">
-                    <input type="text" class="form-control" placeholder="Add Name" />
-                    <div class="bottom-block">
-                        <input type="button" class="btn btn-blue btn-sm" value="Add" />
-                    </div>
-                </div>
-                <!--create post-->
-                <div class="single-post">
-                    <div class="post-head">
-                        <div class="post-user"><img src="images/user-post.jpg" alt=""></div>
-                        <div class="post-info"> <a class="post-by" href="javascript:void(0);">Tammy Everts</a> <span class="post-time">•  July 16, 2016</span>
-                            <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</a></h1>
+                    <div class="create-poll" style="display:none;">
+                        <textarea class="form-control" placeholder="Ask something..."></textarea>
+                        <ul class="poll-option">
+                            <li>
+                                <input type="text" placeholder="Add an option" />
+                            </li>
+                            <li>
+                                <input type="text" placeholder="Add an option" />
+                            </li>
+                        </ul>
+                        <div><a href="javascript:void(0);" class="btn-add-new" id="add-poll-opt">Add New</a></div>
+                        <div class="bottom-block">
+                            <a href="javascript:void(0);" class=" btn btn-blue">ADD POST</a>
                         </div>
                     </div>
-                    <div class="post-content">
-                        <div class="post-img"><img src="images/saudi.jpg" alt=""></div>
-                        <div class="post-share">
-                            <ul>
-                                <li>Like • &nbsp;205 Likes</li>
-                                <li class="reply">106 Replies</li>
-                                <li class="view">670 Views</li>
-                                <li class="share">100 Shares</li>
-                                <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
-                            </ul>
-                        </div>
-                        <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
-                    </div>
-                </div>
-                <div class="single-post">
-                    <div class="post-head">
-                        <div class="post-user"><img src="images/user-post.jpg" alt=""></div>
-                        <div class="post-info"> <a class="post-by" href="javascript:void(0);">Tammy Everts</a> <span class="post-time">•  July 16, 2016</span>
-                            <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</a></h1>
+                    <div class="guest-list" style="display:none;">
+                        <input type="text" class="form-control" placeholder="Add Name" />
+                        <div class="bottom-block">
+                            <input type="button" class="btn btn-blue btn-sm" value="Add" />
                         </div>
                     </div>
-                    <div class="post-content">
-                        <div class="post-img"><img src="images/saudi.jpg" alt=""></div>
-                        <div class="post-share">
-                            <ul>
-                                <li>Like • &nbsp;205 Likes</li>
-                                <li class="reply">106 Replies</li>
-                                <li class="view">670 Views</li>
-                                <li class="share">100 Shares</li>
-                                <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
-                            </ul>
+                    <div class="tab-pill"><span class="text-bold">Latest Posts</span></div>
+                    <!--create post-->
+                    <div class="top-post">
+                        <div class="row">
+                            <div class="col-md-3 forum-user-details text-right">
+                                <img src="images/user4.jpg" alt="">
+                                <p>Mark Grey</p>
+                                <div class="post-share ">
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star"></i></div>
+                            </div>
+                            <div class="col-md-9 top-user-left">
+                                <p class="post-time">10 h ago</p>
+                                <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                            </div>
+                            <div class="col-xs-12 post-text">
+                                <img class="img-responsive" src="images/post-img1.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                <div class="post-share">
+                                    <ul>
+                                        <li>
+                                            <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i>
+                                            <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                        </li>
+                                        <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                        <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                                        <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li class="pull-right"><button class="flat-btn purple"><i class="material-icons">share</i>Share</button> </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
                     </div>
-                </div>
-                <a class="btn btn-white btn-block" href="javascript:void(0);">Load More...</a> </div>
-            <div class="col-md-6">
-                <div class="highlight-box" style="min-height:1170px;">
-                    <div class="top-bar">&nbsp;</div>
-                    <div class="clear"></div>
-                    <div class="mid-bar"> <span class="event-det-venue">Venue: 123, Main Street, London, UK</span> <span class="event-det-date">6-7th Oct, 2016</span> <span class="event-det-time">5pm</span> </div>
-                    <div class="event-org">
-                        <p class="event-title">Event Organizer</p>
-                        <div class="event-org-info"> <img class="org-profile" src="images/profile-pic-lg.jpg" alt=""> <span class="org-name">
+                    <div class="top-post">
+                        <div class="row">
+                            <div class="col-md-3 forum-user-details text-right">
+                                <img src="images/user4.jpg" alt="">
+                                <p>Mark Grey</p>
+                                <div class="post-share ">
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star"></i></div>
+                            </div>
+                            <div class="col-md-9 top-user-left">
+                                <p class="post-time">10 h ago</p>
+                                <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                            </div>
+                            <div class="col-xs-12 post-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                <div class="post-share">
+                                    <ul>
+                                        <li>
+                                            <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i>
+                                            <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                        </li>
+                                        <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                        <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                                        <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li class="pull-right"><button class="flat-btn purple"><i class="material-icons">share</i>Share</button> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-post">
+                        <div class="row">
+                            <div class="col-md-3 forum-user-details text-right">
+                                <img src="images/user4.jpg" alt="">
+                                <p>Mark Grey</p>
+                                <div class="post-share ">
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star"></i></div>
+                            </div>
+                            <div class="col-md-9 top-user-left">
+                                <p class="post-time">10 h ago</p>
+                                <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                            </div>
+                            <div class="col-xs-12 post-text">
+                                <div class="post-share">
+                                    <ul>
+                                        <li>
+                                            <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i>
+                                            <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                        </li>
+                                        <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                        <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                                        <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li class="pull-right"><button class="flat-btn purple"><i class="material-icons">share</i>Share</button> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-white btn-block" href="javascript:void(0);">Load More...</a> </div>
+                <div class="col-md-6">
+                    <div class="highlight-box" style="min-height:1170px;">
+                        <div class="top-bar">&nbsp;</div>
+                        <div class="clear"></div>
+                        <div class="mid-bar"> <span class="event-det-venue">Venue: 123, Main Street, London, UK</span> <span class="event-det-date">6-7th Oct, 2016</span> <span class="event-det-time">5pm</span> </div>
+                        <div class="event-org">
+                            <p class="event-title">Event Organizer</p>
+                            <div class="event-org-info"> <img class="org-profile" src="images/profile-pic-lg.jpg" alt=""> <span class="org-name">
               <h2>John Smith</h2>
               <p class="profile-desc">Students&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Los Anageles, LA</p>
               </span> </div>
-                        <div class="org-action">
-                            <input type="button" value="Call" class="btn btn-primary" />
-                            <div class="spacer10"></div>
-                            <input type="button" value="Message" class="btn btn-primary" />
+                            <div class="org-action">
+                                <input type="button" value="Call" class="btn btn-primary" />
+                                <div class="spacer10"></div>
+                                <input type="button" value="Message" class="btn btn-primary" />
+                            </div>
+                            <div class="clear"></div>
                         </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="event-info-content">
-                        <p class="event-title">About Event</p>
-                        <h6 class="event-tag-line"> Quisque maximus quis mi ac efficitur. In tempor suscipit magna et suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam cursus et libero ut suscipit. Integer ultrices, mauris et ornare aliquet, nibh risus auctor sem, sed efficitur ipsum leo quis velit. Maecenas in orci molestie, fermentum felis at, maximus ex. Proin dignissim pharetra mi. </h6>
-                        <p>Nulla malesuada ante ac lectus blandit elementum. Nulla interdum diam eu leo congue molestie. In porta elit vitae suscipit egestas. Sed sed malesuada elit, eget volutpat dolor. Proin faucibus placerat diam id vestibulum. Etiam commodo mattis rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nec consequat tortor. Mauris ut efficitur turpis. Suspendisse et justo at erat molestie aliquet. Nullam placerat ornare tincidunt. Donec erat lectus, sollicitudin non vestibulum vel, aliquet nec mi. Aenean molestie nulla in suscipit dictum. Nullam nec libero lacinia, varius ante quis, mollis quam.</p>
-                        <p>Nulla malesuada ante ac lectus blandit elementum. Nulla interdum diam eu leo congue molestie. In porta elit vitae suscipit egestas. Sed sed malesuada elit, eget volutpat dolor. Proin faucibus placerat diam id vestibulum. Etiam commodo mattis rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nec consequat tortor. Mauris ut efficitur turpis. Suspendisse et justo at erat molestie aliquet. Nullam placerat ornare tincidunt. Donec erat lectus, sollicitudin non vestibulum vel, aliquet nec mi. Aenean molestie nulla in suscipit dictum. Nullam nec libero lacinia, varius ante quis, mollis quam.</p>
-                        <p>Nulla malesuada ante ac lectus blandit elementum. Nulla interdum diam eu leo congue molestie. In porta elit vitae suscipit egestas. Sed sed malesuada elit, eget volutpat dolor. Proin faucibus placerat diam id vestibulum. Etiam commodo mattis rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nec consequat tortor. Mauris ut efficitur turpis. Suspendisse et justo at erat molestie aliquet. Nullam placerat ornare tincidunt. Donec erat lectus, sollicitudin non vestibulum vel, aliquet nec mi. Aenean molestie nulla in suscipit dictum. Nullam nec libero lacinia, varius ante quis, mollis quam.</p>
+                        <div class="event-info-content">
+                            <p class="event-title">About Event</p>
+                            <h6 class="event-tag-line"> Quisque maximus quis mi ac efficitur. In tempor suscipit magna et suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam cursus et libero ut suscipit. Integer ultrices, mauris et ornare aliquet, nibh risus auctor sem, sed efficitur ipsum leo quis velit. Maecenas in orci molestie, fermentum felis at, maximus ex. Proin dignissim pharetra mi. </h6>
+                            <p>Nulla malesuada ante ac lectus blandit elementum. Nulla interdum diam eu leo congue molestie. In porta elit vitae suscipit egestas. Sed sed malesuada elit, eget volutpat dolor. Proin faucibus placerat diam id vestibulum. Etiam commodo mattis rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nec consequat tortor. Mauris ut efficitur turpis. Suspendisse et justo at erat molestie aliquet. Nullam placerat ornare tincidunt. Donec erat lectus, sollicitudin non vestibulum vel, aliquet nec mi. Aenean molestie nulla in suscipit dictum. Nullam nec libero lacinia, varius ante quis, mollis quam.</p>
+                            <p>Nulla malesuada ante ac lectus blandit elementum. Nulla interdum diam eu leo congue molestie. In porta elit vitae suscipit egestas. Sed sed malesuada elit, eget volutpat dolor. Proin faucibus placerat diam id vestibulum. Etiam commodo mattis rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nec consequat tortor. Mauris ut efficitur turpis. Suspendisse et justo at erat molestie aliquet. Nullam placerat ornare tincidunt. Donec erat lectus, sollicitudin non vestibulum vel, aliquet nec mi. Aenean molestie nulla in suscipit dictum. Nullam nec libero lacinia, varius ante quis, mollis quam.</p>
+                            <p>Nulla malesuada ante ac lectus blandit elementum. Nulla interdum diam eu leo congue molestie. In porta elit vitae suscipit egestas. Sed sed malesuada elit, eget volutpat dolor. Proin faucibus placerat diam id vestibulum. Etiam commodo mattis rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nec consequat tortor. Mauris ut efficitur turpis. Suspendisse et justo at erat molestie aliquet. Nullam placerat ornare tincidunt. Donec erat lectus, sollicitudin non vestibulum vel, aliquet nec mi. Aenean molestie nulla in suscipit dictum. Nullam nec libero lacinia, varius ante quis, mollis quam.</p>
+                        </div>
                     </div>
                 </div>
             </div>

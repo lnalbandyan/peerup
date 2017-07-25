@@ -190,6 +190,9 @@ angular.
       when('/termsOfUse', {
           template: '<terms-of-use></terms-of-use>'
       }).
+      when('/userProfile', {
+          template: '<user-profile></user-profile>'
+      }).
 
       otherwise('/');
     }

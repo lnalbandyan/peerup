@@ -1,6 +1,6 @@
 <app-navbar active="'forum'"></app-navbar>
 <div class="forum-page-bg">
-    <div class="container forum fixed-header">
+    <div class="container forum fixed-header grey">
         <div class="row">
             <div class="col-md-3 forum-leftmenu fixed-sidebar-wrapper">
                 <div class="sticky-width sticky">
@@ -168,7 +168,7 @@
                                                     </div>
                                                     <div class="post-footer">
                                                         <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
-                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Answer</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -211,7 +211,7 @@
                                                     </div>
                                                     <div class="post-footer">
                                                         <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
-                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Answer</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,7 +253,7 @@
                                                     </div>
                                                     <div class="post-footer">
                                                         <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
-                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Answer</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -295,7 +295,7 @@
                                                     </div>
                                                     <div class="post-footer">
                                                         <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
-                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Answer</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -321,7 +321,11 @@
                                     </span>
                                     <span class="by-user-text">
                                         <i class="input-caret grey-caret"></i>
-                                        <input type="text" class="form-control" placeholder="What’s your question?" />
+                                        <div>
+                                            <input class="upload-file" id="uploadImage" type="file" style="display:none;" />
+                                            <label for="uploadImage" class="img-upload flat-btn"><i class="material-icons">photo_camera</i></label>
+                                            <input type="text" class="form-control" placeholder="What’s your question?" />
+                                        </div>
                                         <a href="javascript:void(0);" class=" btn btn-blue">Post a question</a>
                                     </span>
                                 </div>
@@ -329,7 +333,7 @@
                         </div>
                         <div class="col-xs-12 forum-feed">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-9">
                                     <!--top post-->
                                     <div class="top-post">
                                         <div class="row">
@@ -367,7 +371,7 @@
                                                     </div>
                                                     <div class="post-footer">
                                                         <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
-                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Answer</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -409,7 +413,7 @@
                                                     </div>
                                                     <div class="post-footer">
                                                         <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
-                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Answer</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -451,7 +455,7 @@
                                                     </div>
                                                     <div class="post-footer">
                                                         <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
-                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Answer</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -493,7 +497,7 @@
                                                     </div>
                                                     <div class="post-footer">
                                                         <button class="flat-btn"><i class="material-icons">redo</i> Follow Post</button>
-                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Write Comment</button>
+                                                        <button class="flat-btn pull-right"><i class="material-icons">create</i> Answer</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -501,7 +505,7 @@
                                     </div>
                                     <!--top post-->
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <top-questions></top-questions>
                                     <sidebar-image></sidebar-image>
                                     <sidebar-footer></sidebar-footer>
