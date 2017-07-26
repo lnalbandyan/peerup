@@ -1,226 +1,277 @@
 <app-navbar></app-navbar>
-<div class="container fixed-header">
+<div class="container fixed-header grey">
     <div class="row">
-        <div class="col-md-12">
-            <div class="user-profile-area">
-                <div class="info-left">
-        	<span class="profile-pic-lg">
-          	<i class="icon-enlarge" data-toggle="modal" data-target="#profile-pic-modal"></i>
-            <img class="profile" src="images/john.jpg" alt="" />
-          </span>
-                    <span class="user-profile-info marginR10">
-          <h2>Adekunle Amodu</h2>
-          <ul>
-            <li class="info-add"><i class="icon-home" data-toggle="tooltip" title="City"></i> Student   |     Los Anageles, LA</li>
-            <li>
-              <label class="lbl"><i class="icon-institute" data-toggle="tooltip" title="Institution"></i></label>
-              <label class="val">St. Marry's Univercity</label>
-            </li>
-            <li>
-              <label class="lbl"><i class="icon-course" data-toggle="tooltip" title="Course"></i></label>
-              <label class="val">Accounting and Finance</label>
-            </li>
-            <li>
-              <label class="lbl"><i class="icon-date" data-toggle="tooltip" title="Birthday"></i></label>
-              <label class="val">2nd July</label>
-            </li>
-          </ul>
-          <a class="btn btn-blue marginT10" href="javascript:void(0);" data-toggle="modal" data-target="#user-message-modal">Message</a>
-          <a class="btn btn-blue marginT10" href="javascript:void(0);" data-toggle="modal" data-target="#post-modal">Post To</a>
-          </span> <span class="user-rating-val"><small>4</small></span> </div>
-                <div class="info-right"> <a href="javascript:void(0);" id="follow-this" class="btn btn-sm btn-primary">Follow</a> <span class="dropdown user-action"> <a href="javascript:void(0);" data-toggle="dropdown" class="more-action-icon"></a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#block-modal">Block</a></li>
-            <li><a href="javascript:void(0);" data-toggle="modal" data-target="#report-user-modal">Report</a></li>
-          </ul>
-          </span> </div>
-                <div class="clear"></div>
+        <div class="col-md-2 fixed-sidebar-wrapper">
+            <div class="post-share options-dropdown">
+                <span uib-dropdown on-toggle="toggled(open)">
+                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                    Options <i class="material-icons">keyboard_arrow_down</i>
+                </a>
+                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                    <li>
+                        <a class="flat-btn purple" href="#"><i class="material-icons">block</i>Block user</a>
+                    </li>
+                    <li>
+                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                    </li>
+                </ul>
+            </span>
+            </div>
+            <div class="sticky-width sticky wide">
+                <!--left sidebar-->
+                <div class="fixed-sidebar not-fixed">
+                    <div class="sidebar-info">
+                        <img  src="images/john.jpg" alt="" />
+                        <h4>John Smith</h4>
+                        <ul class="post-share user-star">
+                            <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
+                        </ul>
+                        <div class="user-profile-actions">
+                            <a class="btn flat-btn purple" href="javascript:void(0);" data-toggle="modal" data-target="#user-message-modal"><i class="material-icons">comment</i>Message</a>
+                            <a class="btn flat-btn purple" href="javascript:void(0);" data-toggle="modal" data-target="#post-modal"><i class="material-icons">border_color</i>Post To</a>
+                        </div>
+                    </div>
+                    <div class="info-group">
+                        <div class="profile-info">
+                            <span> <i class="material-icons">info</i> I am a math professor</span>
+                        </div>
+                        <div class="profile-info">
+                            <span> <i class="material-icons">person</i>  Student Los Anageles, LA</span>
+                        </div>
+                        <div class="profile-info">
+                            <span> <i class="material-icons">account_balance</i> St. Marry's Univercity</span>
+                        </div>
+                        <div class="profile-info">
+                            <span> <i class="material-icons">school</i> Accounting and Finance</span>
+                        </div>
+                        <div class="profile-info">
+                            <span> <i class="material-icons">today</i> 2nd July</span>
+                        </div>
+                    </div>
+                    <div class="widget media-widget">
+                        <h5 class="widget-title"><i class="material-icons">local_offer</i>Interest</h5>
+                        <ul class="tags">
+                            <li><a href="javascript:void(0);">Politics</a></li>
+                            <li><a href="javascript:void(0);">Fashions</a></li>
+                            <li><a href="javascript:void(0);">Music</a></li>
+                            <li><a href="javascript:void(0);">Car Racing</a></li>
+                            <li><a href="javascript:void(0);">Politics</a></li>
+                            <li><a href="javascript:void(0);">Fashions</a></li>
+                            <li><a href="javascript:void(0);">Music</a></li>
+                            <li><a href="javascript:void(0);">Car Racing</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget media-widget">
+                        <h5 class="widget-title"><i class="material-icons">book</i>Accomplishments </h5>
+                        <div class="accomplish">
+                            <p class="widget-sub-title">Previous Education:</p>
+                            <p>Nullam at ipsum porttitor, interdum magna vestibulum, scelerisque tortor</p>
+                        </div>
+                    </div>
+                    <div class="widget media-widget">
+                        <h5 class="widget-title "> <i class="material-icons">photo_library</i> Media / Pictures (14)</h5>
+                        <ul class="media">
+                            <li><i class="btn-play"></i><a href="javascript:void(0);"><img src="images/media1.jpg" alt="" /></a></li>
+                            <li><i class="btn-play"></i><a href="javascript:void(0);"></a></li>
+                            <li><i class="btn-play"></i><a href="javascript:void(0);"><img src="images/media2.jpg" alt="" /></a></li>
+                            <li><i class="btn-play"></i><a href="javascript:void(0);"><img src="images/media3.jpg" alt="" /></a></li>
+                        </ul>
+                        <div class="text-right widget-bottom">
+                            <a href="javascript:void(0);" class="btn flat-btn purple">View All</a>
+                        </div>
+                    </div>
+                    <div class="widget media-widget">
+                        <h5 class="widget-title"><i class="material-icons">collections</i>Awards (3)</h5>
+                        <div id="awards-slider">
+                            <ng-owl-carousel class="owl-theme" owl-items="vm.items" owl-properties="vm.properties">
+                                <div class="item"><img src="images/stars.jpg" alt=""></div>
+                                <div class="item"><img src="images/stars.jpg" alt=""></div>
+                                <div class="item"><img src="images/stars.jpg" alt=""></div>
+                            </ng-owl-carousel>
+                        </div>
+                    </div>
+                </div>
+                <!--left sidebar-->
             </div>
         </div>
-        <!--left sidebar-->
-        <div class="col-md-3 cell-1">
-            <div class="widget">
-                <h5 class="widget-title">About Me</h5>
-                <p class="info-txt">Tell people about yourself...</p>
-            </div>
-            <div class="widget">
-                <h5 class="widget-title">Interest</h5>
-                <ul class="tags">
-                    <li><a href="javascript:void(0);">Politics</a></li>
-                    <li><a href="javascript:void(0);">Fashions</a></li>
-                    <li><a href="javascript:void(0);">Music</a></li>
-                    <li><a href="javascript:void(0);">Car Racing</a></li>
-                    <li><a href="javascript:void(0);">Politics</a></li>
-                    <li><a href="javascript:void(0);">Fashions</a></li>
-                    <li><a href="javascript:void(0);">Music</a></li>
-                    <li><a href="javascript:void(0);">Car Racing</a></li>
-                </ul>
-            </div>
-            <div class="widget">
-                <h5 class="widget-title">Accomplishments</h5>
-                <p class="widget-sub-title">Previous Education:</p>
-                <p>Nullam at ipsum porttitor, interdum magna vestibulum, scelerisque tortor</p>
-            </div>
-            <div class="widget">
-                <h5 class="widget-title">Media / Pictures (14)</h5>
-                <ul class="media">
-                    <li><i class="btn-play"></i><a href="javascript:void(0);"><img src="images/media1.jpg" alt="" /></a></li>
-                    <li><a href="javascript:void(0);"></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/media2.jpg" alt="" /></a></li>
-                    <li><a href="javascript:void(0);"><img src="images/media3.jpg" alt="" /></a></li>
-                </ul>
-                <a href="javascript:void(0);" class="btn btn-default btn-blue btn-block">View All</a> </div>
-            <div class="widget">
-                <h5 class="widget-title">Awards (3)</h5>
-                <div id="awards-slider" class="owl-carousel">
-                    <div class="item"><img src="images/stars.jpg" alt=""></div>
-                    <div class="item"><img src="images/stars.jpg" alt=""></div>
-                    <div class="item"><img src="images/stars.jpg" alt=""></div>
+        <div class="col-md-10 fixed-sidebar-content ">
+
+            <!--content area-->
+            <div class="col-md-8 ">
+                <div>
+                    <div class="tab-pill"><span>TIMELINE</span></div>
+                    <!--post-->
+                    <div class="top-post">
+                        <div class="row">
+                            <div class="col-md-3 forum-user-details text-right">
+                                <img src="images/user4.jpg" alt="">
+                                <p>Mark Grey</p>
+                                <div class="post-share ">
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star"></i></div>
+                            </div>
+                            <div class="col-md-9 top-user-left">
+                                <p class="post-time">10 h ago</p>
+                                <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                            </div>
+                            <div class="col-xs-12 post-text">
+                                <img class="img-responsive" src="images/post-img1.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                <div class="post-share">
+                                    <ul>
+                                        <li>
+                                            <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i>
+                                            <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                        </li>
+                                        <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                        <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                                        <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li class="pull-right" ><a class="flat-btn purple" href="javascript:void(0);"><i class="material-icons">share</i>Share (123)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-post">
+                        <div class="row">
+                            <div class="col-md-3 forum-user-details text-right">
+                                <img src="images/user4.jpg" alt="">
+                                <p>Mark Grey</p>
+                                <div class="post-share ">
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star"></i></div>
+                            </div>
+                            <div class="col-md-9 top-user-left">
+                                <p class="post-time">10 h ago</p>
+                                <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                            </div>
+                            <div class="col-xs-12 post-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                <div class="post-share">
+                                    <ul>
+                                        <li>
+                                            <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i>
+                                            <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                        </li>
+                                        <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                        <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                                        <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li class="pull-right" ><a class="flat-btn purple" href="javascript:void(0);"><i class="material-icons">share</i>Share (123)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-post">
+                        <div class="row">
+                            <div class="col-md-3 forum-user-details text-right">
+                                <img src="images/user4.jpg" alt="">
+                                <p>Mark Grey</p>
+                                <div class="post-share ">
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star"></i></div>
+                            </div>
+                            <div class="col-md-9 top-user-left">
+                                <p class="post-time">10 h ago</p>
+                                <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                            </div>
+                            <div class="col-xs-12 post-text">
+                                <div class="post-share">
+                                    <ul>
+                                        <li>
+                                            <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i>
+                                            <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                        </li>
+                                        <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                        <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                                        <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li class="pull-right" ><a class="flat-btn purple" href="javascript:void(0);"><i class="material-icons">share</i>Share (123)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--post-->
+                    <div class="load-more"><a href="javascript:void(0);">load more...</a></div>
                 </div>
             </div>
+            <!--content area-->
+            <!--right sidebar-->
+            <div class="col-md-4 ">
+                <button style="margin-bottom: 20px;" class="btn btn-blue btn-default">Follow</button>
+                <following></following>
+                <social-widget></social-widget>
+                <followers></followers>
+                <sidebar-image></sidebar-image>
+                <sidebar-footer></sidebar-footer>
+            </div>
+            <!--right sidebar-->
         </div>
-        <!--left sidebar-->
-        <!--content area-->
-        <div class="col-md-6 cell-2">
-            <div>
-                <div class="tab-pill"><span>TIMELINE</span></div>
-                <!--post-->
-                <div class="single-post">
-                    <div class="post-head">
-                        <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-                        <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                            <ul class="post-share user-star">
-                                <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                            </ul>
-                            <span class="post-time"> •  10 h</span>
-                            <h1 class="post-title"><a href="javascript:void(0);" data-toggle="modal" data-target="#post-detail">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</a></h1>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-img"><span class="new">New Post</span><img src="images/post-img1.jpg" alt="" /></div>
-                        <div class="post-share">
-                            <ul>
-                                <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                <li class="reply">106 Replies</li>
-                                <li class="view">670 Views</li>
-                                <li class="share">100 Shares</li>
-                                <li class="report"><a href="javascript:void(0);" data-toggle="modal" data-target="#report-modal">Report</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
-                </div>
-                <!--post-->
-                <!--post-->
-                <div class="single-post">
-                    <div class="post-shared">Coopeers post shared</div>
-                    <div class="post-head">
-                        <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-                        <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                            <ul class="post-share user-star">
-                                <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                            </ul>
-                            <span class="post-time"> •  10 h</span>
-                            <h1 class="post-title"><a href="javascript:void(0);" data-toggle="modal" data-target="#post-detail">Who understands financial modeling?</a></h1>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-img"><img src="images/post-img2.jpg" alt="" /></div>
-                        <div class="post-share">
-                            <ul>
-                                <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                <li class="reply">106 Replies</li>
-                                <li class="view">670 Views</li>
-                                <li class="share">100 Shares</li>
-                                <li class="report"><a href="javascript:void(0);" data-toggle="modal" data-target="#report-modal">Report</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
-                </div>
-                <!--post-->
-                <!--post-->
-                <div class="single-post">
-                    <div class="post-head">
-                        <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-                        <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                            <ul class="post-share user-star">
-                                <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                            </ul>
-                            <span class="post-time"> •  10 h</span>
-                            <h1 class="post-title"><a href="javascript:void(0);" data-toggle="modal" data-target="#post-detail">Looks like team "Giggle Waters" had the last giggle after all! Congratulations to the <span class="hash-tag">#MahindraWarRoom 2016</span> Champion...</a></h1>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-img"><span class="new">New Post</span><img src="images/post-img3.jpg" alt="" /></div>
-                        <div class="post-share">
-                            <ul>
-                                <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                <li class="reply">106 Replies</li>
-                                <li class="view">670 Views</li>
-                                <li class="share">100 Shares</li>
-                                <li class="report"><a href="javascript:void(0);" data-toggle="modal" data-target="#report-modal">Report</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
-                </div>
-                <!--post-->
-                <div class="load-more"><a href="javascript:void(0);">load more...</a></div>
-            </div>
-        </div>
-        <!--content area-->
-        <!--right sidebar-->
-        <div class="col-md-3 cell-3">
-            <div class="widget">
-                <h5 class="widget-title">following (46)</h5>
-                <ul class="users-list">
-                    <li data-toggle="tooltip" title="Angela Gill"><img src="images/user1.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Faith Black"><i class="online-indicator"></i><img src="images/user2.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Olivia	Metcalfe"><img src="images/user3.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Adekunle Amodu"><i class="online-indicator"></i><img src="images/user4.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Gordon Piper"><img src="images/user5.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="David Ball"><i class="online-indicator"></i><img src="images/user6.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Megan Vaughan"><img src="images/user7.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Gavin Newman"><i class="online-indicator"></i><img src="images/user8.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Fiona Sharp"><i class="online-indicator"></i><img src="images/user9.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                </ul>
-                <a class="link-und" href="followers-following.html">View All</a> </div>
-            <div class="widget">
-                <h5 class="widget-title">Media</h5>
-                <ul class="social-list">
-                    <a href="javascript:void(0);" class="fb" data-toggle="tooltip" title="Facebook"></a> <a href="javascript:void(0);" class="linkedin" data-toggle="tooltip" title="Linkedin"></a> <a href="javascript:void(0);" class="twitter" data-toggle="tooltip" title="Twitter"></a> <a href="javascript:void(0);" class="insta" data-toggle="tooltip" title="Instagram"></a>
-                </ul>
-            </div>
-            <div class="widget">
-                <h5 class="widget-title">followers (22)</h5>
-                <ul class="users-list">
-                    <li data-toggle="tooltip" title="Angela Gill"><img src="images/user1.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Faith Black"><i class="online-indicator"></i><img src="images/user2.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Olivia	Metcalfe"><img src="images/user3.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Adekunle Amodu"><i class="online-indicator"></i><img src="images/user4.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Gordon Piper"><img src="images/user5.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="David Ball"><i class="online-indicator"></i><img src="images/user6.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Megan Vaughan"><img src="images/user7.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Gavin Newman"><i class="online-indicator"></i><img src="images/user8.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                    <li data-toggle="tooltip" title="Fiona Sharp"><i class="online-indicator"></i><img src="images/user9.jpg" alt="" data-toggle="modal" data-target="#userprofile-modal" /></li>
-                </ul>
-                <a class="link-und" href="followers-following.html">View All</a> </div>
-            <div class="sidebar-footer">
-                <p>Copyright 2017 All rights reserved.</p>
-                <ul>
-                    <li><a href="javascript:void(0);">About Us</a></li>
-                    <li><a href="javascript:void(0);">Our Team</a></li>
-                    <li><a href="javascript:void(0);">Careers</a></li>
-                    <li><a href="javascript:void(0);">Support</a></li>
-                    <li><a href="javascript:void(0);">Events</a></li>
-                    <li><a href="javascript:void(0);">Campus</a></li>
-                    <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                    <li><a href="javascript:void(0);">Terms & Conditions</a></li>
-                    <li><a href="javascript:void(0);">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--right sidebar-->
     </div>
 </div>
