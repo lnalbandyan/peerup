@@ -61,6 +61,9 @@ angular.
       when('/communityYearEnrollment', {
           template: '<community-year-enrollment></community-year-enrollment>'
       }).
+      when('/communityFreshersHome', {
+          template: '<community-freshers-home></community-freshers-home>'
+      }).
       when('/contact', {
           template: '<contact></contact>'
       }).
