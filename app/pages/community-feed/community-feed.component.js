@@ -7,6 +7,37 @@ component('communityFeed', {
     controllerAs: 'vm',
     controller: function communityFeedComponenet($uibModal) {
         var vm = this;
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var data = {
+                datasets: [{
+                    data: [10, 20, 30],
+                    backgroundColor: [
+                        'rgb(39, 142, 87)',
+                        'rgb(220, 48, 48)',
+                        'rgb(228, 200, 42)'
+                    ]
+                }],
+
+                // These labels appear in the legend and in the tooltips when hovering different arcs
+                labels: [
+                    'Red',
+                    'Yellow',
+                    'Blue'
+                ]
+            };
+        var myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: data,
+            options: {
+                legend: {
+                    display: true,
+                    labels: {
+                        padding: 25,
+                        fontColor: 'rgb(255, 99, 132)'
+                    }
+                }
+            }
+        });
         if ($(window).width() > 1025) {
 
             var $sticky = $('.sticky');

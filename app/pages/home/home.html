@@ -3,8 +3,8 @@
 <div class="container fixed-header grey forum">
     <div class="row">
         <!--left sidebar-->
-        <div class="col-md-2 fixed-sidebar-wrapper">
-            <div class="sticky-width sticky wide">
+        <div class="col-md-2 fixed-sidebar-wrapper home-sidebar">
+            <div class="sticky-width sticky wide home-sidebar">
                 <!--left sidebar-->
                 <div class="fixed-sidebar">
                     <div class="widget profile-widget">
@@ -48,7 +48,7 @@
 
         <!--left sidebar-->
         <!--content area-->
-        <div class="col-md-10 fixed-sidebar-content padding-left-0">
+        <div class="col-md-10 fixed-sidebar-content home-content padding-left-0">
             <div class="col-xs-12" style="width: calc(100% + 25px);margin-left: -10px;">
                 <ul class="post-action">
                     <li class="active"><a href="javascript:void(0);" class="create-post-link" ng-click="vm.postLink($event)">Write a Post</a></li>
@@ -59,7 +59,7 @@
                     <div class="post-input">
                         <i class="input-caret grey-caret"></i>
                         <input class="upload-file" id="uploadImage" type="file" style="display:none;" />
-                        <label for="uploadImage" class="img-upload flat-btn"><i class="material-icons">photo_camera</i></label>
+                        <label for="uploadImage" class="img-upload flat-btn"><i class="material-icons">link</i></label>
                         <textarea class="form-control" placeholder="Whats happening?"></textarea>
                     </div>
                     <a href="javascript:void(0);" class=" btn btn-blue">ADD POST</a>
@@ -93,46 +93,46 @@
                     <div class="tab-pill"><span>Top Stories</span></div>
                     <ul>
                         <li>
-                            Breakthrough computer program detects cancer before symptoms arise
+                            <p>Breakthrough computer program detects cancer before symptoms arise</p>
                             <span class="pull-right">
-                                (<a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>)
+                                <a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>
                                 18:41
                             </span>
                         </li>
                         <li>
-                            Breakthrough computer program detects cancer before symptoms arise
+                            <p>Breakthrough computer program detects cancer before symptoms arise</p>
                             <span class="pull-right">
-                                (<a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>)
+                                <a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>
                                 18:41
                             </span>
                         </li>
 
                         <li class="hidden-news" style="display:none;">
-                            Breakthrough computer program detects cancer before symptoms arise
+                            <p>Breakthrough computer program detects cancer before symptoms arise</p>
                             <span class="pull-right">
-                                (<a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>)
+                                <a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>
                                 18:41
                             </span>
                         </li>
                         <li class="hidden-news" style="display:none;">
-                            Breakthrough computer program detects cancer before symptoms arise
+                            <p>Breakthrough computer program detects cancer before symptoms arise</p>
                             <span class="pull-right">
-                                (<a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>)
+                                <a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>
                                 18:41
                             </span>
                         </li>
                         <li class="hidden-news" style="display:none;">
-                            Breakthrough computer program detects cancer before symptoms arise
+                            <p>Breakthrough computer program detects cancer before symptoms arise</p>
                             <span class="pull-right">
-                                (<a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>)
+                                <a href="http://www.ibtimes.co.uk/breakthrough-computer-program-detects-cancer-even-before-symptoms-arise-1615036" class="news-ref">IBTimes</a>
                                 18:41
                             </span>
                         </li>
                     </ul>
-                    <div class="news-post-footer text-right"><a href="javascript:void(0);" ng-click="vm.moreNews($event)"><span>View More</span></a></div>
+                    <div class="news-post-footer view-more-news text-right"><a href="javascript:void(0);" ng-click="vm.moreNews($event)"><span>View More</span></a></div>
                 </div>
                 <div>
-                    <div class="tab-pill"><span>TIMELINE</span></div>
+                    <div class="tab-pill"><span>LATEST</span></div>
                     <div class="top-post">
                         <div class="row">
                             <div class="col-md-3 forum-user-details text-right">
@@ -180,6 +180,9 @@
                                                 </ul>
                                             </span>
                                         </li>
+                                        <li class="pull-right">
+                                            <button class="flat-btn purple"><i class="material-icons">share</i> SHARE (123)</button>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -231,6 +234,9 @@
                                                 </ul>
                                             </span>
                                         </li>
+                                        <li class="pull-right">
+                                            <button class="flat-btn purple"><i class="material-icons">share</i> SHARE (123)</button>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -239,8 +245,8 @@
                     <div class="top-post">
                         <div class="row">
                             <div class="col-md-3 forum-user-details text-right">
-                                <img src="images/user4.jpg" alt="">
-                                <p>Mark Grey</p>
+                                <img src="images/toranto-uni.png" alt="">
+                                <p><a href="#businessProfile">Torronto University</a></p>
                                 <div class="post-share ">
                                     <i class="star fill"></i>
                                     <i class="star fill"></i>
@@ -280,6 +286,9 @@
                                                     </li>
                                                 </ul>
                                             </span>
+                                        </li>
+                                        <li class="pull-right">
+                                            <button class="flat-btn purple"><i class="material-icons">share</i> SHARE (123)</button>
                                         </li>
                                     </ul>
                                 </div>

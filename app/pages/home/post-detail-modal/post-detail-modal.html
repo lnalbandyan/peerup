@@ -1,60 +1,77 @@
 <div class="modal-body">
     <!--post-->
-    <div class="single-post">
-        <div class="post-head">
-            <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-            <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                <ul class="post-share user-star">
-                    <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                </ul>
-                <span class="post-time"> •  10 h</span>
-                <h1 class="post-title"><a href="javascript:void(0);">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</a></h1>
+    <div class="top-post">
+        <div class="row">
+            <div class="col-md-3 forum-user-details text-right">
+                <img src="images/user4.jpg" alt="">
+                <p>Mark Grey</p>
+                <div class="post-share ">
+                    <i class="star fill"></i>
+                    <i class="star fill"></i>
+                    <i class="star fill"></i>
+                    <i class="star fill"></i>
+                    <i class="star"></i></div>
             </div>
-        </div>
-        <div class="post-content row">
-            <div class="col-md-4">
-                <div class="post-img"><span class="new">New Post</span><img src="images/post-img4.jpg" alt="" /></div>
+            <div class="col-md-9 top-user-left">
+                <p class="post-time">10 h ago</p>
+                <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
             </div>
-            <div class="col-md-8">
-                <p>Cras dictum id justo mollis maximus. Pellentesque interdum, erat vel bibendum tincidunt, eros risus consequat elit, sed vulputate felis leo sit amet magna. Duis malesuada feugiat urna et vestibulum. Donec condimentum felis vehicula pretium sodales. Praesent pulvinar lobortis est vitae luctus. Nullam mollis felis a nunc bibendum, eget elementum elit imperdiet. Maecenas maximus felis in ante commodo cursus.</p>
+            <div class="col-xs-12 post-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 <div class="post-share">
                     <ul>
-                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                        <li class="reply"><a href="javascript:void(0);" class="inline-reply-link1">106 Replies</a></li>
-                        <li class="view">670 Views</li>
-                        <li class="share">100 Shares</li>
-                        <li class="report"><a href="javascript:void(0);" data-toggle="modal" data-target="#report-modal">Report</a></li>
-                    </ul>
-                </div>
-                <div class="reply-section inline-reply"> <span class="reply-img"><img src="images/adekunle.jpg" alt=""></span> <span class="reply-field">
-                <textarea placeholder="Write a reply..." class="form-control"></textarea>
-                </span>
-                    <div class="clear"></div>
-                    <div class="reply-action">
-                        <input type="submit" class="btn btn-blue btn-sm" value="Reply">
-                    </div>
-                    <ul class="reply-list">
                         <li>
-                            <span class="reply-img"><img src="images/user1.jpg" alt="" /></span>
-                            <span class="reply-field"> <a class="post-by" href="user-profile.html">Angela Gill</a>
-                    <ul class="post-share user-star">
-                      <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                    </ul>
-                    <p>Very helpful.</p>
-                    <p class="reply-time">January 5 at 10:00 AM</p>
-                    </span> </li>
-                        <li>
-                            <span class="reply-img"><img src="images/user2.jpg" alt="" /></span> <span class="reply-field"> <a class="post-by" href="user-profile.html">Faith Black</a>
-                    <ul class="post-share user-star">
-                      <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                    </ul>
-                    <p>Very helpful.</p>
-                    <p class="reply-time">January 5 at 10:00 AM</p>
-                    </span> </li>
+                            <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                            <i class="star fill"></i>
+                            <i class="star fill"></i>
+                            <i class="star fill"></i>
+                            <i class="star fill"></i>
+                            <i class="star"></i>
+                            <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                        </li>
+                        <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                        <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                        <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                        </li>
+                        <li class="pull-right">
+                            <button class="flat-btn purple"><i class="material-icons">share</i> SHARE (123)</button>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div> </div>
+        </div>
+    </div>
+    <div class="forum-header">
+        <div class="question-widget" style="margin: 0 auto;">
+            <h4 class="question-title">Add a reply</h4>
+            <div class="question-input clearfix">
+                <span class="by-user-img">
+                    <img src="images/profile.jpg" alt="">
+                    <p>Mark Grey</p>
+                </span>
+                <span class="by-user-text">
+                    <i class="input-caret grey-caret"></i>
+                    <div style="width: 100%;">
+                        <input class="upload-file" id="uploadImage" type="file" style="display:none;">
+                        <label for="uploadImage" class="img-upload flat-btn"><i class="material-icons">link</i></label>
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+                </span>
+                <a href="javascript:void(0);" class=" btn btn-blue pull-right">Post a question</a>
+            </div>
         </div>
     </div>
     <!--post-->

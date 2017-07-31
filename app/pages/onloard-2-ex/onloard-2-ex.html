@@ -4,7 +4,7 @@
             <div class="">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo-blue.png" alt="peersview" /></a> </div>
+                    <a class="navbar-brand" href="#index"><img src="images/logo-blue.png" alt="peersview" /></a> </div>
                 <!-- /.navbar-collapse -->
             </div>
         </nav>
@@ -60,7 +60,13 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Date of Birth</label>
-                                            <input type="text" class="form-control datepicker" />
+                                            <input type="text" class="form-control field-calender datepicker designation"
+                                                   ng-focus="vm.dateOpen2 = !vm.dateOpen2"
+                                                   is-open="vm.dateOpen2"
+                                                   ng-model="vm.dt"
+                                                   style="padding-left: 0"
+                                                   uib-datepicker-popup="{{vm.format}}"
+                                                   datepicker-options="vm.dateOptions"/>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -80,7 +86,7 @@
                 </div>
             </div>
             <div class="bottom-button no-sep">
-                <input class="btn btn-md btn-blue" value="Continue" type="button" onClick="parent.location='onloard-3.html'">
+                <input class="btn btn-md btn-blue" value="Continue" type="button" onClick="parent.location='#onloard3'">
             </div>
         </div>
     </div>

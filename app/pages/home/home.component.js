@@ -13,7 +13,7 @@ component('home', {
             $sticky.css({position: 'fixed', top: '68px'});
         }
         vm.moreNews = function(e){
-            var txt = $(".hidden-news").is(':visible') ? 'View More News' : 'Hide News';
+            var txt = $(".hidden-news").is(':visible') ? 'View More' : 'Hide News';
             $(".view-more-news a span").text(txt);
             $(e.target).toggleClass("active");
             $(".hidden-news").slideToggle();

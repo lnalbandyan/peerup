@@ -196,6 +196,9 @@ angular.
       when('/userProfile', {
           template: '<user-profile></user-profile>'
       }).
+      when('/dash', {
+          template: '<dashboard></dashboard>'
+      }).
 
       otherwise('/');
     }

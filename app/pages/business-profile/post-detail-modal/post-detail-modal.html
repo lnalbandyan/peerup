@@ -17,6 +17,7 @@
                 <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
             </div>
             <div class="col-xs-12 post-text">
+                <img class="img-responsive" src="images/post-img1.jpg" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 <div class="post-share">
                     <ul>
@@ -31,7 +32,24 @@
                         </li>
                         <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
                         <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
-
+                        <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                        </li>
+                        <li class="pull-right">
+                            <button class="flat-btn purple"><i class="material-icons">share</i> SHARE (123)</button>
+                        </li>
                     </ul>
                 </div>
             </div>
