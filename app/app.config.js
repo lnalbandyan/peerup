@@ -97,6 +97,9 @@ angular.
       when('/forumHome', {
           template: '<forum-home></forum-home>'
       }).
+      when('/forumHomeReply', {
+          template: '<forum-home-reply></forum-home-reply>'
+      }).
       when('/forumPostSecondary', {
           template: '<forum-post-secondary></forum-post-secondary>'
       }).

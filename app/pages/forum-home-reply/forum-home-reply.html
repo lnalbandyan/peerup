@@ -1,0 +1,318 @@
+<app-navbar active="'forum'"></app-navbar>
+<div class="forum-page-bg">
+    <div class="container forum fixed-header grey">
+        <div class="row">
+            <div class="col-md-3 forum-leftmenu fixed-sidebar-wrapper">
+                <div class="sticky-width sticky">
+                    <div class="fixed-sidebar text-lower">
+                        <ul>
+                            <li class="active-link forum-home"><a href="#forumHome">
+                                <i class="material-icons">forum</i>
+                                <span class="link-text">Forum</span></a>
+                            </li>
+                            <li class="forum-career"><a href="#forumCareers">
+                                <i class="material-icons">work</i>
+                                <span class="link-text">Careers</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 forum-tab fixed-sidebar-content">
+                <div class="col-xs-12 forum-reply-item">
+                    <div class="top-post">
+                        <div class="row">
+                            <div class="col-md-3 forum-user-details text-right">
+                                <img src="images/user4.jpg" alt="">
+                                <p>Mark Grey</p>
+                                <span>University of Toronto</span>
+                                <div class="post-share ">
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star fill"></i>
+                                    <i class="star"></i></div>
+                            </div>
+                            <div class="col-md-9 top-user-left">
+                                <div class="top-user">
+                                    <div class="forum-post">
+                                        <i class="input-caret grey-caret"></i>
+                                        <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                    </div>
+                                    <div class="post-share">
+                                        <ul>
+                                            <li>
+                                                <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star fill"></i>
+                                                <i class="star"></i>
+                                                &nbsp; Likes (135)
+                                            </li>
+                                            <li class="pull-right">
+                                                    <span uib-dropdown on-toggle="toggled(open)">
+                                                        <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                            <i class="material-icons">more_vert</i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                            </li>
+                                                        </ul>
+                                                    </span>
+                                            </li>
+                                            <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                            <li class="view pull-right">670 Views</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 forum-feed">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <!--top post-->
+                            <span class="header-tab">Latest Replies</span>
+                            <div class="top-post">
+                                <div class="row">
+                                    <div class="col-md-3 forum-user-details text-right">
+                                        <img src="images/user4.jpg" alt="">
+                                        <p>Mark Grey</p>
+                                        <span>University of Toronto</span>
+                                        <div class="post-share ">
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i></div>
+                                    </div>
+                                    <div class="col-md-9 top-user-left">
+                                        <div class="top-user">
+                                            <div class="forum-post">
+                                                <i class="input-caret grey-caret"></i>
+                                                <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                            </div>
+                                            <div class="post-share">
+                                                <ul>
+                                                    <li>
+                                                        <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                        <i class="star fill"></i>
+                                                        <i class="star fill"></i>
+                                                        <i class="star fill"></i>
+                                                        <i class="star fill"></i>
+                                                        <i class="star"></i>
+                                                        &nbsp; Likes (135)
+                                                    </li>
+                                                    <li class="pull-right">
+                                                    <span uib-dropdown on-toggle="toggled(open)">
+                                                        <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                            <i class="material-icons">more_vert</i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                            </li>
+                                                        </ul>
+                                                    </span>
+                                                    </li>
+                                                    <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                    <li class="view pull-right">670 Views</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-post">
+                                <div class="row">
+                                    <div class="col-md-3 forum-user-details text-right">
+                                        <img src="images/user4.jpg" alt="">
+                                        <p>Mark Grey</p>
+                                        <span>University of Toronto</span>
+                                        <div class="post-share ">
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i></div>
+                                    </div>
+                                    <div class="col-md-9 top-user-left">
+                                        <div class="top-user">
+                                            <div class="forum-post">
+                                                <i class="input-caret grey-caret"></i>
+                                                <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                            </div>
+                                            <div class="post-share">
+                                                <ul>
+                                                    <li>
+                                                        <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                        <i class="star fill"></i>
+                                                        <i class="star fill"></i>
+                                                        <i class="star fill"></i>
+                                                        <i class="star fill"></i>
+                                                        <i class="star"></i>
+                                                        &nbsp; Likes (135)
+                                                    </li>
+                                                    <li class="pull-right">
+                                                    <span uib-dropdown on-toggle="toggled(open)">
+                                                        <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                            <i class="material-icons">more_vert</i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                            </li>
+                                                        </ul>
+                                                    </span>
+                                                    </li>
+                                                    <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                    <li class="view pull-right">670 Views</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-post">
+                                <div class="row">
+                                    <div class="col-md-3 forum-user-details text-right">
+                                        <img src="images/user4.jpg" alt="">
+                                        <p>Mark Grey</p>
+                                        <span>University of Toronto</span>
+                                        <div class="post-share ">
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i></div>
+                                    </div>
+                                    <div class="col-md-9 top-user-left">
+                                        <div class="top-user">
+                                            <div class="forum-post">
+                                                <i class="input-caret grey-caret"></i>
+                                                <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                            </div>
+                                            <div class="post-share">
+                                                <ul>
+                                                    <li>
+                                                        <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                        <i class="star fill"></i>
+                                                        <i class="star fill"></i>
+                                                        <i class="star fill"></i>
+                                                        <i class="star fill"></i>
+                                                        <i class="star"></i>
+                                                        &nbsp; Likes (135)
+                                                    </li>
+                                                    <li class="pull-right">
+                                                    <span uib-dropdown on-toggle="toggled(open)">
+                                                        <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                            <i class="material-icons">more_vert</i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                            </li>
+                                                        </ul>
+                                                    </span>
+                                                    </li>
+                                                    <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                    <li class="view pull-right">670 Views</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-post">
+                            <div class="row">
+                                <div class="col-md-3 forum-user-details text-right">
+                                    <img src="images/user4.jpg" alt="">
+                                    <p>Mark Grey</p>
+                                    <span>University of Toronto</span>
+                                    <div class="post-share ">
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star fill"></i>
+                                        <i class="star"></i></div>
+                                </div>
+                                <div class="col-md-9 top-user-left">
+                                    <div class="top-user">
+                                        <div class="forum-post">
+                                            <i class="input-caret grey-caret"></i>
+                                            <p>I loved watching this video.  I am a visual learner and seeing such good teaching in practice was very helpful for me.  I do like the idea of getting students to challenge each others thinking.  I am going...</p>
+                                        </div>
+                                        <div class="post-share">
+                                            <ul>
+                                                <li>
+                                                    <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i>
+                                                    &nbsp; Likes (135)
+                                                </li>
+                                                <li class="pull-right">
+                                                    <span uib-dropdown on-toggle="toggled(open)">
+                                                        <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                            <i class="material-icons">more_vert</i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                            </li>
+                                                        </ul>
+                                                    </span>
+                                                </li>
+                                                <li class="reply pull-right" ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);">106 Replies</a></li>
+                                                <li class="view pull-right">670 Views</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="post-reply top-post">
+                                <div class="col-md-3 forum-user-details text-right">
+                                    <img src="images/user4.jpg" alt="">
+                                </div>
+                                <div class="col-md-9 top-user-left">
+                                    <div class="forum-post">
+                                        <i class="input-caret grey-caret"></i>
+                                        <textarea rows="5"></textarea>
+                                    </div>
+                                    <button class="btn btn-blue pull-right">COMMENT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <top-questions></top-questions>
+                            <sidebar-image></sidebar-image>
+                            <sidebar-footer></sidebar-footer>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

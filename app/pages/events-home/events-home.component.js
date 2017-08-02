@@ -34,6 +34,10 @@ component('eventsHome', {
             loop: false,
             dots: false,
             nav:true,
+            responsive: {
+                0: {items: 5},
+                767: {items: 8}
+            },
             onChange: function () {
 
             }

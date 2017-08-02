@@ -117,144 +117,212 @@
                </div>
                 <!--create post-->
             <div class="col-xs-12">
-                <div class="col-xs-12 col-sm-6 col-md-8">
-                    <div>
-                        <div class="tab-pill"><span>TIMELINE</span></div>
-                        <!--post-->
-                        <div class="single-post">
-                            <div class="post-head">
-                                <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-                                <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                                    <ul class="post-share user-star">
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                                    </ul>
-                                    <span class="post-time"> •  10 h</span>
-                                    <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</a></h1>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-8">
+                            <div class="tab-pill"><span>TIMELINE</span></div>
+                            <div class="top-post">
+                                <div class="row">
+                                    <div class="col-md-3 forum-user-details text-right">
+                                        <img src="images/user4.jpg" alt="">
+                                        <p>Mark Grey</p>
+                                        <div class="post-share ">
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i></div>
+                                    </div>
+                                    <div class="col-md-9 top-user-left">
+                                        <p class="post-time">10 h ago</p>
+                                        <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                                    </div>
+                                    <div class="col-xs-12 post-text">
+                                        <img class="img-responsive" src="images/post-img1.jpg" alt="">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                        <div class="post-share">
+                                            <ul>
+                                                <li>
+                                                    <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i>
+                                                    <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                                </li>
+                                                <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                                <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                                                <li class="pull-right">
+                                                    <span uib-dropdown on-toggle="toggled(open)">
+                                                        <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                            <i class="material-icons">more_vert</i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                            </li>
+                                                        </ul>
+                                                    </span>
+                                                </li>
+                                                <li class="pull-right">
+                                                    <button class="flat-btn purple"><i class="material-icons">share</i> SHARE (123)</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="post-content">
-                                <div class="post-img"><span class="new">New Post</span><img src="images/post-img1.jpg" alt="" /></div>
-                                <div class="post-share">
-                                    <ul>
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                        <li class="reply">106 Replies</li>
-                                        <li class="view">670 Views</li>
-                                        <li class="share">100 Shares</li>
-                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
-                                    </ul>
+                            <div class="top-post">
+                                <div class="row">
+                                    <div class="col-md-3 forum-user-details text-right">
+                                        <img src="images/user4.jpg" alt="">
+                                        <p>Mark Grey</p>
+                                        <div class="post-share ">
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i></div>
+                                    </div>
+                                    <div class="col-md-9 top-user-left">
+                                        <p class="post-time">10 h ago</p>
+                                        <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                                    </div>
+                                    <div class="col-xs-12 post-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                        <div class="post-share">
+                                            <ul>
+                                                <li>
+                                                    <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i>
+                                                    <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                                </li>
+                                                <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                                <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                                                <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                                </li>
+                                                <li class="pull-right">
+                                                    <button class="flat-btn purple"><i class="material-icons">share</i> SHARE (123)</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
+                            <div class="top-post">
+                                <div class="row">
+                                    <div class="col-md-3 forum-user-details text-right">
+                                        <img src="images/toranto-uni.png" alt="">
+                                        <p><a href="#businessProfile">Torronto University</a></p>
+                                        <div class="post-share ">
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star fill"></i>
+                                            <i class="star"></i></div>
+                                    </div>
+                                    <div class="col-md-9 top-user-left">
+                                        <p class="post-time">10 h ago</p>
+                                        <h3 class="post-title grey" ng-click="vm.openPostDetail('lg')">Saudi Government Linked To 9/11 Hijackers In Newly Released U.S. Report</h3>
+                                    </div>
+                                    <div class="col-xs-12 post-text">
+                                        <div class="post-share">
+                                            <ul>
+                                                <li>
+                                                    <button class="flat-btn"><img src="images/icon_like.png"/> </button>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star fill"></i>
+                                                    <i class="star"></i>
+                                                    <span style="vertical-align: sub;margin-left: 5px;">Likes (135)</span>
+                                                </li>
+                                                <li ng-click="vm.openPostDetail('lg')"><a href="javascript:void(0);"><i class="material-icons">reply</i>106 Replies</a></li>
+                                                <li><i class="material-icons">remove_red_eye</i> 670 Views</li>
+                                                <li class="pull-right">
+                                            <span uib-dropdown on-toggle="toggled(open)">
+                                                <a href id="simple-dropdown" class="flat-btn purple" uib-dropdown-toggle>
+                                                    <i class="material-icons">more_vert</i>
+                                                </a>
+                                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                                </li>
+                                                <li class="pull-right">
+                                                    <button class="flat-btn purple"><i class="material-icons">share</i> SHARE (123)</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--post-->
+                            <div class="load-more"><a href="javascript:void(0);">load more...</a></div>
                         </div>
-                        <!--post-->
-                        <!--post-->
-                        <div class="single-post">
-                            <div class="post-shared">Coopeers post shared</div>
-                            <div class="post-head">
-                                <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-                                <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                                    <ul class="post-share user-star">
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                                    </ul>
-                                    <span class="post-time"> •  10 h</span>
-                                    <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Who understands financial modeling?</a></h1>
-                                </div>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-img"><img src="images/post-img2.jpg" alt="" /></div>
-                                <div class="post-share">
-                                    <ul>
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                        <li class="reply">106 Replies</li>
-                                        <li class="view">670 Views</li>
-                                        <li class="share">100 Shares</li>
-                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
-                        </div>
-                        <!--post-->
-                        <!--post-->
-                        <div class="single-post">
-                            <div class="post-head">
-                                <div class="post-user"><img src="images/user-post.jpg" alt="" /></div>
-                                <div class="post-info"> <a class="post-by" href="user-profile.html">Adekunle Amodu</a>
-                                    <ul class="post-share user-star">
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star"></i> </li>
-                                    </ul>
-                                    <span class="post-time"> •  10 h</span>
-                                    <h1 class="post-title"><a href="javascript:void(0);" ng-click="vm.openPostDetail('lg')">Looks like team "Giggle Waters" had the last giggle after all! Congratulations to the <span class="hash-tag">#MahindraWarRoom 2016</span> Champion...</a></h1>
-                                </div>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-img"><span class="new">New Post</span><img src="images/post-img3.jpg" alt="" /></div>
-                                <div class="post-share">
-                                    <ul>
-                                        <li> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> <i class="star fill"></i> &nbsp;Like • &nbsp;205 Likes</li>
-                                        <li class="reply">106 Replies</li>
-                                        <li class="view">670 Views</li>
-                                        <li class="share">100 Shares</li>
-                                        <li class="report"><a href="javascript:void(0);" ng-click="vm.openReport('sm')">Report</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="add-comment"><a href="javascript:void(0);">Write a comment (Use @ to mention people)</a></div>
-                        </div>
-                        <!--post-->
-                        <div class="load-more"><a href="javascript:void(0);">load more...</a></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="widget"> <a href="javascript:void(0);" class="btn btn-primary btn-block">Leave Group</a> </div>
-                    <peers-may-know></peers-may-know>
-                    <div class="widget events">
-                        <h5 class="widget-title">Invite Your Friends</h5>
-                        <div class="invite-form">
-                            <div class="form-group">
-                                <label>Invite via Email</label>
-                                <input type="text" class="form-control" placeholder="Email" />
-                            </div>
-                            <input type="button" value="Continue" class="btn btn-white" ng-click="vm.openInvite('md')" />
-                            <div class="or-text">
-                                <div class="line"></div>
-                                <span>OR</span>
-                            </div>
-                            <div class="email-site">
-                                <a class="email-fb" href="https://www.facebook.com" target="_blank">
-                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                        <path fill="#ffffff" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
-                                    </svg>
-                                </a>
-                                <a class="email-twitter" href="https://twitter.com/" target="_blank">
-                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                        <path fill="#ffffff" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
-                                    </svg>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="widget"> <a href="javascript:void(0);" class="btn btn-primary btn-block">Leave Group</a> </div>
+                            <peers-may-know></peers-may-know>
+                            <div class="widget events">
+                                <h5 class="widget-title">Invite Your Friends</h5>
+                                <div class="invite-form">
+                                    <div class="form-group">
+                                        <label>Invite via Email</label>
+                                        <input type="text" class="form-control" placeholder="Email" />
+                                    </div>
+                                    <input type="button" value="Continue" class="btn btn-white" ng-click="vm.openInvite('md')" />
+                                    <div class="or-text">
+                                        <div class="line"></div>
+                                        <span>OR</span>
+                                    </div>
+                                    <div class="email-site">
+                                        <a class="email-fb" href="https://www.facebook.com" target="_blank">
+                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                                <path fill="#ffffff" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+                                            </svg>
+                                        </a>
+                                        <a class="email-twitter" href="https://twitter.com/" target="_blank">
+                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                                <path fill="#ffffff" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                                            </svg>
 
-                                </a>
-                                <a class="email-gmail" href="http://gmail.com/" target="_blank">
-                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                        <path fill="#ffffff" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
-                                    </svg>
-                                </a>
+                                        </a>
+                                        <a class="email-gmail" href="http://gmail.com/" target="_blank">
+                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                                <path fill="#ffffff" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+                            <sidebar-footer></sidebar-footer>
                         </div>
                     </div>
-                    <div class="sidebar-footer">
-                        <p>Copyright 2017 All rights reserved.</p>
-                        <ul>
-                            <li><a href="javascript:void(0);">About Us</a></li>
-                            <li><a href="javascript:void(0);">Our Team</a></li>
-                            <li><a href="javascript:void(0);">Careers</a></li>
-                            <li><a href="javascript:void(0);">Support</a></li>
-                            <li><a href="javascript:void(0);">Events</a></li>
-                            <li><a href="javascript:void(0);">Campus</a></li>
-                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                            <li><a href="javascript:void(0);">Terms & Conditions</a></li>
-                            <li><a href="javascript:void(0);">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <!--content area-->
             <!--right sidebar-->
