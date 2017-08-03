@@ -196,6 +196,9 @@ angular.
       when('/termsOfUse', {
           template: '<terms-of-use></terms-of-use>'
       }).
+      when('/termsOfUseUser', {
+          template: '<terms-of-use-user></terms-of-use-user>'
+      }).
       when('/userProfile', {
           template: '<user-profile></user-profile>'
       }).

@@ -97,6 +97,23 @@ component('myProfile', {
             });
         };
 
+        vm.openShare = function (size) {
+            var parentElem = angular.element('body');
+            var modalInstance = $uibModal.open({
+                animation: true,
+                templateUrl: 'pages/home/share-modal/share-modal.html',
+                size: size,
+                appendTo: parentElem,
+                controllerAs: 'vm',
+                controller: function ($uibModalInstance) {
+                    var vm = this;
+                    vm.cancel = function () {
+                        $uibModalInstance.dismiss('cancel');
+                    };
+                }
+            });
+        };
+
         vm.openUsersProfile = function (size) {
             var parentElem = angular.element('body');
             var modalInstance = $uibModal.open({

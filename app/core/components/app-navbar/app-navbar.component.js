@@ -25,6 +25,7 @@ angular.
             };
         },
         bindings: {
-            active: '<'
+            active: '<',
+            logo: '<'
         }
     });

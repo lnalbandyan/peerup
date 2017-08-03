@@ -13,7 +13,7 @@
                         </ul>
                     </div>
                     <div class="profile-info">
-                        <a href="https://www.utoronto.ca/" target="_blank"> <i class="material-icons">account_balance</i> https://www.utoronto.ca/</a>
+                        <span><i class="material-icons">account_balance</i> </span><a href="https://www.utoronto.ca/" target="_blank"> https://www.utoronto.ca/</a>
                     </div>
                     <div class="widget media-widget">
                         <h5 class="widget-title "> <i class="material-icons">photo_library</i> Media / Pictures (14)</h5>
@@ -80,7 +80,7 @@
                                                         <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
                                                     </li>
                                                     <li>
-                                                        <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                        <a class="flat-btn purple" ng-click="vm.openReport('md')" ><i class="material-icons">flag</i>Report</a>
                                                     </li>
                                                 </ul>
                                             </span>
@@ -128,10 +128,10 @@
                                                         </a>
                                                         <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
                                                             <li>
-                                                                <a class="flat-btn purple" href="#"><i class="material-icons">delete</i>Delete</a>
+                                                                <a class="flat-btn purple" ng-click="vm.openUserMessage('lg')"><i class="material-icons">delete</i>Delete</a>
                                                             </li>
                                                             <li>
-                                                                <a class="flat-btn purple" href="#"><i class="material-icons">flag</i>Report</a>
+                                                                <a class="flat-btn purple" ng-click="vm.openReport('md')" ><i class="material-icons">flag</i>Report</a>
                                                             </li>
                                                         </ul>
                                                     </span>
