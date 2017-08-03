@@ -2421,10 +2421,20 @@ and (orientation : portrait) {
 	.forum-user-details p, .forum-user-details p a {
 		padding-left: 0;
 	}
+	.forum-user-details p span {
+		display: inline !important;
+		font-size: 12px;
+		color: #989898;
+		margin-left: 10px;
+		font-family: 'Conv_MavenPro-Regular';
+	}
+	.top-user-left .post-time {
+		display: none;
+	}
 	.forum-user-details {
 		width: 100%;
 		float: none;
-		text-align: center;
+		text-align: left;
 	}
 	.create-post, .brain-map {
 		padding: 20px 40px;

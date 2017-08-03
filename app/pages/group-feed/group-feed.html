@@ -107,6 +107,56 @@
                            <input class="form-control" placeholder="Type a topic"/>
                        </div>
                        <a href="javascript:void(0);" class=" btn btn-blue">ADD POST</a>
+                       <div class="brain-map-image">
+                           <img src="images/brainstorming-map.jpg"/>
+                           <div class="brain-inputs">
+                               <div class="clearfix input-wrapper active">
+                                   <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon2">
+                                    <span class="circle"></span>
+                                </span>
+                                       <input type="text" class="form-control" placeholder="Keyword" aria-describedby="basic-addon1">
+                                   </div>
+                                   <button class="btn btn-blue" ng-click="vm.addKeyword($event)">Add</button>
+                               </div>
+                               <div class="clearfix input-wrapper">
+                                   <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon3">
+                                    <span class="diamond"></span>
+                                </span>
+                                       <input type="text" class="form-control" placeholder="Keyword" aria-describedby="basic-addon1">
+                                   </div>
+                                   <button class="btn btn-blue" ng-click="vm.addKeyword($event)">Add</button>
+                               </div>
+                               <div class="clearfix input-wrapper">
+                                   <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon4">
+                                    <span class="rectangle"></span>
+                                </span>
+                                       <input type="text" class="form-control" placeholder="Keyword" aria-describedby="basic-addon1">
+                                   </div>
+                                   <button class="btn btn-blue" ng-click="vm.addKeyword($event)">Add</button>
+                               </div>
+                               <div class="clearfix input-wrapper">
+                                   <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon5">
+                                    <span class="star"></span>
+                                </span>
+                                       <input type="text" class="form-control" placeholder="Keyword" aria-describedby="basic-addon1">
+                                   </div>
+                                   <button class="btn btn-blue" ng-click="vm.addKeyword($event)">Add</button>
+                               </div>
+                               <div class="clearfix input-wrapper">
+                                   <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon6">
+                                    <span class="shape"></span>
+                                </span>
+                                       <input type="text" class="form-control" placeholder="Keyword" aria-describedby="basic-addon1">
+                                   </div>
+                                   <button class="btn btn-blue" ng-click="vm.addKeyword($event)">Add</button>
+                               </div>
+                           </div>
+                       </div>
                    </div>
                    <div class="ask-question" style="display:none;">
                        <textarea class="form-control" placeholder="Ask something..."></textarea>
@@ -124,7 +174,7 @@
                                 <div class="row">
                                     <div class="col-md-3 forum-user-details text-right">
                                         <img src="images/user4.jpg" alt="">
-                                        <p>Mark Grey</p>
+                                        <p>Mark Grey<span class="mobile-time visible-xs">10h ago</span></p>
                                         <div class="post-share ">
                                             <i class="star fill"></i>
                                             <i class="star fill"></i>
@@ -179,7 +229,7 @@
                                 <div class="row">
                                     <div class="col-md-3 forum-user-details text-right">
                                         <img src="images/user4.jpg" alt="">
-                                        <p>Mark Grey</p>
+                                        <p>Mark Grey<span class="mobile-time visible-xs">10h ago</span></p>
                                         <div class="post-share ">
                                             <i class="star fill"></i>
                                             <i class="star fill"></i>
