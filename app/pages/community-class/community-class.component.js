@@ -13,6 +13,12 @@ component('communityClass', {
             $sticky.css({position: 'fixed', top: '86px'});
         }
 
+        vm.addKeyword = function (e) {
+            console.log(e);
+            $(e.target).hide();
+            $(e.target).parent().next('div').addClass('active');
+        };
+
         vm.postLink = function (e) {
             $(".create-poll, .brain-map, .ask-question, .share-story, .guest-list").hide();
             $(".create-post, .timeline-block").fadeIn();
